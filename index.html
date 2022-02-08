@@ -26,7 +26,9 @@
          Rock, Paper, Scissors, Lizard, Spock
     </h1>
   </div>
+
     <div class='game-area'> 
+<section class='results-area'>
         <div class='results-area'> 
             <div class="scores-area">
                 <p class='scores'>Player 1</p>
@@ -41,6 +43,8 @@
             <p class='answer-messgae'>Choose you Weapon!</p>
             <!-- <input id='answer-box' type='number'> -->
         </div>
+</section>    
+<section class='results-area'>
         <div class='controls-area'> 
             <button id="rock" class="playerChoice" value="Rock">
                 <i class="fas fa-hand-rock"></i>
@@ -58,15 +62,19 @@
                 <i class="fas fa-hand-spock"></i>
             </button>
         </div>
-        </div class='info'>
-            <button data-type="playGame" class="buttonRun">Play Game</button>
+</section> 
+<section class='info-area'>
+        </div class='info-area'>
+            <button data-type="playGame" class="buttonRun">
+                <a href="./index.html">Play Game</a>
+            </button>
             <button data-type="rules" class="buttonRun"> 
-                <a href="rules.html">Rules</a>
+                <a href="./rules.html">Rules</a>
             </button>
             <button data-type="difficulty" class="buttonRun">Difficulty</button>
         </div>
         <script src="assets/js/script.js"></script>
     </div>
-
+</section>
 </body> 
 </html>

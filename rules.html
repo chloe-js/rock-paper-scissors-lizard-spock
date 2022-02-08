@@ -4,63 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- font awesome and google fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<!-- <script src="https://kit.fontawesome.com/50b3676eae.js" crossorigin="anonymous"></script> -->
-<!-- **google font to be inserted -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">    
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
 
-<!--** favicon font to be inserted -->
     <!-- favicon icon link-->
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' /> 
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Love Maths</title>
+    <title>Rules</title>
 </head>
 <body>
-  <div id='head-area'>
-    <h1 class="heading">
-        <i class="fas fa-american-sign-language-interpreting" alt="logo"></i>
-         Rock, Paper, Scissors, Lizard, Spock
-    </h1>
-  </div>
-    <div class='game-area'> 
-        <div class='results-area'> 
-            <!-- <span id='operand1'>0</span> randowm computer choice -->
-            <!-- <span id='operator'>x</span> hand choice -->
-            <span id='operand2'>0</span>
-            <span>vs</span>
-            <p class='answer-messgae'>Choose you Weapon!</p>
-            <!-- <input id='answer-box' type='number'> -->
-        </div>
-        <div class='controls-area'> 
-            <button id='btn' data-type="rock" class="playerChoice" value="Rock">
-                <i class="fas fa-hand-rock"></i>
-            </button>
-            <button data-type="paper" class="playerChoice" value="Paper">
-                <i class="fas fa-hand-paper"></i>
-            </button>
-            <button data-type="scissors" class="playerChoice" value="Scissors">
-                <i class="fas fa-hand-scissors"></i>
-            </button>
-            <button data-type="lizard" class="playerChoice" value="Lizard">
-                <i class="fas fa-hand-lizard"></i>
-            </button>
-            <button data-type="spock" class="playerChoice" value="Spock">
-                <i class="fas fa-hand-spock"></i>
-            </button>
-        </div>
-        </div class='info'>
-            <button data-type="playGame" class="buttonRun">Play Game</button>
-            <button data-type="rules" class="buttonRun"> 
-                <a href="rules.html">Rules</a>
-            </button>
-            <button data-type="difficulty" class="buttonRun">Difficulty</button>
-        </div>
-        
-    </div>
+    <h1>Rules of R,P,S,L,S</h1>
+    
+<a href="...">Play Game</a>
 
-</body> 
+
+    <div><i class="fas fa-hand-rock"></i></i>
+        <h3>Rock</h3>
+        <p id="rock-rule1">Rock Smashes Scissors</p>
+        <p id="rock-rule2">Rock Crushes Lizard</p>
+        <p id="rock-rule3">Spock Vaporizes Rock</p>
+        <p id="rock-rule4">Paper Covers Rock</p>
+    </div>    
+    <div><i class="fas fa-hand-paper"></i>
+        <h3>Paper</h3>
+        <p id="paper-rule1">Paper Covers Rock</p>
+        <p id="paper-rule2">Paper Disproves Spock</p>
+        <p id="paper-rule3">Scissors Cuts Paper</p>
+        <p id="rock-rule4">Lizard Eats Paper</p>
+    </div>
+    <div><i class="fas fa-hand-scissors"></i>
+        <h3>Scissors</h3>
+        <p id="scissors-rule1">Scissors Cuts Paper</p>
+        <p id="scissors-rule2">Scissors Decapitates Lizard</p>
+        <p id="scissors-rule3">Rock Smashes Scissors</p>
+        <p id="rock-rule4">Spock Breaks Scissors</p>
+    </div>
+    <div><i class="fas fa-hand-lizard"></i>
+        <h3>Lizard</h3>
+        <p id="lizard-rule1">Lizard Poisons Spock</p>
+        <p id="lizard-rule2">Lizard Eats Paper</p>
+        <p id="lizard-rule3">Scissors Decapitates Lizard</p>
+        <p id="rock-rule4">Rock Crushes Lizard</p>
+    </div>
+    <div><i class="fas fa-hand-spock"></i>
+        <h3>Spock</h3>
+        <p id="spock-rule1">Spock Vaporizes Rock</p>
+        <p id="spock-rule2">Spock Breaks Scissors</p>
+        <p id="spock-rule3">Lizard Poisons Spock</p>
+        <p id="rock-rule4">Paper Disproves Spock</p>
+    </div>
+    </div class='info'>
+        <button data-type="playGame" class="buttonRun">
+            <a href="./index.html">Play Game</a>
+        </button>
+        <button data-type="rules" class="buttonRun"> 
+            <a href="./rules.html">Rules</a>
+        </button>
+        <button data-type="difficulty" class="buttonRun">Difficulty</button>
+    </div>
+ </body>
 </html>

@@ -8,29 +8,56 @@ for (var i = 0; i < playerChoice.length; i++) {
       let playerHand = this.value;
       // https://codepen.io/rpandrews/pen/oKRLxY // limited, included new icons and choices
       if (playerHand === opponentHand) {
-         alert(`It's a draw!\n${playerHand} vs ${opponentHand}`);
+        alert(`It's a draw!\n${playerHand} vs ${opponentHand}`);
+        incrementScore();
       } else if (playerHand === 'Scissors' && opponentHand === 'Paper') {
-         alert(`You win!\n${playerHand} vs ${opponentHand}`);
+        alert(`You win!\n${playerHand} vs ${opponentHand}`);
+        incrementScore();
       } else if (playerHand === 'Paper' && opponentHand === 'Rock') {
         alert(`You win!\n${playerHand} vs ${opponentHand}`);
+        incrementScore();
      }  else if (playerHand === 'Rock' && opponentHand === 'Lizard') {
         alert(`You win!\n${playerHand} vs ${opponentHand}`);
+        incrementScore();
      }  else if (playerHand === 'Lizard' && opponentHand === 'Spock') {
         alert(`You win!\n${playerHand} vs ${opponentHand}`);
+        incrementScore();
      }  else if (playerHand === 'Spock' && opponentHand === 'Scissors') {
         alert(`You win!\n${playerHand} vs ${opponentHand}`);
+        incrementScore();
      }  else if (playerHand === 'Rock' && opponentHand === 'Scissors') {
         alert(`You win!\n${playerHand} vs ${opponentHand}`);
+        incrementScore();
      }  else if (playerHand === 'Scissors' && opponentHand === 'Lizard') {
         alert(`You win!\n${playerHand} vs ${opponentHand}`);
+        incrementScore();
      }  else if (playerHand === 'Lizard' && opponentHand === 'Paper') {
         alert(`You win!\n${playerHand} vs ${opponentHand}`);
+        incrementScore();
      }  else if (playerHand === 'Paper' && opponentHand === 'Spock') {
         alert(`You win!\n${playerHand} vs ${opponentHand}`);
+        incrementScore();
      }  else if (playerHand === 'Spock' && opponentHand === 'Rock') {
         alert(`You win!\n${playerHand} vs ${opponentHand}`);
+        incrementScore();
      }  else {
-         alert(`You lose!\n${playerHand} vs ${opponentHand}`);
+        alert(`You lose!\n${playerHand} vs ${opponentHand}`);
+        incrementWrongAnswer()
       }
    });
 }
+
+// function incrementScore() {
+
+//     let oldScore = playerChoice === ;
+//     document.getElementById("score").innerText = ++oldScore;
+ 
+//  }
+ 
+
+// function incrementWrongAnswer() {
+ 
+//     let oldScore = parseInt(document.getElementById("incorrect").innerText);
+//     document.getElementById("incorrect").innerText = ++oldScore;
+    
+//  }

@@ -1,5 +1,5 @@
 body {
-    background: orange;
+    background: lightsalmon;
     height: 100vh;
     text-align: center;
     padding: 10px;
@@ -8,7 +8,7 @@ body {
 .playerChoice {
     padding: 10px;
     border-radius: 50%;
-    background-color: white;
+    background-color: lightsalmon;
     border: 10px solid;
     width: 100px;
     height: 100px;
@@ -20,7 +20,17 @@ body {
        transform: scale(1.1);
        background-color: currentcolor;
     }
+}
+/* .controls-area {
+  width: 85%;
+  margin: 30px auto;
+} */
 
+div {
+        margin: 5px auto;
+        width: 60%;
+        font-size: 1.2rem;
+      }
 #rock{
     color: red;
 }
@@ -36,10 +46,4 @@ body {
 }
 #spock{
     color: purple;
-}
-/* #rock {
-    color: white;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
