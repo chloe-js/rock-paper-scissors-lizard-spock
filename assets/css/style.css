@@ -1,28 +1,25 @@
 body {
     background: orange;
     height: 100vh;
-    justify-content: center;
+    text-align: center;
+    padding: 10px;
  }
 
 .playerChoice {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 5em;
-    margin: 0 10px;
-    transition: 0.2s;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 10px solid;
+    width: 100px;
+    height: 100px;
+    font-size: 3.2rem;
+    margin: 0 30px;
+    transition: all 0.5s;
 }
 .playerChoice:hover {
        transform: scale(1.1);
+       background-color: currentcolor;
     }
-
-/* div {
-    background-color: red;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin:0 auto;
-} */
 
 #rock{
     color: red;

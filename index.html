@@ -17,7 +17,7 @@
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' /> 
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Love Maths</title>
+    <title>Rock Paper Scissors Lizard Spock</title>
 </head>
 <body>
   <div id='head-area'>
@@ -28,27 +28,33 @@
   </div>
     <div class='game-area'> 
         <div class='results-area'> 
+            <div class="scores-area">
+                <p class='scores'>Player 1</p>
+                <span id="scores">0</span>
+                    <p class='scores'>Player 2</p>
+                <span id="scores">0</span>
+            </div>
             <!-- <span id='operand1'>0</span> randowm computer choice -->
             <!-- <span id='operator'>x</span> hand choice -->
-            <span id='operand2'>0</span>
-            <span>vs</span>
+            <!-- <span id='operand2'>0</span> -->
+            <!-- <span>vs</span> -->
             <p class='answer-messgae'>Choose you Weapon!</p>
             <!-- <input id='answer-box' type='number'> -->
         </div>
         <div class='controls-area'> 
-            <button id='btn' data-type="rock" class="playerChoice" value="Rock">
+            <button id="rock" class="playerChoice" value="Rock">
                 <i class="fas fa-hand-rock"></i>
             </button>
-            <button data-type="paper" class="playerChoice" value="Paper">
+            <button id="paper" class="playerChoice" value="Paper">
                 <i class="fas fa-hand-paper"></i>
             </button>
-            <button data-type="scissors" class="playerChoice" value="Scissors">
+            <button id="scissors" class="playerChoice" value="Scissors">
                 <i class="fas fa-hand-scissors"></i>
             </button>
-            <button data-type="lizard" class="playerChoice" value="Lizard">
+            <button id="lizard" class="playerChoice" value="Lizard">
                 <i class="fas fa-hand-lizard"></i>
             </button>
-            <button data-type="spock" class="playerChoice" value="Spock">
+            <button id="spock" class="playerChoice" value="Spock">
                 <i class="fas fa-hand-spock"></i>
             </button>
         </div>

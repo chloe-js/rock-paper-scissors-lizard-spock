@@ -1,4 +1,3 @@
-https://codepen.io/rpandrews/pen/oKRLxY
 let playerChoice = document.querySelectorAll('.playerChoice');
 
 for (var i = 0; i < playerChoice.length; i++) {
