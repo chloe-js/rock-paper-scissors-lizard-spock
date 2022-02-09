@@ -1,10 +1,7 @@
 let playerChoice = document.querySelectorAll('.playerChoice');
 
-let result = false;
-let draw = false;
-
 playerChoice.forEach(i => i.addEventListener('click', function () {
-    checkResult(this.value)
+    checkResult(this.value);
 }))
 
 const opponent = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
@@ -21,52 +18,65 @@ const rules = [
     ['Spock', 'Rock'],
     ['Rock', 'Scissors']
 ]
-    let p1Score = 0
-    let p2Score = 0
+
+let p1Score = 0
+let p2Score = 0
+
 function checkResult(res) {
     const opponentHand = opponent[Math.floor(Math.random() * 5)];
-    
+    let result = false
+    let draw = false;
 
-    rules.forEach(i => {
-        console.log(res)
-        console.log(opponentHand)
-        if (res === opponentHand) {
-            console.log(`${i[0] + ' - ' + res} vs ${i[1] + ' - ' + opponentHand} => TIE`)
-            return draw = true;
-        } 
-        else if (res === i[0] && opponentHand === i[1]) {
-            console.log(`${i[0] + ' - ' + res} vs ${i[1] + ' - ' + opponentHand} => WIN`)
-            return result = true;
-        } else {
-            console.log(`${i[0] + ' - ' + res} vs ${i[1] + ' - ' + opponentHand} => LOSE`)
+    for(var i = 0; i < rules.length; i++){
+        if(res === rules[i][0] && opponentHand === rules[i][1]){
+            result = true;
+        } else if(res === opponentHand){
+            draw = true;
         }
-    })
-    console.log(result)
-    console.log(res, ' vs ', opponentHand)
+    }
 
-    if (draw){
-        alert(`It a Draw!\n${res} vs ${opponentHand}`);
-    } else if (result && draw === false){
-        alert(`You win!\n${res} vs ${opponentHand}`); ///ternary operator (short if statement)
-        incrementScore();
-    } else if (!result && !draw){
-        alert(`You lose!\n${res} vs ${opponentHand}`);
-        incrementWrongAnswer();
+    if(result && !draw){
+        alert(`${res} beats ${opponentHand} -- YOU WIN!`);
+        document.getElementById('scoresPlayer1').innerText = String(++p1Score);
+    } else if(!result && draw){
+        alert(`DRAW: ${res} vs ${opponentHand}`);
+    } else if(!result && !draw){
+        alert(`${res} loses to ${opponentHand} -- YOU LOSE!`);
+        document.getElementById('scoresPlayer2').innerText = String(++p2Score);
     }
 }
 
-function incrementScore() {
+  document.getElementById('resetButton').addEventListener("click", function() {
+    document.getElementById('scoresPlayer1').innerText = 0;
+    document.getElementById('scoresPlayer2').innerText = 0;
+  });
 
-    document.getElementById("scoresPlayer1").innerText = ++p1Score;
-
- }
-
-function incrementWrongAnswer() {
-
-    document.getElementById("scoresPlayer2").innerText = ++p2Score;
-
- }
-
+  document.getElementById('difficulty').addEventListener("click", function() {
+    function checkResult(resInc) {
+        const opponentHand = opponent[Math.floor(Math.random() * 5)][Math.floor(Math.random() * 5)];
+        let result = false
+        let draw = false;
+    
+        for(var i = 0; i < rules.length; i++){
+            if(resInc === rules[i][0] && opponentHand === rules[i][1]){
+                result = true;
+            } else if(res === opponentHand){
+                draw = true;
+            }
+        }
+    
+        if(result && !draw){
+            alert(`${res} beats ${opponentHand} -- YOU WIN!`);
+            document.getElementById('scoresPlayer1').innerText = String(++p1Score);
+        } else if(!result && draw){
+            alert(`DRAW: ${res} vs ${opponentHand}`);
+        } else if(!result && !draw){
+            alert(`${res} loses to ${opponentHand} -- YOU LOSE!`);
+            document.getElementById('scoresPlayer2').innerText = String(++p2Score);
+        }
+    }
+  });
+  
 
 /////////////////////////////////////////////////////hackernoon//////////////////////////////////////////////////
 // const playButton = document.querySelector('#play');

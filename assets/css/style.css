@@ -5,7 +5,21 @@ body {
     text-align: center;
     padding: 10px;
 }
+/* 
+#buttonRun:hover {
+    transform: scale(1.1);
+    background-color: darkblue;
+} */
 
+/* .rules {
+    background-color: white;
+    color: #3A3743;
+  } */
+
+/* .buttonStyle {
+    background-color: white;
+    color: #3A3743;
+  } */
 .playerChoice {
     padding: 10px;
     border-radius: 50%;
@@ -19,10 +33,11 @@ body {
 }
 
 .playerChoice:hover {
+    color: white;
     transform: scale(1.1);
     background-color: currentcolor;
 }
-}
+
 
 /* .controls-area {
   width: 85%;
@@ -30,7 +45,6 @@ body {
 } */
 
 div {
-    background-color: #565264;
     margin: 5px auto;
     width: 60%;
     font-size: 1.2rem;
