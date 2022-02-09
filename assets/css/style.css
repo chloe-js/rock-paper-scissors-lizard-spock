@@ -1,14 +1,15 @@
 body {
-    background: lightsalmon;
+    color: white;
+    background-color: #3A3743;
     height: 100vh;
     text-align: center;
     padding: 10px;
- }
+}
 
 .playerChoice {
     padding: 10px;
     border-radius: 50%;
-    background-color: lightsalmon;
+    background-color: #3A3743;
     border: 10px solid;
     width: 100px;
     height: 100px;
@@ -16,34 +17,41 @@ body {
     margin: 0 30px;
     transition: all 0.5s;
 }
+
 .playerChoice:hover {
-       transform: scale(1.1);
-       background-color: currentcolor;
-    }
+    transform: scale(1.1);
+    background-color: currentcolor;
 }
+}
+
 /* .controls-area {
   width: 85%;
   margin: 30px auto;
 } */
 
 div {
-        margin: 5px auto;
-        width: 60%;
-        font-size: 1.2rem;
-      }
-#rock{
-    color: red;
+    background-color: #565264;
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
 }
 
-#paper{
-    color: blue;
+#rock {
+    color: #ff8080;
 }
-#scissors{
-    color: green;
+
+#paper {
+    color: #ffdd55;
 }
-#lizard{
-    color: yellow;
+
+#scissors {
+    color: #e580ff;
 }
-#spock{
-    color: purple;
+
+#lizard {
+    color: #87de87;
+}
+
+#spock {
+    color: #80b3ff;
 }

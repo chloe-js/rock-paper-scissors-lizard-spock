@@ -90,13 +90,13 @@ function checkResult(res) {
 
 //     let oldScore = playerChoice === ;
 //     document.getElementById("score").innerText = ++oldScore;
- 
+
 //  }
- 
+
 
 // function incrementWrongAnswer() {
- 
+
 //     let oldScore = parseInt(document.getElementById("incorrect").innerText);
 //     document.getElementById("incorrect").innerText = ++oldScore;
-    
+
 //  }
