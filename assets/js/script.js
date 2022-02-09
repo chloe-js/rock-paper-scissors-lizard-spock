@@ -19,27 +19,95 @@ const rules = [
     ['Spock', 'Rock'],
     ['Rock', 'Scissors']
 ]
-
+    let p1Score = 0
+    let p2Score = 0
 function checkResult(res) {
     const opponentHand = opponent[Math.floor(Math.random() * 5)];
+    
 
     rules.forEach(i => {
         console.log(res)
         console.log(opponentHand)
         if (res === i[0] && opponentHand === i[1]) {
             console.log(`${i[0] + ' - ' + res} vs ${i[1] + ' - ' + opponentHand} => WIN`)
-            // alert(`You win!\n${res} vs ${opponentHand}`);
             return result = true;
         } else {
             console.log(`${i[0] + ' - ' + res} vs ${i[1] + ' - ' + opponentHand} => LOSE`)
-            // alert(`You lose!\n${res} vs ${opponentHand}`);
         }
     })
     console.log(result)
     console.log(res, ' vs ', opponentHand)
+    alert(result ?`You win!\n${res} vs ${opponentHand}`:`You lose!\n${res} vs ${opponentHand}`); ///ternary operator (short if statement)
+    result ? incrementScore() : incrementWrongAnswer();
 }
 
+function incrementScore() {
 
+    // let oldScore = playerChoice === ;
+    document.getElementById("scoresPlayer1").innerText = ++p1Score;
+
+ }
+
+
+function incrementWrongAnswer() {
+
+    // let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("scoresPlayer2").innerText = ++p2Score;
+
+ }
+
+/////////////////////////////////////////////////////hackernoon//////////////////////////////////////////////////
+// const playButton = document.querySelector('#play');
+
+// playButton.addEventListener('click', () => {
+
+//     const computerChoiceID = getComputerChoice();
+//     const computerChoice = OPTIONS[computerChoiceID];
+//     const computerChoiceElement = document.querySelector('#computer-choice');
+//     const output = document.querySelector('#output');
+//     const userChoice = OPTIONS[userChoiceID];
+
+//     let result = '';
+//     computerChoiceElement.innerHTML = OPTIONS2EMOJI[computerChoiceID];
+
+//     switch (`${computerChoice}-${userChoice}`) {
+//         case `${ROCK}-${ROCK}`:
+//         case `${SCISSORS}-${SCISSORS}`:
+//         case `${PAPER}-${PAPER}`:
+//         case `${SPOCK}-${SPOCK}`:
+//         case `${LIZARD}-${LIZARD}`:
+//             result = 'TIE 👔'
+//             break;
+//         case `${ROCK}-${SCISSORS}`:
+//         case `${ROCK}-${LIZARD}`:
+//         case `${SCISSORS}-${PAPER}`:
+//         case `${SCISSORS}-${LIZARD}`:
+//         case `${PAPER}-${ROCK}`:
+//         case `${PAPER}-${SPOCK}`:
+//         case `${SPOCK}-${ROCK}`:
+//         case `${SPOCK}-${SCISSORS}`:
+//         case `${LIZARD}-${PAPER}`:
+//         case `${LIZARD}-${SPOCK}`:
+//             result = 'COMPUTER WIN 😔💔 🤖🥇'
+//             break;
+//         case `${ROCK}-${PAPER}`:
+//         case `${ROCK}-${SPOCK}`:
+//         case `${SCISSORS}-${ROCK}`:
+//         case `${SCISSORS}-${SPOCK}`:
+//         case `${PAPER}-${SCISSORS}`:
+//         case `${PAPER}-${LIZARD}`:
+//         case `${SPOCK}-${PAPER}`:
+//         case `${SPOCK}-${LIZARD}`:
+//         case `${LIZARD}-${ROCK}`:
+//         case `${LIZARD}-${SCISSORS}`:
+//             result = 'YOU WIN ☺️🥇 🤖💔'
+//             break;
+//         default:
+//             result = 'SOMETHING WRONG. TRY AGAIN. 🐛'
+
+//             output.innerHTML = result;
+//     }
+// })
 
 
 /////////////////////////////////love math help///////////////////////////////////////////////////////////////
