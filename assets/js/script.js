@@ -51,31 +51,33 @@ function checkResult(res) {
     document.getElementById('scoresPlayer2').innerText = 0;
   });
 
-  document.getElementById('difficulty').addEventListener("click", function() {
-    function checkResult(resInc) {
-        const opponentHand = opponent[Math.floor(Math.random() * 5)][Math.floor(Math.random() * 5)];
-        let result = false
-        let draw = false;
+// //more that one opentent hand//
+//   document.getElementById('difficulty').addEventListener("click", function() {
+//     function checkResult(resInc) {
+//         const opponentHand = opponent[Math.floor(Math.random() * 5)][Math.floor(Math.random() * 5)];
+//         let result = false
+//         let draw = false;
     
-        for(var i = 0; i < rules.length; i++){
-            if(resInc === rules[i][0] && opponentHand === rules[i][1]){
-                result = true;
-            } else if(res === opponentHand){
-                draw = true;
-            }
-        }
+//         for(var i = 0; i < rules.length; i++){
+//             if(resInc === rules[i][0] && opponentHand === rules[i][1][1]){
+//                 result = true;
+//                 console.log(result)
+//             } else if(res === opponentHand){
+//                 draw = true;
+//             }
+//         }
     
-        if(result && !draw){
-            alert(`${res} beats ${opponentHand} -- YOU WIN!`);
-            document.getElementById('scoresPlayer1').innerText = String(++p1Score);
-        } else if(!result && draw){
-            alert(`DRAW: ${res} vs ${opponentHand}`);
-        } else if(!result && !draw){
-            alert(`${res} loses to ${opponentHand} -- YOU LOSE!`);
-            document.getElementById('scoresPlayer2').innerText = String(++p2Score);
-        }
-    }
-  });
+//         if(result && !draw){
+//             alert(`${res} beats ${opponentHand} -- YOU WIN!`);
+//             document.getElementById('scoresPlayer1').innerText = String(++p1Score);
+//         } else if(!result && draw){
+//             alert(`DRAW: ${res} vs ${opponentHand}`);
+//         } else if(!result && !draw){
+//             alert(`${res} loses to ${opponentHand} -- YOU LOSE!`);
+//             document.getElementById('scoresPlayer2').innerText = String(++p2Score);
+//         }
+//     }
+//   });
   
 
 /////////////////////////////////////////////////////hackernoon//////////////////////////////////////////////////
