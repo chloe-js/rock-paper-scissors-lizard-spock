@@ -28,7 +28,10 @@ function checkResult(res) {
     rules.forEach(i => {
         console.log(res)
         console.log(opponentHand)
-        if (res === i[0] && opponentHand === i[1]) {
+         if (res === opponentHand) {
+            console.log(`${i[0] + ' - ' + res} vs ${i[1] + ' - ' + opponentHand} => TIE`)
+        } 
+        else if (res === i[0] && opponentHand === i[1]) {
             console.log(`${i[0] + ' - ' + res} vs ${i[1] + ' - ' + opponentHand} => WIN`)
             return result = true;
         } else {
