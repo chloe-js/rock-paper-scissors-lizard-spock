@@ -1,6 +1,8 @@
 let playerChoice = document.querySelectorAll('.playerChoice');
 
 let result = false;
+let draw = false;
+
 playerChoice.forEach(i => i.addEventListener('click', function () {
     checkResult(this.value)
 }))
@@ -28,8 +30,9 @@ function checkResult(res) {
     rules.forEach(i => {
         console.log(res)
         console.log(opponentHand)
-         if (res === opponentHand) {
+        if (res === opponentHand) {
             console.log(`${i[0] + ' - ' + res} vs ${i[1] + ' - ' + opponentHand} => TIE`)
+            return draw = true;
         } 
         else if (res === i[0] && opponentHand === i[1]) {
             console.log(`${i[0] + ' - ' + res} vs ${i[1] + ' - ' + opponentHand} => WIN`)
@@ -40,24 +43,30 @@ function checkResult(res) {
     })
     console.log(result)
     console.log(res, ' vs ', opponentHand)
-    alert(result ?`You win!\n${res} vs ${opponentHand}`:`You lose!\n${res} vs ${opponentHand}`); ///ternary operator (short if statement)
-    result ? incrementScore() : incrementWrongAnswer();
+
+    if (draw){
+        alert(`It a Draw!\n${res} vs ${opponentHand}`);
+    } else if (result && draw === false){
+        alert(`You win!\n${res} vs ${opponentHand}`); ///ternary operator (short if statement)
+        incrementScore();
+    } else if (!result && !draw){
+        alert(`You lose!\n${res} vs ${opponentHand}`);
+        incrementWrongAnswer();
+    }
 }
 
 function incrementScore() {
 
-    // let oldScore = playerChoice === ;
     document.getElementById("scoresPlayer1").innerText = ++p1Score;
 
  }
 
-
 function incrementWrongAnswer() {
 
-    // let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("scoresPlayer2").innerText = ++p2Score;
 
  }
+
 
 /////////////////////////////////////////////////////hackernoon//////////////////////////////////////////////////
 // const playButton = document.querySelector('#play');
