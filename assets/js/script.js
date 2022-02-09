@@ -39,6 +39,10 @@ function checkResult(res) {
     console.log(res, ' vs ', opponentHand)
 }
 
+
+
+
+/////////////////////////////////love math help///////////////////////////////////////////////////////////////
 // for (var i = 0; i < playerChoice.length; i++) {
 //    playerChoice[i].addEventListener('click', function() {
 //       const opponent = ['Rock', 'Paper', 'Scissors', 'Lizard','Spock'];
