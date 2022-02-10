@@ -51,22 +51,20 @@ body {
         width: 70%;
         height: auto;
 }
-/* #alertBox {
-    position:relative;
-    width:300px;
-    min-height:100px;
-    margin-top:50px;
-    border:1px solid #666;
-    background-color:pink;
-    background-repeat:no-repeat;
-    background-position:20px 30px;
-} */
 
-div {
-    margin: 5px auto;
-    width: 60%;
-    font-size: 1.2rem;
+.head-area {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .game-area {
+    display: flex;
+} */
 
 #rock {
     color: #ff8080;
@@ -87,3 +85,20 @@ div {
 #spock {
     color: #80b3ff;
 }
+
+/* #alertBox {
+    position:relative;
+    width:300px;
+    min-height:100px;
+    margin-top:50px;
+    border:1px solid #666;
+    background-color:pink;
+    background-repeat:no-repeat;
+    background-position:20px 30px;
+} */
+
+/* div {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+} */

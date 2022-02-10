@@ -22,77 +22,84 @@
 </head>
 
 <body>
-    <div id='head-area'>
-        <h1 class="heading">
-            <i id="spock" class="fas fa-hand-spock"></i>
-            Rock Paper Scissors Lizard Spock
-            <i id="lizard" class="fas fa-hand-lizard"></i>
-        </h1>
-    </div>
-
-    <div class='game-area'>
-        <p><i class="fas fa-trophy"></i>   First to 5 will be crowned Champion   <i class="fas fa-award"></i></p>
-        <section class='results-area'>
-            <div class='results-area'>
-                <div class="scores-area">
-                    <p class='scores'><i class="fas fa-user-astronaut"></i>  Player 1</p>
-                    <span id="scoresPlayer1">0</span>
-                    <p class='scores'><i class="fas fa-robot"></i>  Player 2</p>
-                    <span id="scoresPlayer2">0</span>
-                    <p class='scores'><i class="fab fa-fort-awesome"></i> LEVEL</p>
-                    <span id="Level">0</span>
+    <div class="container">
+        <div class='head-area'>
+            <h1 class="heading">
+                <i id="spock" class="fas fa-hand-spock"></i>
+                <p>Rock</p> 
+                <p>Paper</p> 
+                <p>Scissors</p> 
+                <p>Lizard</p> 
+                <p>Spock</p>
+                <i id="lizard" class="fas fa-hand-lizard"></i>
+            </h1>
+            <section class='results-area'>
+                <div class='results-area'>
+                    <p><i class="fas fa-trophy"></i> First to 5 will be Champion! <i class="fas fa-award"></i></p>
+                    <div class="scores-area">
+                        <p class='scores'><i class="fas fa-user-astronaut"></i> Player 1</p>
+                        <span id="scoresPlayer1">0</span>
+                        <p class='scores'><i class="fas fa-robot"></i> Player 2</p>
+                        <span id="scoresPlayer2">0</span>
+                        <p class='scores'><i class="fab fa-fort-awesome"></i> LEVEL</p>
+                        <span id="Level"> <i class="fas fa-angle-double-up"></i> 0</span>
+                    </div>
+                    <p class='answer-messgae'><i class="fas fa-axe"></i>Choose your Weapon!</p>
                 </div>
-                <p class='answer-messgae'><i class="fas fa-axe"></i>Choose you Weapon!</p>
-            </div>
-        </section>
-        <section class='results-area'>
-            <div class='controls-area'>
-                <button id="rock" class="playerChoice" value="Rock">
-                    <i class="fas fa-hand-rock"  class="whiteHover"></i>
+            </section>
+        </div>
+
+        <div class='game-area'>
+            <section class='results-area'>
+                <div class='controls-area'>
+                    <button id="rock" class="playerChoice" value="Rock">
+                        <i class="fas fa-hand-rock" class="whiteHover"></i>
+                    </button>
+                    <button id="paper" class="playerChoice" value="Paper">
+                        <i class="fas fa-hand-paper"></i>
+                    </button>
+                    <button id="scissors" class="playerChoice" value="Scissors">
+                        <i class="fas fa-hand-scissors"></i>
+                    </button>
+                    <button id="lizard" class="playerChoice" value="Lizard">
+                        <i class="fas fa-hand-lizard"></i>
+                    </button>
+                    <button id="spock" class="playerChoice" value="Spock">
+                        <i class="fas fa-hand-spock"></i>
+                    </button>
+                </div>
+            </section>
+            <section class='info-area'>
+
+                <button class="linkButton">
+                    <a href="./index.html" class="buttonRun" id="playGame"><i class="fas fa-play"></i> Play Game</a>
                 </button>
-                <button id="paper" class="playerChoice" value="Paper">
-                    <i class="fas fa-hand-paper"></i>
+                <button class="linkButton">
+                    <a href="./rules.html" class="buttonRun" id="rules"> <i class="fas fa-scroll"></i> Rules</a>
                 </button>
-                <button id="scissors" class="playerChoice" value="Scissors">
-                    <i class="fas fa-hand-scissors"></i>
+
+                <button id="difficulty" class="buttonRun" class="linkButton">
+                    <i class="fas fa-angle-double-up"></i> Difficulty
                 </button>
-                <button id="lizard" class="playerChoice" value="Lizard">
-                    <i class="fas fa-hand-lizard"></i>
+                <button id="resetButton" class="buttonRun">
+                    <i class="fas fa-undo"></i> Reset
                 </button>
-                <button id="spock" class="playerChoice" value="Spock">
-                    <i class="fas fa-hand-spock"></i>
-                </button>
-            </div>
-</section>
-<section class='info-area'>
-    </div class='info-area'>
-    <button class="linkButton" >
-        <a href="./index.html" class="buttonRun" id="playGame" ><i class="fas fa-play"></i>  Play Game</a>
-    </button>
-    <button class="linkButton">
-        <a href="./rules.html" class="buttonRun" id="rules" > <i class="fas fa-scroll"></i>  Rules</a>
-    </button>
-    
-    <button id="difficulty" class="buttonRun" class="linkButton"> 
-        <i class="fas fa-angle-double-up"></i>  Difficulty
-    </button>
-    <button id="resetButton" class="buttonRun"> 
-        <i class="fas fa-undo"></i>  Reset
-    </button>
-    <script src="assets/js/script.js"></script>
-</section>
-<section>
-    <i class="fab fa-fort-awesome"></i>
-    <i class="fas fa-ghost"></i>
-    <i class="fal fa-helmet-battle"></i>
-    <i class="fas fa-home"></i>
-    <i class="fas fa-redo"></i>
-    <i class="fab fa-redhat"></i>
-    <i class="fas fa-robot"></i>
-    <i class="fas fa-skull-crossbones"></i>
-    <i class="fas fa-user-secret"></i>
-    <i class="fas fa-home"></i>
-    <i class="fas fa-caret-square-right"></i>
+                <script src="assets/js/script.js"></script>
+            </section>
+        </div>
+    </div>
+    <section>
+        <i class="fab fa-fort-awesome"></i>
+        <i class="fas fa-ghost"></i>
+        <i class="fal fa-helmet-battle"></i>
+        <i class="fas fa-home"></i>
+        <i class="fas fa-redo"></i>
+        <i class="fab fa-redhat"></i>
+        <i class="fas fa-robot"></i>
+        <i class="fas fa-skull-crossbones"></i>
+        <i class="fas fa-user-secret"></i>
+        <i class="fas fa-home"></i>
+        <i class="fas fa-caret-square-right"></i>
     </section>
 </body>
 

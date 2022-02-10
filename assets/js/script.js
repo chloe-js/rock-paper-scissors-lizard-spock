@@ -22,6 +22,8 @@ const rules = [
 
 let p1Score = 0
 let p2Score = 0
+const Player1Score = document.getElementById('scoresPlayer1');
+const Player2Score = document.getElementById('scoresPlayer2');
 
 function checkResult(res) {
     const opponentHand = opponent[Math.floor(Math.random() * 5)];
@@ -38,19 +40,34 @@ function checkResult(res) {
 
     if(result && !draw){
         alert(`${res} beats ${opponentHand} -- YOU WIN!`);
-        document.getElementById('scoresPlayer1').innerText = String(++p1Score);
+        Player1Score.innerText = String(++p1Score);
     } else if(!result && draw){
         alert(`DRAW: ${res} vs ${opponentHand}`);
     } else if(!result && !draw){
         alert(`${res} loses to ${opponentHand} -- YOU LOSE!`);
-        document.getElementById('scoresPlayer2').innerText = String(++p2Score);
+        Player2Score.innerText = String(++p2Score);
     }
 }
 
   document.getElementById('resetButton').addEventListener("click", function() {
-    document.getElementById('scoresPlayer1').innerText = 0;
-    document.getElementById('scoresPlayer2').innerText = 0;
+    Player1Score.innerText = 0;
+    Player2Score.innerText = 0;
   });
+
+  ///difficulty//
+
+//   document.getElementById('difficulty').addEventListener("click", function() {
+      
+
+//     for(var i = 0; i < rules.length; i++){
+//         if(res === rules[i][0] && opponentHand === rules[i][1]){
+//             result = true;
+//         } else if(res === opponentHand){
+//             draw = true;
+//         }
+//     }
+//     document.getElementById('difficulty').innerText = String(++p1Score);
+//   });
 
 // //more that one opentent hand//
 //   document.getElementById('difficulty').addEventListener("click", function() {
