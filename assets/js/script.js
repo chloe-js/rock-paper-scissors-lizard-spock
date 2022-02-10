@@ -13,7 +13,7 @@ const Player2Score = document.getElementById('scoresPlayer2');
 
 // Create a variable called btnDifficulty and assign it the DIFFICULTY button 
 // ** Your code below **
-// let btnDifficulty = document.getElementById(difficulty)
+let btnDifficulty = document.getElementById('difficulty')
 // ** Your code above **
 
 const opponent = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
@@ -24,6 +24,9 @@ playerChoice.forEach(i => i.addEventListener('click', function () {
 
 // Attach an event listener to it and provide the callback function as toggleDifficulty
 // ** Your code below **
+btnDifficulty.addEventListener('click', function () {
+    toggleDifficulty();
+})
 
 // ** Your code above **
 
@@ -31,6 +34,9 @@ playerChoice.forEach(i => i.addEventListener('click', function () {
 // Within the function, reference the activateDifficulty variable, and re-assign it true or false whenever it is toggled
 // HINT: ! <-- will provide the opposite of the boolean value provided. eg: !variableName 
 // ** Your code below **
+function toggleDifficulty (){
+    !activateDifficulty;
+}
 // ** Your code above **
 
 // Create a variable named weakness, assign this variable an empty object
@@ -38,6 +44,9 @@ playerChoice.forEach(i => i.addEventListener('click', function () {
 // Each key should be an option the player has to play
 // Each value should be an ARRAY which contains strings of each item that DEFEATS the specified key
 // ** Your code below **
+let weakness = { playerChoice, opponent}
+// (this.value){ playerChoice, ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']};
+
 // ** Your code above **
 
 const rules = [
@@ -53,19 +62,20 @@ const rules = [
     ['Rock', 'Scissors']
 ]
 
-
-
 function checkResult(res) {
 
     // As the checkResult function begins to run, check to see IF the activateDifficulty variable is true
     // If it is true, push into the opponent array, the VALUE of each STRING item in the ARRAY which exists in the USER SELECTED KEY
     // HINT: The KEY is the choice of the player, the VALUE is the ARRAY
     // ** Your code below **
+    if (!activateDifficulty){
+        opponent + playerChoice.value
+    }
     // ** Your code above **
 
     // Instead of supplying 5, supply a reference to the opponent array, as a number.
     // ** Your code below **
-    const opponentHand = opponent[Math.floor(Math.random() * 5)];
+    const opponentHand = opponent[Math.floor(Math.random() * opponent[0])];
     // ** Your code above **
 
     let result = false
@@ -93,6 +103,9 @@ function checkResult(res) {
     // If it is true, remove the items you pushed into the opponent array 
     // HINT: Ensure the opponent array reverts back to the original amount in the global scope
     // ** Your code below **
+    else if (!activeDifficluty) {
+        opponent - playerChoice.value
+    }
     // ** Your code above **
 }
 
