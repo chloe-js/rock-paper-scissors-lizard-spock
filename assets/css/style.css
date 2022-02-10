@@ -23,8 +23,6 @@ body {
     background-color: currentcolor;
 }
 
-
-
 .buttonRun {
     color: #3A3743;
     background-color: white;
@@ -50,10 +48,10 @@ body {
     margin: 5px;
 }
 .imageGame {
-        width: 50%;
+        width: 70%;
         height: auto;
 }
-#alertBox {
+/* #alertBox {
     position:relative;
     width:300px;
     min-height:100px;
@@ -62,7 +60,7 @@ body {
     background-color:pink;
     background-repeat:no-repeat;
     background-position:20px 30px;
-}
+} */
 
 div {
     margin: 5px auto;
