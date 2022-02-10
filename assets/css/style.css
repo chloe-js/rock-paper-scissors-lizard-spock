@@ -5,21 +5,6 @@ body {
     text-align: center;
     padding: 10px;
 }
-/* 
-#buttonRun:hover {
-    transform: scale(1.1);
-    background-color: darkblue;
-} */
-
-/* .rules {
-    background-color: white;
-    color: #3A3743;
-  } */
-
-/* .buttonStyle {
-    background-color: white;
-    color: #3A3743;
-  } */
 .playerChoice {
     padding: 10px;
     border-radius: 50%;
@@ -39,10 +24,33 @@ body {
 }
 
 
-/* .controls-area {
-  width: 85%;
-  margin: 30px auto;
-} */
+
+.buttonRun {
+    color: #3A3743;
+    background-color: white;
+    display: inline-block;
+    padding: 13px;
+    border-radius: 20%;
+}
+.buttonRun:hover {
+    color: white;
+    transform: scale(1.1);
+    background-color: #3A3743;
+    display: inline-block;
+    padding: 13px;
+    border-radius: 20%;
+}
+
+.linkButton {
+    color: #3A3743;
+    background-color: white;
+    display: inline-block;
+    border-radius: 20%;
+}
+.imageGame {
+        width: 50%;
+        height: auto;
+}
 
 div {
     margin: 5px auto;

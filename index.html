@@ -12,6 +12,7 @@
     <!-- <script src="https://kit.fontawesome.com/50b3676eae.js" crossorigin="anonymous"></script> -->
     <!-- **google font to be inserted -->
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/50b3676eae.js" crossorigin="anonymous"></script>
 
     <!--** favicon font to be inserted -->
     <!-- favicon icon link-->
@@ -27,6 +28,8 @@
             <i id="spock" class="fas fa-hand-spock"></i>
             Rock, Paper, Scissors, Lizard, Spock
             <i id="lizard" class="fas fa-hand-lizard"></i>
+            <i class="fa-solid fa-hand-lizard"></i>
+            <i id="lizard" class="fa-solid fa-angles-up"></i>
         </h1>
     </div>
 
@@ -45,7 +48,7 @@
         <section class='results-area'>
             <div class='controls-area'>
                 <button id="rock" class="playerChoice" value="Rock">
-                    <i class="fas fa-hand-rock"></i>
+                    <i class="fas fa-hand-rock"  class="whiteHover"></i>
                 </button>
                 <button id="paper" class="playerChoice" value="Paper">
                     <i class="fas fa-hand-paper"></i>
@@ -63,11 +66,11 @@
         </section>
         <section class='info-area'>
     </div class='info-area'>
-    <button id="playGame" class="buttonRun">
-        <a href="./index.html">Play Game</a>
+    <button class="linkButton" >
+        <a href="./index.html" class="buttonRun" id="playGame" >Play Game</a>
     </button>
-    <button id="rules" class="buttonRun">
-        <a href="./rules.html">Rules</a>
+    <button class="linkButton">
+        <a href="./rules.html" class="buttonRun" id="rules" >Rules</a>
     </button>
     
     <button id="difficulty" class="buttonRun">Difficulty</button>

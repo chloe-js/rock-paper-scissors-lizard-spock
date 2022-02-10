@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/50b3676eae.js" crossorigin="anonymous"></script>
 
     <!-- favicon icon link-->
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
@@ -19,8 +20,8 @@
 
 <body>
     <h1>Rules of R,P,S,L,S</h1>
-    <div class="imageGame">
-        <img src="./assets/images/RPSSL.png" alt="Game Rules">
+    <div >
+        <img src="./assets/images/RPSSL.png" alt="Game Rules" class="imageGame">
     </div>
     </div class='info'>
     <button data-type="playGame" class="buttonRun">
@@ -29,7 +30,12 @@
     <button data-type="rules" class="buttonRun">
         <a href="./rules.html">Rules</a>
     </button>
-    <button data-type="difficulty" class="buttonRun">Difficulty</button>
+    <button id="difficulty" class="buttonRun"><i class="fas fa-solid fa-angles-up"></i>Difficulty</button>
+    </div>
+    <div> 
+        <div><i class="fa-solid fa-up" id="rock"></i></div>
+        <h3>Increase Difficulty</h3>
+        <p>Selecting the 'Difficulty' button increases the Level each time selected with a maximum of 3 Levels</p>
     </div>
     <div><i id="rock" class="fas fa-hand-rock"></i></i>
         <h3>Rock</h3>
@@ -37,7 +43,8 @@
         <p id="rock-rule2">Rock Crushes Lizard</p>
         <p id="rock-rule3">Spock Vaporizes Rock</p>
         <p id="rock-rule4">Paper Covers Rock</p>
-    </div>
+    </div> <i class="fa-solid fa-angles-up"></i>
+    <div><i class="fa-solid fa-angles-up" id="rock"></i></div>
     <div><i id="paper" class="fas fa-hand-paper"></i>
         <h3>Paper</h3>
         <p id="paper-rule1">Paper Covers Rock</p>
@@ -51,7 +58,7 @@
         <p id="scissors-rule2">Scissors Decapitates Lizard</p>
         <p id="scissors-rule3">Rock Smashes Scissors</p>
         <p id="rock-rule4">Spock Breaks Scissors</p>
-    </div>
+    </div> 
     <div><i id="lizard" class="fas fa-hand-lizard"></i>
         <h3>Lizard</h3>
         <p id="lizard-rule1">Lizard Poisons Spock</p>
