@@ -50,24 +50,25 @@ function checkResult(res) {
 }
 
   document.getElementById('resetButton').addEventListener("click", function() {
-    Player1Score.innerText = 0;
-    Player2Score.innerText = 0;
+    Player1Score.innerText = 0; //does not clear the cache to reset
+    Player2Score.innerText = 0; //does not clear the cache to reset
+    document.getElementById('level').innerText = 0; //does not clear the cache to reset
   });
 
   ///difficulty//
 
-//   document.getElementById('difficulty').addEventListener("click", function() {
+  document.getElementById('difficulty').addEventListener("click", function() {
       
 
-//     for(var i = 0; i < rules.length; i++){
-//         if(res === rules[i][0] && opponentHand === rules[i][1]){
-//             result = true;
-//         } else if(res === opponentHand){
-//             draw = true;
-//         }
-//     }
-//     document.getElementById('difficulty').innerText = String(++p1Score);
-//   });
+    // for(var i = 0; i < rules.length; i++){
+    //     if(res === rules[i][0] && opponentHand === rules[i][1]){
+    //         result = true;
+    //     } else if(res === opponentHand){
+    //         draw = true;
+    //     }
+    // }
+    document.getElementById('level').innerText = String(++p1Score);
+  });
 
 // //more that one opentent hand//
 //   document.getElementById('difficulty').addEventListener("click", function() {

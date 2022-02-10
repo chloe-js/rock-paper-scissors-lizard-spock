@@ -55,9 +55,48 @@ body {
     height: auto;
 }
 
+.headingList {
+    color: white;
+    list-style: none;
+    display: inline-flex;
+}
+li {
+    margin-left: 10px; 
+    margin-right: 10;
+}
+
+
 /* .game-area {
     display: flex;
 } */
+#yellowIcon {
+    color: #ffdd55;
+}
+#redIcon {
+    color: #ff8080;
+}
+
+.player {
+    color: #87de87;
+    /* color: #FFAF6B; */
+}
+
+.robot {
+    color: #ff8080;
+}
+
+#player {
+    color: #87de87;
+    /* color: #FFAF6B; */
+}
+
+#robot {
+    color: #ff8080;
+}
+
+#difficulty {
+    color: #9387C0;
+}
 
 #rock {
     color: #ff8080;
@@ -79,15 +118,38 @@ body {
     color: #80b3ff;
 }
 
- #rock i:hover,
- #paper i:hover,
- #scissors i:hover,
- #lizard i:hover,
- #spock i:hover {
+#rock i:hover,
+#paper i:hover,
+#scissors i:hover,
+#lizard i:hover,
+#spock i:hover {
     color: #333;
 }
 
-@media screen and (max-width: 620px) {
+#rules-area {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+}
+
+.box-divider {
+    border-style: solid;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+    padding: 13px;
+}
+
+div.footer {
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: 3A3743;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
     .head-area {
         display: flex;
         flex: 1;
@@ -99,7 +161,21 @@ body {
         flex-direction: column;
     }
 
+    #rules-area {
+        display: flex;
+        flex: 2;
+        justify-content: space-around;
+    }
+    .headingList {
+        color: white;
+        list-style: none;
+        display: block;
+        text-align: left;
+        padding-left:5px;
+    }
+
 }
+
 
 
 
