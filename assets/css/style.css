@@ -5,6 +5,7 @@ body {
     text-align: center;
     padding: 10px;
 }
+
 .playerChoice {
     padding: 10px;
     border-radius: 50%;
@@ -30,6 +31,7 @@ body {
     padding: 13px;
     border-radius: 20%;
 }
+
 .buttonRun:hover {
     color: white;
     transform: scale(1.1);
@@ -47,19 +49,10 @@ body {
     border-radius: 20%;
     margin: 5px;
 }
-.imageGame {
-        width: 70%;
-        height: auto;
-}
 
-.head-area {
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
-}
-.container {
-    display: flex;
-    flex-direction: column;
+.imageGame {
+    width: 70%;
+    height: auto;
 }
 
 /* .game-area {
@@ -85,6 +78,30 @@ body {
 #spock {
     color: #80b3ff;
 }
+
+ #rock i:hover,
+ #paper i:hover,
+ #scissors i:hover,
+ #lizard i:hover,
+ #spock i:hover {
+    color: #333;
+}
+
+@media screen and (max-width: 620px) {
+    .head-area {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
 
 /* #alertBox {
     position:relative;
