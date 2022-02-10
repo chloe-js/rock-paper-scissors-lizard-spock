@@ -1,3 +1,4 @@
+
 let playerChoice = document.querySelectorAll('.playerChoice');
 
 playerChoice.forEach(i => i.addEventListener('click', function () {

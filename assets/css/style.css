@@ -51,6 +51,10 @@ body {
         width: 50%;
         height: auto;
 }
+/* 
+alert {
+    background-color: #80b3ff;
+} */
 
 div {
     margin: 5px auto;
