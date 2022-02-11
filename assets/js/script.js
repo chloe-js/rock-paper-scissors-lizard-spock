@@ -81,19 +81,14 @@ function checkResult(res) {
  
 
    if (activateDifficulty) {
-    console.log('testing true')
-
-    console.log(weakness[res], ' --access')
+console.log('testing true')
+console.log(weakness[res], ' --access')
     opponent.push(weakness[res][0])
     opponent.push(weakness[res][1])
+    console.log(activateDifficulty)
+   console.log(opponent)
 
-    // opponent.push(weakness.playerChoice:'',[''])
-    // opponent.push(playerChoice.value)
-    // NodeListPrototype { item: item(), keys: keys(), values: values()}
-        
-   } console.log(toggleDifficulty)
-
-
+   } console.log(activateDifficulty)
    console.log(opponent)
     /// here we are check if button is on the ... we get the value of the string! from the opponent (is it supposed to match the same value at the opponent?)
     // ** Your code above **
@@ -128,10 +123,24 @@ function checkResult(res) {
     // If it is true, remove the items you pushed into the opponent array /////
     // HINT: Ensure the opponent array reverts back to the original amount in the global scope (reference in let. call again should run same)
     // ** Your code below **
-    if (activateDifficulty){
-        opponent.value //
-        console.log(toggleDifficulty)
-    }
+
+    if (activateDifficulty) {
+                console.log('testing if still true')
+                console.log(activateDifficulty, ' --accessing')
+                console.log(opponent, '---this is the arry after')
+        // weakness[res][0];
+        // weakness[res][1];
+        //         console.log(weakness[res][0], ' --need removing')
+        //         console.log(weakness[res][1], ' --need removing')
+                console.log(opponent)
+        opponent.pop(weakness[0]);
+        // opponent.pop(weakness[1]);
+                console.log(opponent.pop(weakness[0]), ' --after removed ')   
+                // console.log(opponent.pop(weakness[1]), ' --after removed ')        
+                console.log(activateDifficulty)
+                console.log(opponent, '---this is the after pop')
+        }       console.log(activateDifficulty)
+        
     // ** Your code above **
 }
 
