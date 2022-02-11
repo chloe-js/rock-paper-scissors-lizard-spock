@@ -54,7 +54,13 @@ body {
     width: 70%;
     height: auto;
 }
-
+/* .heading {
+    padding: 0px;
+    border-radius: 10%;
+    background-color: #3A3743;
+    border: 0px solid;
+    margin: 0px;
+} */
 .headingList {
     color: white;
     list-style: none;
@@ -152,6 +158,16 @@ div.footer {
 @media screen and (max-width: 700px) {
     .head-area {
         display: flex;
+        flex: 1;
+        justify-content: space-around;
+    }
+
+    .results-area {
+        /* color: white; */
+        /* list-style: none; */
+        display: block;
+        text-align: right;
+        padding-left:5px;
         flex: 1;
         justify-content: space-around;
     }

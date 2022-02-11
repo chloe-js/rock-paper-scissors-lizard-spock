@@ -23,10 +23,8 @@ playerChoice.forEach(i => i.addEventListener('click', function () {
 }))
 
 // Attach an event listener to it and provide the callback function as toggleDifficulty
-// ** Your code below **
-btnDifficulty.addEventListener('click', function () {
-    toggleDifficulty();
-})
+// ** Your code below ** ///callback funtion function is only going to run when click event hits if include () function will auto create unless in the scope of the EventListener {}//
+btnDifficulty.addEventListener('click', toggleDifficulty)
 
 // ** Your code above **
 
@@ -35,7 +33,9 @@ btnDifficulty.addEventListener('click', function () {
 // HINT: ! <-- will provide the opposite of the boolean value provided. eg: !variableName 
 // ** Your code below **
 function toggleDifficulty (){
-    !activateDifficulty;
+    console.log(activateDifficulty);
+    activateDifficulty = !activateDifficulty;
+    console.log(activateDifficulty);
 }//when click on button we activate the difficulty to true with event listener and toggle difficulty
 // ** Your code above **
 
@@ -45,7 +45,13 @@ function toggleDifficulty (){
 // Each key should be an option the player has to play
 // Each value should be an     !ARRAY which contains strings of each item that     !DEFEATS the specified key
 // ** Your code below **
-let weakness = {playerChoice, opponent}
+const weakness = {
+    Rock:['Paper','Spock'],
+    Paper:['Lizard','Scissors'], 
+    Scissors:['Rock','Spock'], 
+    Lizard:['Scissors','Rock'], 
+    Spock:['Paper','Lizard']  
+} 
 // (this.value)//{ playerChoice, ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']};
 
 // ** Your code above **
@@ -69,16 +75,28 @@ function checkResult(res) {
     // If it is true, *push into the opponent array, the* VALUE of each STRING item in the ARRAY which exists in the *USER SELECTED KEY
     // HINT: The KEY is the choice of the player, the VALUE is the ARRAY ({playerChoice, opponent.value})
     // ** Your code below **
-    if (!activateDifficulty){
-        opponent + playerChoice.value
-    }/// here we are check if button is on the ... we get the value of the string! from the opponent (is it supposed to match the same value at the opponent?)
+   /////////////////////////////////////////////////come here
+   console.log(toggleDifficulty)
+   console.log(weakness[''])
+
+   console.log(opponent)
+   if (toggleDifficulty) {
+    console.log(toggleDifficulty)
+    console.log(opponent)
+        opponent.push(weakness[''])
+        
+   } console.log(toggleDifficulty)
+   console.log(weakness[''])
+
+   console.log(opponent)
+    /// here we are check if button is on the ... we get the value of the string! from the opponent (is it supposed to match the same value at the opponent?)
     // ** Your code above **
 
     // Instead of supplying 5, supply a reference to the opponent array, as a number.
     // ** Your code below **
-    const opponentHand = opponent[Math.floor(Math.random() * opponent[0])];
+    const opponentHand = opponent[Math.floor(Math.random() * opponent.length)];
     // ** Your code above **
-
+    // console.log(opponent[0])
     let result = false
     let draw = false;
 
@@ -92,7 +110,7 @@ function checkResult(res) {
 
     if (result && !draw) {
         alert(`${res} beats ${opponentHand} -- YOU WIN!`);
-        Player1Score.innerText = String(++p1Score); /alert and add points player
+        Player1Score.innerText = String(++p1Score); //alert and add points player
     } else if (!result && draw) {
         alert(`DRAW: ${res} vs ${opponentHand}`);
     } else if (!result && !draw) {
@@ -105,7 +123,7 @@ function checkResult(res) {
     // HINT: Ensure the opponent array reverts back to the original amount in the global scope (reference in let. call again should run same)
     // ** Your code below **
     if (!activeDifficluty) {
-        opponent.value
+        opponent.value //
     }
     // ** Your code above **
 }
