@@ -128,15 +128,9 @@ console.log(weakness[res], ' --access')
                 console.log('testing if still true')
                 console.log(activateDifficulty, ' --accessing')
                 console.log(opponent, '---this is the arry after')
-        // weakness[res][0];
-        // weakness[res][1];
-        //         console.log(weakness[res][0], ' --need removing')
-        //         console.log(weakness[res][1], ' --need removing')
                 console.log(opponent)
         opponent.pop(weakness[0]);
-        // opponent.pop(weakness[1]);
-                console.log(opponent.pop(weakness[0]), ' --after removed ')   
-                // console.log(opponent.pop(weakness[1]), ' --after removed ')        
+                console.log(opponent.pop(weakness[0]), ' --after removed ')         
                 console.log(activateDifficulty)
                 console.log(opponent, '---this is the after pop')
         }       console.log(activateDifficulty)
