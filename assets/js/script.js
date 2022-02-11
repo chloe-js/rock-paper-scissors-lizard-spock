@@ -20,6 +20,7 @@ const opponent = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
 
 playerChoice.forEach(i => i.addEventListener('click', function () {
     checkResult(this.value);
+    console.log(this.value)
 }))
 
 // Attach an event listener to it and provide the callback function as toggleDifficulty
@@ -52,6 +53,7 @@ const weakness = {
     Lizard:['Scissors','Rock'], 
     Spock:['Paper','Lizard']  
 } 
+console.log(weakness.Paper)
 // (this.value)//{ playerChoice, ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']};
 
 // ** Your code above **
@@ -73,20 +75,24 @@ function checkResult(res) {
 
     // As the checkResult function begins to run, check to see IF the activateDifficulty variable is true
     // If it is true, *push into the opponent array, the* VALUE of each STRING item in the ARRAY which exists in the *USER SELECTED KEY
-    // HINT: The KEY is the choice of the player, the VALUE is the ARRAY ({playerChoice, opponent.value})
+    // HINT: The KEY is the choice of the player, the VALUE is the ARRAY 
     // ** Your code below **
    /////////////////////////////////////////////////come here
-   console.log(toggleDifficulty)
-   console.log(weakness[''])
+ 
 
-   console.log(opponent)
-   if (toggleDifficulty) {
-    console.log(toggleDifficulty)
-    console.log(opponent)
-        opponent.push(weakness[''])
+   if (activateDifficulty) {
+    console.log('testing true')
+
+    console.log(weakness[res], ' --access')
+    opponent.push(weakness[res][0])
+    opponent.push(weakness[res][1])
+
+    // opponent.push(weakness.playerChoice:'',[''])
+    // opponent.push(playerChoice.value)
+    // NodeListPrototype { item: item(), keys: keys(), values: values()}
         
    } console.log(toggleDifficulty)
-   console.log(weakness[''])
+
 
    console.log(opponent)
     /// here we are check if button is on the ... we get the value of the string! from the opponent (is it supposed to match the same value at the opponent?)
@@ -122,8 +128,9 @@ function checkResult(res) {
     // If it is true, remove the items you pushed into the opponent array /////
     // HINT: Ensure the opponent array reverts back to the original amount in the global scope (reference in let. call again should run same)
     // ** Your code below **
-    if (!activeDifficluty) {
+    if (activateDifficulty){
         opponent.value //
+        console.log(toggleDifficulty)
     }
     // ** Your code above **
 }
