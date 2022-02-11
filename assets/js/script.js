@@ -36,16 +36,17 @@ btnDifficulty.addEventListener('click', function () {
 // ** Your code below **
 function toggleDifficulty (){
     !activateDifficulty;
-}
+}//when click on button we activate the difficulty to true with event listener and toggle difficulty
 // ** Your code above **
 
 // Create a variable named weakness, assign this variable an empty object
 // within the object create a key and a value 
+
 // Each key should be an option the player has to play
-// Each value should be an ARRAY which contains strings of each item that DEFEATS the specified key
+// Each value should be an     !ARRAY which contains strings of each item that     !DEFEATS the specified key
 // ** Your code below **
-let weakness = { playerChoice, opponent}
-// (this.value){ playerChoice, ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']};
+let weakness = {playerChoice, opponent}
+// (this.value)//{ playerChoice, ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']};
 
 // ** Your code above **
 
@@ -65,12 +66,12 @@ const rules = [
 function checkResult(res) {
 
     // As the checkResult function begins to run, check to see IF the activateDifficulty variable is true
-    // If it is true, push into the opponent array, the VALUE of each STRING item in the ARRAY which exists in the USER SELECTED KEY
-    // HINT: The KEY is the choice of the player, the VALUE is the ARRAY
+    // If it is true, *push into the opponent array, the* VALUE of each STRING item in the ARRAY which exists in the *USER SELECTED KEY
+    // HINT: The KEY is the choice of the player, the VALUE is the ARRAY ({playerChoice, opponent.value})
     // ** Your code below **
     if (!activateDifficulty){
         opponent + playerChoice.value
-    }
+    }/// here we are check if button is on the ... we get the value of the string! from the opponent (is it supposed to match the same value at the opponent?)
     // ** Your code above **
 
     // Instead of supplying 5, supply a reference to the opponent array, as a number.
@@ -83,15 +84,15 @@ function checkResult(res) {
 
     for (var i = 0; i < rules.length; i++) {
         if (res === rules[i][0] && opponentHand === rules[i][1]) {
-            result = true;
+            result = true;  //we run through pairing of the rules for opponent and if match for rules
         } else if (res === opponentHand) {
-            draw = true;
+            draw = true; //draw is 0
         }
     }
 
     if (result && !draw) {
         alert(`${res} beats ${opponentHand} -- YOU WIN!`);
-        Player1Score.innerText = String(++p1Score);
+        Player1Score.innerText = String(++p1Score); /alert and add points player
     } else if (!result && draw) {
         alert(`DRAW: ${res} vs ${opponentHand}`);
     } else if (!result && !draw) {
@@ -100,11 +101,11 @@ function checkResult(res) {
     }
 
     // Just before we leave the function, check to see IF the activateDifficulty variable is still true
-    // If it is true, remove the items you pushed into the opponent array 
-    // HINT: Ensure the opponent array reverts back to the original amount in the global scope
+    // If it is true, remove the items you pushed into the opponent array /////
+    // HINT: Ensure the opponent array reverts back to the original amount in the global scope (reference in let. call again should run same)
     // ** Your code below **
-    else if (!activeDifficluty) {
-        opponent - playerChoice.value
+    if (!activeDifficluty) {
+        opponent.value
     }
     // ** Your code above **
 }
