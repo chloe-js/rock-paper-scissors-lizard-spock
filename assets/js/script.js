@@ -16,6 +16,7 @@ btnDifficulty.addEventListener('click', toggleDifficulty)
 function toggleDifficulty() {
     console.log(activateDifficulty);
     activateDifficulty = !activateDifficulty;
+    document.getElementById('level').innerText = 1;
     console.log(activateDifficulty);
 }
 const weakness = {
@@ -46,7 +47,9 @@ function checkResult(res) {
         console.log('testing true')
         console.log(weakness[res], ' --access')
         opponent.push(weakness[res][0])
+        document.getElementById('level').innerText = 0;
         opponent.push(weakness[res][1])
+        document.getElementById('level').innerText = 0;
         console.log(activateDifficulty)
         console.log(opponent)
 
@@ -96,7 +99,17 @@ document.getElementById('resetButton').addEventListener("click", function () {
     player2Score.innerText = 0;
 }); 
 
-btnDifficulty.addEventListener("click", function() {
-    
+if (activateDifficulty){
     document.getElementById('level').innerText = 1;
-  });
+} else if (!activateDifficulty){
+    document.getElementById('level').innerText = 0;
+}
+
+
+// btnDifficulty.addEventListener("click", function() {
+//     if (activateDifficulty){
+//         document.getElementById('level').innerText = 1;
+//     } else if (!activateDifficulty){
+//         document.getElementById('level').innerText = 0;
+//     }
+//   });
