@@ -112,6 +112,7 @@ console.log(weakness[res], ' --access')
     if (result && !draw) {
         alert(`${res} beats ${opponentHand} -- YOU WIN!`);
         Player1Score.innerText = String(++p1Score); //alert and add points player
+        console.log(p1Score)
     } else if (!result && draw) {
         alert(`DRAW: ${res} vs ${opponentHand}`);
     } else if (!result && !draw) {
@@ -139,6 +140,9 @@ console.log(weakness[res], ' --access')
 }
 
 document.getElementById('resetButton').addEventListener("click", function () {
+    p1Score = 0;
     Player1Score.innerText = 0;
+    p2Score = 0;
     Player2Score.innerText = 0;
-});
+}); 
+// CHANGE Player2Score to lower camelCase !!!!!!!!!!!!!!
