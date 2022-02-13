@@ -3,8 +3,8 @@ let p2Score = 0
 let activateDifficulty = false
 let playerChoice = document.querySelectorAll('.playerChoice');
 let btnDifficulty = document.getElementById('difficulty')
-const Player1Score = document.getElementById('scoresPlayer1');
-const Player2Score = document.getElementById('scoresPlayer2');
+const player1Score = document.getElementById('scoresplayer1');
+const player2Score = document.getElementById('scoresplayer2');
 const opponent = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
 
 playerChoice.forEach(i => i.addEventListener('click', function () {
@@ -54,7 +54,6 @@ function checkResult(res) {
     console.log(opponent)
 
     const opponentHand = opponent[Math.floor(Math.random() * opponent.length)];
-
     let result = false
     let draw = false;
 
@@ -68,13 +67,13 @@ function checkResult(res) {
 
     if (result && !draw) {
         alert(`${res} beats ${opponentHand} -- YOU WIN!`);
-        Player1Score.innerText = String(++p1Score); //alert and add points player
+        player1Score.innerText = String(++p1Score);
         console.log(p1Score)
     } else if (!result && draw) {
         alert(`DRAW: ${res} vs ${opponentHand}`);
     } else if (!result && !draw) {
         alert(`${res} loses to ${opponentHand} -- YOU LOSE!`);
-        Player2Score.innerText = String(++p2Score);
+        player2Score.innerText = String(++p2Score);
     }
 
     if (activateDifficulty) {
@@ -91,7 +90,7 @@ function checkResult(res) {
 
 document.getElementById('resetButton').addEventListener("click", function () {
     p1Score = 0;
-    Player1Score.innerText = 0;
+    player1Score.innerText = 0;
     p2Score = 0;
-    Player2Score.innerText = 0;
+    player2Score.innerText = 0;
 }); 
