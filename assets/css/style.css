@@ -54,13 +54,7 @@ body {
     width: 70%;
     height: auto;
 }
-/* .heading {
-    padding: 0px;
-    border-radius: 10%;
-    background-color: #3A3743;
-    border: 0px solid;
-    margin: 0px;
-} */
+
 .headingList {
     color: white;
     list-style: none;
@@ -70,10 +64,6 @@ li {
     margin-left: 10px; 
 }
 
-
-/* .game-area {
-    display: flex;
-} */
 #yellowIcon {
     color: #ffdd55;
 }
