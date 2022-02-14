@@ -20,9 +20,9 @@ function toggleDifficulty() {
     activateDifficulty = !activateDifficulty;
     
     if (activateDifficulty){
-            document.getElementById('level').innerText = 'HARD!';
+            document.getElementById('level').innerText = ' HARD! ';
         } else if (!activateDifficulty){
-            document.getElementById('level').innerText = 'EASY';
+            document.getElementById('level').innerText = ' EASY ';
         }
         
     console.log(activateDifficulty);
@@ -76,9 +76,10 @@ let draw = false;
         }
     }
 
-    
+
 // // if win get point if loose no point and draw no point
-    if (result && !draw) {
+
+    if (result && !draw) {       
         alert(`${res} beats ${opponentHand} -- YOU WIN!`);
         player1Score.innerText = String(++p1Score); 
         console.log(p1Score)
@@ -87,9 +88,22 @@ let draw = false;
     } else if (!result && !draw) {
         alert(`${res} loses to ${opponentHand} -- YOU LOSE!`);
         player2Score.innerText = String(++p2Score);
-        
     } 
-    
+
+///////////////////////////POTENTIAL WINNER ALERT POPUP WHEN eins hand////////////////////////////////////////      
+
+function winnerAlertPopUp(){
+    const alertElement = document.createElement('span');
+    alertElement.setAttribute('class', 'popup-alert');
+    alertElement.setAttribute('id', 'winner-alert')
+    console.dir(alertElement)
+    alertElement.innerText = 'CONGRATUALTIONS YOU WON';
+    document.body.appendChild(alertElement);
+    setTimeout(function () {
+        document.getElementById('winner-alert').remove();
+    }, 5000)
+}
+///////////////////////////POTENTIAL WINNER SCORE WHEN HIT 5 in a row////////////////////////////////////////  
 function firstToFive() {
     if ( p1Score.length < 5) {
         alert(`CONGRATUALTIONS PLAYER 1 YOU WON! YOUR SCORE: ${p1Score} PLAYER 2 SCORE: ${p2Score}`);

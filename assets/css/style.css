@@ -59,9 +59,24 @@ body {
     color: white;
     list-style: none;
     display: inline-flex;
+    font-size: 2em;
 }
 li {
     margin-left: 10px; 
+}
+
+#winner-alert{
+
+}
+.popup-alert{
+    position: absolute;
+    padding: 1.5em 2em;
+    font-size: 1.25em;
+    background: #333;
+    color: white;
+    border-radius: 9px;
+    left: 3em;
+    bottom: 3em;
 }
 
 #yellowIcon {
