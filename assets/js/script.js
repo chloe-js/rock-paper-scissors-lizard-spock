@@ -7,21 +7,21 @@ const player1Score = document.getElementById('scoresPlayer1');
 const player2Score = document.getElementById('scoresPlayer2');
 const opponent = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
 
-// click event listener for player choice
+// // click event listener for player choice
 playerChoice.forEach(i => i.addEventListener('click', function () {
     checkResult(this.value);
     console.log(this.value)
 }))
 btnDifficulty.addEventListener('click', toggleDifficulty)
 
-// funtion for turn on Difficulty
+// // funtion for turn on Difficulty
 function toggleDifficulty() {
     console.log(activateDifficulty);
     activateDifficulty = !activateDifficulty;
     document.getElementById('level').innerText = 1;
     console.log(activateDifficulty);
 }
-// winning hands values
+// // winning hands values
 const weakness = {
     Rock: ['Paper', 'Spock'],
     Paper: ['Lizard', 'Scissors'],
@@ -30,7 +30,7 @@ const weakness = {
     Spock: ['Paper', 'Lizard']
 }
 console.log(weakness.Paper)
-// rules for who wins what hand
+// // rules for who wins what hand
 const rules = [
     ['Scissors', 'Paper'],
     ['Paper', 'Rock'],
@@ -43,26 +43,27 @@ const rules = [
     ['Spock', 'Rock'],
     ['Rock', 'Scissors']
 ]
-// difficulty is on give computer extra winning hands from weakness
+
+// // difficulty is on give computer extra winning hands from weakness
 function checkResult(res) {
 
     if (activateDifficulty) {
-        // console.log('testing true')
-        // console.log(weakness[res], ' --access')
+        console.log('testing true')
+        console.log(weakness[res], ' --access')
         opponent.push(weakness[res][0])
-        // document.getElementById('level').innerText = 0;
+        document.getElementById('level').innerText = 0;
         opponent.push(weakness[res][1])
-        // document.getElementById('level').innerText = 0;
-        // console.log(activateDifficulty)
-        // console.log(opponent)
+        document.getElementById('level').innerText = 0;
+        console.log(activateDifficulty)
+        console.log(opponent)
 
-    } 
-    // console.log(activateDifficulty)
-    // console.log(opponent)
+    } console.log(activateDifficulty)
+    console.log(opponent)
 
-const opponentHand = opponent[Math.floor(Math.random() * opponent.length)];
-let result = false
-let draw = false;
+    const opponentHand = opponent[Math.floor(Math.random() * opponent.length)];
+
+    let result = false
+    let draw = false;
 
     for (var i = 0; i < rules.length; i++) {
         if (res === rules[i][0] && opponentHand === rules[i][1]) {
@@ -71,7 +72,7 @@ let draw = false;
             draw = true;
         }
     }
-// if win get point if loose no point and draw no point
+// // if win get point if loose no point and draw no point
     if (result && !draw) {
         alert(`${res} beats ${opponentHand} -- YOU WIN!`);
         player1Score.innerText = String(++p1Score); 
@@ -82,27 +83,26 @@ let draw = false;
         alert(`${res} loses to ${opponentHand} -- YOU LOSE!`);
         player2Score.innerText = String(++p2Score);
     }
-// after hand played, difficulty removed
+// // after hand played, difficulty removed
     if (activateDifficulty) {
-        // console.log('testing if still true')
-        // console.log(activateDifficulty, ' --accessing')
-        // console.log(opponent, '---this is the arry after')
-        // console.log(opponent)
+        console.log('testing if still true')
+        console.log(activateDifficulty, ' --accessing')
+        console.log(opponent, '---this is the arry after')
+        console.log(opponent)
             opponent.pop(weakness[0]);
-        // console.log(opponent.pop(weakness[0]), ' --after removed ')
-        // console.log(activateDifficulty)
-        // console.log(opponent, '---this is the after pop')
-    } 
-    // console.log(activateDifficulty)
+        console.log(opponent.pop(weakness[0]), ' --after removed ')
+        console.log(activateDifficulty)
+        console.log(opponent, '---this is the after pop')
+    } console.log(activateDifficulty)
 }
-// reset button clean score and starts again
+// // reset button clean score and starts again
 document.getElementById('resetButton').addEventListener("click", function () {
     p1Score = 0;
     player1Score.innerText = 0;
     p2Score = 0;
     player2Score.innerText = 0;
 }); 
-// Difficult score displayed
+// // btnDifficulty.addEventListener("click", function() {
 if (activateDifficulty){
     document.getElementById('level').innerText = 1;
 } else if (!activateDifficulty){
@@ -118,32 +118,153 @@ if (activateDifficulty){
 //     }
 //   });
 
-//////////////////////PIZZA PIZZA
-// function createSelectedToppingElement(toppings) {
-//     // if(selectedToppings.children.length !== 5)
-//     if (selectedToppings.childElementCount < 5) {
-//         console.dir(selectedToppings.children)
-//         const element = document.createElement('span');
-//         element.setAttribute('class', 'chosen-toppings__selected');
-//         element.setAttribute('title', 'remove');
-//         element.setAttribute('id', toppings.toLowerCase())
-//         element.innerText = toppings;
-//         console.log(toppings)
-//         console.dir(selectedToppings)
-//         selectedToppings.appendChild(element)
-//     } else {
-//         maxToppingAlert();
+
+// let p1Score = 0
+// let p2Score = 0
+// let activateDifficulty = false
+// let playerChoice = document.querySelectorAll('.playerChoice');
+// let btnDifficulty = document.getElementById('difficulty')
+// const player1Score = document.getElementById('scoresPlayer1');
+// const player2Score = document.getElementById('scoresPlayer2');
+// const opponent = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
+
+// // click event listener for player choice
+// playerChoice.forEach(i => i.addEventListener('click', function () {
+//     // checkResult(this.value);
+//     console.log(this.value)
+// }))
+// btnDifficulty.addEventListener('click', toggleDifficulty)
+
+// // funtion for turn on Difficulty
+// function toggleDifficulty() {
+//     console.log(activateDifficulty);
+//     activateDifficulty = !activateDifficulty;
+//     document.getElementById('level').innerText = 1;
+//     console.log(activateDifficulty);
+// }
+// // winning hands values
+// const weakness = {
+//     Rock: ['Paper', 'Spock'],
+//     Paper: ['Lizard', 'Scissors'],
+//     Scissors: ['Rock', 'Spock'],
+//     Lizard: ['Scissors', 'Rock'],
+//     Spock: ['Paper', 'Lizard']
+// }
+// console.log(weakness.Paper)
+// // rules for who wins what hand
+// const rules = [
+//     ['Scissors', 'Paper'],
+//     ['Paper', 'Rock'],
+//     ['Rock', 'Lizard'],
+//     ['Lizard', 'Spock'],
+//     ['Spock', 'Scissors'],
+//     ['Scissors', 'Lizard'],
+//     ['Lizard', 'Paper'],
+//     ['Paper', 'Spock'],
+//     ['Spock', 'Rock'],
+//     ['Rock', 'Scissors']
+// ]
+// // difficulty is on give computer extra winning hands from weakness
+// function checkResult(res) {
+
+//     if (activateDifficulty) {
+//         // console.log('testing true')
+//         // console.log(weakness[res], ' --access')
+//         opponent.push(weakness[res][0])
+//         // document.getElementById('level').innerText = 0;
+//         opponent.push(weakness[res][1])
+//         // document.getElementById('level').innerText = 0;
+//         // console.log(activateDifficulty)
+//         // console.log(opponent)
+
+//     } 
+//     // console.log(activateDifficulty)
+//     // console.log(opponent)
+
+// const opponentHand = opponent[Math.floor(Math.random() * opponent.length)];
+// let result = false
+// let draw = false;
+
+//     for (var i = 0; i < rules.length; i++) {
+//         if (res === rules[i][0] && opponentHand === rules[i][1]) {
+//             result = true;
+//         } else if (res === opponentHand) {
+//             draw = true;
+//         }
 //     }
+// // if win get point if loose no point and draw no point
+//     if (result && !draw) {
+//         alert(`${res} beats ${opponentHand} -- YOU WIN!`);
+//         player1Score.innerText = String(++p1Score); 
+//         console.log(p1Score)
+//     } else if (!result && draw) {
+//         alert(`DRAW: ${res} vs ${opponentHand}`);
+//     } else if (!result && !draw) {
+//         alert(`${res} loses to ${opponentHand} -- YOU LOSE!`);
+//         player2Score.innerText = String(++p2Score);
+//     }
+// // after hand played, difficulty removed
+//     if (activateDifficulty) {
+//         // console.log('testing if still true')
+//         // console.log(activateDifficulty, ' --accessing')
+//         // console.log(opponent, '---this is the arry after')
+//         // console.log(opponent)
+//             opponent.pop(weakness[0]);
+//         // console.log(opponent.pop(weakness[0]), ' --after removed ')
+//         // console.log(activateDifficulty)
+//         // console.log(opponent, '---this is the after pop')
+//     } 
+//     // console.log(activateDifficulty)
+// }
+// // reset button clean score and starts again
+// document.getElementById('resetButton').addEventListener("click", function () {
+//     p1Score = 0;
+//     player1Score.innerText = 0;
+//     p2Score = 0;
+//     player2Score.innerText = 0;
+// }); 
+// // Difficult score displayed
+// if (activateDifficulty){
+//     document.getElementById('level').innerText = 1;
+// } else if (!activateDifficulty){
+//     document.getElementById('level').innerText = 0;
 // }
 
-// function maxToppingAlert() {
-//     const alertElement = document.createElement('span');
-//     alertElement.setAttribute('class', 'max-alert');
-//     alertElement.setAttribute('id', 'max alert')
-//     console.dir(alertElement)
-//     alertElement.innerText = 'Max Allowance Of Toppings Achieved!';
-//     document.body.appendChild(alertElement);
-//     setTimeout(function () {
-//         document.getElementById('max alert').remove();
-//     }, 5000)
-// }
+
+// // btnDifficulty.addEventListener("click", function() {
+// //     if (activateDifficulty){
+// //         document.getElementById('level').innerText = 1;
+// //     } else if (!activateDifficulty){
+// //         document.getElementById('level').innerText = 0;
+// //     }
+// //   });
+
+// //////////////////////PIZZA PIZZA
+// // function createSelectedToppingElement(toppings) {
+// //     // if(selectedToppings.children.length !== 5)
+// //     if (selectedToppings.childElementCount < 5) {
+// //         console.dir(selectedToppings.children)
+// //         const element = document.createElement('span');
+// //         element.setAttribute('class', 'chosen-toppings__selected');
+// //         element.setAttribute('title', 'remove');
+// //         element.setAttribute('id', toppings.toLowerCase())
+// //         element.innerText = toppings;
+// //         console.log(toppings)
+// //         console.dir(selectedToppings)
+// //         selectedToppings.appendChild(element)
+// //     } else {
+// //         maxToppingAlert();
+// //     }
+// // }
+
+// // function maxToppingAlert() {
+// //     const alertElement = document.createElement('span');
+// //     alertElement.setAttribute('class', 'max-alert');
+// //     alertElement.setAttribute('id', 'max alert')
+// //     console.dir(alertElement)
+// //     alertElement.innerText = 'Max Allowance Of Toppings Achieved!';
+// //     document.body.appendChild(alertElement);
+// //     setTimeout(function () {
+// //         document.getElementById('max alert').remove();
+// //     }, 5000)
+// // }
