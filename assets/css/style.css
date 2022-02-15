@@ -100,11 +100,11 @@ award
 
 /* scores area */
 #player1Green {
-    color: #87de87;
+    color: #80b3ff;
 }
 #scoresPlayer1{
     font-size: 2em;
-    color: #87de87;
+    color: #80b3ff;
 }
 #robotRed {
     color: #ff8080;
@@ -125,50 +125,42 @@ award
 
 /* change # id to  . class */
 /* color to icons */
+/* game area */
 
-#rock {
+#difficultyColorRule {
+    font-size: 2em;
+    color: #9387C0;
+}
+#difficultyExplain {
+    font-size: 2em;
+    color: #9387C0;
+}
+#rockRed {
     color: #ff8080;
 }
 
-#paper {
+#paperYellow {
     color: #ffdd55;
 }
 
-#scissors {
+#scissorsPink {
     color: #e580ff;
 }
 
-#lizard {
+#lizardGreen {
     color: #87de87;
 }
 
-/* #spock {
-    color: #80b3ff;
-} */
-.spock {
+#spockBlue {
     color: #80b3ff;
 }
 
-#rock i:hover,
-#paper i:hover,
-#scissors i:hover,
-#lizard i:hover,
-#spock i:hover {
+#rockRed i:hover,
+#paperYellow i:hover,
+#scissorsPink i:hover,
+#lizardGreen i:hover,
+#spockBlue i:hover {
     color: #333;
-}
-
-#rules-area {
-    display: flex;
-    flex: 2;
-    justify-content: space-around;
-}
-
-.box-divider {
-    border-style: solid;
-    border-left: none;
-    border-bottom: none;
-    border-top: none;
-    padding: 13px;
 }
 
 div.footer {
@@ -178,6 +170,23 @@ div.footer {
     width: 100%;
     background-color: #3A3743;
     text-align: center;
+}
+
+/* RULES rules area */
+/* MAX DESCKTOP 1313 x 975 */
+#rules-area {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+.box-divider {
+    border-style: solid;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+    padding: 13px;
 }
 
 @media screen and (max-width: 700px) {
