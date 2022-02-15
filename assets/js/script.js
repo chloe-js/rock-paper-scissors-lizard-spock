@@ -83,11 +83,13 @@ let draw = false;
         alert(`${res} beats ${opponentHand} -- YOU WIN!`);
         player1Score.innerText = String(++p1Score); 
         console.log(p1Score)
+        winnerAlertPopUp()//////////////////////////////////////////////////////////////////////
     } else if (!result && draw) {
         alert(`DRAW: ${res} vs ${opponentHand}`);
     } else if (!result && !draw) {
         alert(`${res} loses to ${opponentHand} -- YOU LOSE!`);
         player2Score.innerText = String(++p2Score);
+        firstToFive();
     } 
 
 ///////////////////////////POTENTIAL WINNER ALERT POPUP WHEN eins hand////////////////////////////////////////      
@@ -97,7 +99,7 @@ function winnerAlertPopUp(){
     alertElement.setAttribute('class', 'popup-alert');
     alertElement.setAttribute('id', 'winner-alert')
     console.dir(alertElement)
-    alertElement.innerText = 'CONGRATUALTIONS YOU WON';
+    alertElement.innerText = `CONGRATUALTIONS YOU WON ${res}`;
     document.body.appendChild(alertElement);
     setTimeout(function () {
         document.getElementById('winner-alert').remove();
@@ -105,11 +107,11 @@ function winnerAlertPopUp(){
 }
 ///////////////////////////POTENTIAL WINNER SCORE WHEN HIT 5 in a row////////////////////////////////////////  
 function firstToFive() {
-    if ( p1Score.length < 5) {
+    if ( p1Score === 5) {
         alert(`CONGRATUALTIONS PLAYER 1 YOU WON! YOUR SCORE: ${p1Score} PLAYER 2 SCORE: ${p2Score}`);
         console.log(firstToFive)
         console.log(p1Score.length)
-    } else if (p2Score.length <5 ) {
+    } else if (p2Score === 5 ) {
         alert(`YOU LOOSE! PLAYER 2 YOU WON! YOUR SCORE: ${p1Score} PLAYER 2 SCORE: ${p2Score}`);
         console.log(firstToFive)
         console.log(p2Score.length)
