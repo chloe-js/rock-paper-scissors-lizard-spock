@@ -1,3 +1,4 @@
+/* . = class */
 body {
     color: white;
     background-color: #3A3743;
@@ -5,7 +6,16 @@ body {
     text-align: center;
     padding: 10px;
 }
-
+/* li {
+    
+} */
+.headingList {
+    margin-left: 10px; 
+    color: white;
+    list-style: none;
+    display: inline-flex;
+    font-size: 2em;
+}
 .playerChoice {
     padding: 10px;
     border-radius: 50%;
@@ -18,12 +28,14 @@ body {
     transition: all 0.5s;
 }
 
+/* game area */
 .playerChoice:hover {
     color: white;
     transform: scale(1.1);
     background-color: currentcolor;
 }
 
+/* info area */
 .buttonRun {
     color: #3A3743;
     background-color: white;
@@ -39,7 +51,6 @@ body {
     display: inline-block;
     padding: 13px;
     border-radius: 20%;
-    /* margin: 5px; */
 }
 
 .linkButton {
@@ -50,21 +61,14 @@ body {
     margin: 5px;
 }
 
+/* rules BODY */
 .imageGame {
     width: 25%;
     height: auto;
 }
 
-.headingList {
-    color: white;
-    list-style: none;
-    display: inline-flex;
-    font-size: 2em;
-}
-li {
-    margin-left: 10px; 
-}
 
+/* POPUP alert box */
 #winner-alert{
 
 }
@@ -79,34 +83,48 @@ li {
     bottom: 3em;
 }
 
+
+/* trophy
 #yellowIcon {
     color: #ffdd55;
 }
+award
 #redIcon {
     color: #ff8080;
 }
+/* #castlePurple {
+    color: #9387C0;
+} */
+ 
 
-.player {
+
+/* scores area */
+#player1Green {
     color: #87de87;
-    /* color: #FFAF6B; */
 }
-
-.robot {
+#scoresPlayer1{
+    font-size: 2em;
+    color: #87de87;
+}
+#robotRed {
     color: #ff8080;
 }
-
-#player {
-    color: #87de87;
-    /* color: #FFAF6B; */
-}
-
-#robot {
+#scoresPlayer2{
+    font-size: 2em;
     color: #ff8080;
 }
 
 #difficultyColor {
     color: #9387C0;
 }
+
+#level {
+    font-size: 2em;
+    color: #9387C0;
+}
+
+/* change # id to  . class */
+/* color to icons */
 
 #rock {
     color: #ff8080;
