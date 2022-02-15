@@ -56,31 +56,32 @@
                 <button id="resetButton" class="buttonRun" aria-label="Reset Game">
                     <i class="fas fa-undo"></i> Reset
                 </button>
-                <script src="assets/js/script.js"></script>
+               
             </section>
             <hr>
         <div class='game-area'>
             <section> <!-- //class='results-area' removed// -->
                 <h2 class='answer-messgae'>CHOOSE YOUR HAND!</h2>
-                <div class='controls-area'>
-                    <button id="rockRed" class="playerChoice" value="Rock" aria-label="Play Rock">
+                <div class='controls-area' id="choices">
+                    <button class="playerChoice" id="rockRed" value="Rock" aria-label="Play Rock">
                         <i class="fas fa-hand-rock"></i>
                     </button>
-                    <button id="paperYellow" class="playerChoice" value="Paper" aria-label="Play Paper">
+                    <button class="playerChoice" id="paperYellow" value="Paper" aria-label="Play Paper">
                         <i class="fas fa-hand-paper"></i>
                     </button>
-                    <button id="scissorsPink" class="playerChoice" value="Scissors" aria-label="Play Scissors">
+                    <button class="playerChoice" value="Scissors" id="scissorsPink" aria-label="Play Scissors">
                         <i class="fas fa-hand-scissors"></i>
                     </button>
-                    <button id="lizardGreen" class="playerChoice" value="Lizard" aria-label="Play Lizard">
+                    <button class="playerChoice" id="lizardGreen" value="Lizard" aria-label="Play Lizard">
                         <i class="fas fa-hand-lizard"></i>
                     </button>
-                    <button id="spockBlue" class="playerChoice" value="Spock" aria-label="Play Spock">
+                    <button class="playerChoice" id="spockBlue" value="Spock" aria-label="Play Spock">
                         <i class="fas fa-hand-spock"></i>
                     </button>
                 </div>
             </section>
         </div>
+       
     </div>
     <!-- <section>
         <i class="fab fa-fort-awesome"></i>
@@ -103,6 +104,7 @@
         <div class="footer">
         </div>
     </section>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

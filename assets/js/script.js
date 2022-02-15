@@ -1,19 +1,21 @@
 let p1Score = 0
 let p2Score = 0
 let activateDifficulty = false
-let playerChoice = document.querySelectorAll('.playerChoice');
+let playerChoice = document.body.querySelectorAll('.playerChoice');
+// let playerChoice = document.getElementById('choices');
 let btnDifficulty = document.getElementById('difficulty')
 const player1Score = document.getElementById('scoresPlayer1');
 const player2Score = document.getElementById('scoresPlayer2');
 const opponent = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
 
+console.log(playerChoice)
 // // click event listener for player choice
 playerChoice.forEach(i => i.addEventListener('click', function () {
     checkResult(this.value);
     console.log(this.value)
 }))
 btnDifficulty.addEventListener('click', toggleDifficulty)
-
+console.log(playerChoice)
 // // funtion for turn on Difficulty
 function toggleDifficulty() {
     console.log(activateDifficulty);
