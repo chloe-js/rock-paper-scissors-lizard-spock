@@ -122,34 +122,35 @@ hr {
     color: #3A3743;
 }
 #champion-alert {
-    background: #87de87;
+    background: #ffdd55;
     color: #3A3743;
     border-style: solid;
     border-color: white;
 }
 #tryAgain-alert {
-    background: #e580ff;
+    background:  #e580ff;
     color: #3A3743;
     border-style: solid;
     border-color: white;
 }
+/* need to make div centered */
 .popup-alert {
-    display: flex;
-    /* flex: 2; */
-    justify-content: space-around;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: absolute;
-    align-content: center;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    /* align-content: center; */
     padding: 1.5em 2em;
-    font-size: 1.25em;
+    font-size: 2em;
     /* background: white;
     color: #333; */
     border-radius: 9px;
-    left: 45%;
-    bottom: 45%;
- 
+    position: absolute; 
+    left: 15%;
+    bottom: 40%;
+    align-items: center;
 }
+
 
 /* trophy
 #yellowIcon {

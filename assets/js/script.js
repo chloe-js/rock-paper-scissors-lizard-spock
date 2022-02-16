@@ -196,37 +196,4 @@ document.getElementById('resetButton').addEventListener("click", function () {
     player1Score.innerText = 0;
     p2Score = 0;
     player2Score.innerText = 0;
-    toggleDifficulty()
 });
-
-
-
-// //////////////////////PIZZA PIZZA
-// // function createSelectedToppingElement(toppings) {
-// //     // if(selectedToppings.children.length !== 5)
-// //     if (selectedToppings.childElementCount < 5) {
-// //         console.dir(selectedToppings.children)
-// //         const element = document.createElement('span');
-// //         element.setAttribute('class', 'chosen-toppings__selected');
-// //         element.setAttribute('title', 'remove');
-// //         element.setAttribute('id', toppings.toLowerCase())
-// //         element.innerText = toppings;
-// //         console.log(toppings)
-// //         console.dir(selectedToppings)
-// //         selectedToppings.appendChild(element)
-// //     } else {
-// //         maxToppingAlert();
-// //     }
-// // }
-
-// // function maxToppingAlert() {
-// //     const alertElement = document.createElement('span');
-// //     alertElement.setAttribute('class', 'max-alert');
-// //     alertElement.setAttribute('id', 'max alert')
-// //     console.dir(alertElement)
-// //     alertElement.innerText = 'Max Allowance Of Toppings Achieved!';
-// //     document.body.appendChild(alertElement);
-// //     setTimeout(function () {
-// //         document.getElementById('max alert').remove();
-// //     }, 5000)
-// // }
