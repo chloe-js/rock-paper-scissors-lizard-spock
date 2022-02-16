@@ -77,17 +77,18 @@ hr {
 
 /* info area */
 .buttonRun {
-    color: #3A3743;
-    background-color: white;
+    color: white;
+    background-color: #3A3743;
+    /* background-color: currentColor; */
     display: inline-block;
     padding: 13px;
     border-radius: 20%;
 }
 
 .buttonRun:hover {
-    color: white;
+    color: #3A3743;
     transform: scale(1.1);
-    background-color: #3A3743;
+    background-color: white;
     display: inline-block;
     padding: 13px;
     border-radius: 20%;
@@ -241,7 +242,6 @@ award
     color: #80b3ff;
 }
 
-
 div.footer {
     left: 0;
     bottom: 0;
@@ -274,7 +274,26 @@ div.footer {
 .box-divider i {
     font-size: 3.2rem;
 }
+.genRed {
+    color: #ff8080;
+    /* font-size: 2em; */
+}
 
+#genYellow {
+    color: #ffdd55;
+}
+
+.genPink {
+    color: #e580ff;
+}
+
+.genGreen {
+    color: #87de87;
+}
+
+.genBlue {
+    color: #80b3ff;
+}
 @media screen and (max-width: 700px) {
     /* .head-area {
         display: flex;
