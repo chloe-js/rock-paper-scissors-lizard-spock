@@ -147,8 +147,10 @@ hr {
     color: #333; */
     border-radius: 9px;
     position: absolute; 
-    left: 15%;
+    left: 0;
     bottom: 40%;
+    transform: translateX(-50%);
+    margin-left: 50%;
     align-items: center;
 }
 
@@ -279,8 +281,8 @@ div.footer {
     /* font-size: 2em; */
 }
 
-#genYellow {
-    color: #ffdd55;
+.genYellow {
+    background-color: #ffdd55;
 }
 
 .genPink {
