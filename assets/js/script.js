@@ -85,7 +85,8 @@ function checkResult(res) {
         // alert(`${res} beats ${opponentHand} -- YOU WIN!`);
         player1Score.innerText = String(++p1Score);
         console.log(p1Score)
-        winnerAlertPopUp() //////////////////////////////////////////////////////////////////////
+        winnerAlertPopUp()
+        firstToFive() //////////////////////////////////////////////////////////////////////
     } else if (!result && draw) {
         drawAlertPopUp()
         // alert(`DRAW: ${res} vs ${opponentHand}`);
@@ -103,7 +104,7 @@ function checkResult(res) {
         alertElement.setAttribute('class', 'popup-alert');
         alertElement.setAttribute('id', 'winner-alert')
         console.dir(alertElement)
-        alertElement.innerText = `CONGRATUALTIONS YOU WON ${res} BEATS ${opponentHand}`;
+        alertElement.innerText = `CONGRATUALTIONS YOU WON! ${res} BEATS ${opponentHand}`;
         document.body.appendChild(alertElement);
         setTimeout(function () {
             document.getElementById('winner-alert').remove();
@@ -152,11 +153,11 @@ function checkResult(res) {
         alertElement.setAttribute('class', 'popup-alert');
         alertElement.setAttribute('id', 'champion-alert')
         console.dir(alertElement)
-        alertElement.innerText = `CONGRATULATIONS PLAYER 1! YOU ARE THE CHAMPION ! YOUR SCORE: ${p1Score} PLAYER 2 SCORE: ${p2Score} `;
+        alertElement.innerText = `CONGRATULATIONS ! YOU ARE THE CHAMPION ! YOUR SCORE: ${p1Score} OPPONENT SCORE: ${p2Score} `;
         document.body.appendChild(alertElement);
         setTimeout(function () {
             document.getElementById('champion-alert').remove();
-        }, 5000)
+        }, 7000)
             p1Score = 0;
             player1Score.innerText = 0;
             p2Score = 0;
@@ -167,11 +168,11 @@ function checkResult(res) {
         alertElement.setAttribute('class', 'popup-alert');
         alertElement.setAttribute('id', 'tryAgain-alert')
         console.dir(alertElement)
-        alertElement.innerText = `YOU LOOSE! PLAYER 2 YOU WON! YOUR SCORE: ${p1Score} PLAYER 2 SCORE: ${p2Score}`;
+        alertElement.innerText = `YOU LOOSE! YOUR SCORE: ${p1Score} OPPONENT SCORE: ${p2Score}`;
         document.body.appendChild(alertElement);
         setTimeout(function () {
             document.getElementById('tryAgain-alert').remove();
-        }, 5000)
+        }, 7000)
             p1Score = 0;
             player1Score.innerText = 0;
             p2Score = 0;
