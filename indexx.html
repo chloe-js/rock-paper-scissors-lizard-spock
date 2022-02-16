@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome and google fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- **google font to be inserted -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <!-- favicon icon link-->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rock Paper Scissors Lizard Spock</title>
+</head>
+
+<body>
+    <div id="container">
+        <!-- <div class='head-area'> -->
+            
+            <section>
+                <div class='results-area'>
+                    <div class="scores-area">
+                        <div class="box-divider">
+                            <ul class="headingList">
+                                <li> ROCK </li>
+                                <li> PAPER </li>
+                                <li> SCISSORS </li>
+                                <li> LIZARD </li>
+                                <li> SPOCK </li>
+                            </ul>
+                        </div>
+                        <div class="box-divider">
+                            <i class="fas fa-user-astronaut" id="player1Green"></i>
+                            <h2 class='scores'> PLAYER 1 </h2>
+                            <span id="scoresPlayer1" class="player">0</span>
+                        </div>
+                        <div class="box-divider" id="robotRed">
+                            <i class="fas fa-robot" ></i>
+                            <h2 class='scores'> PLAYER 2 </h2>
+                            <span id="scoresPlayer2">0</span>
+                        </div>
+                        <div class="box-divider">
+                            <i class="fas fa-angle-double-up" id="difficultyColor"></i>
+                            <h2 class='scores'> LEVEL </h2>
+                            <span id="level"> EASY </span>
+                        </div>
+                    </div>
+                    <h2> First to 5 will be Champion! </h2>
+                </div>
+            </section>
+        <!-- </div> -->
+        <section class='info-area'>
+            <a href="./index.html" class="buttonRun" id="playGame" class="linkButton" aria-label="Play Game">
+                <i class="fas fa-play"></i> Play Game</a>
+
+            <a href="./rules.html" class="buttonRun" id="rules" class="linkButton" aria-label="Read Rules">
+                <i class="fas fa-scroll"></i> Rules</a>
+
+            <button class="buttonRun" class="linkButton" id="difficulty" aria-label="Increase Difficulty">
+                <i class="fas fa-angle-double-up"></i> Difficulty
+            </button>
+            <button id="resetButton" class="buttonRun" aria-label="Reset Game">
+                <i class="fas fa-undo"></i> Reset
+            </button>
+
+        </section>
+        <hr>
+        <div class='game-area'>
+            <section>
+                <!-- //class='results-area' removed// -->
+                <h2 class='answer-messgae'>CHOOSE YOUR HAND!</h2>
+                <div class='controls-area' id="choices">
+                    <button class="playerChoice" id="rockRed" value="Rock" aria-label="Play Rock">
+                        <i class="fas fa-hand-rock"></i>
+                    </button>
+                    <button class="playerChoice" id="paperYellow" value="Paper" aria-label="Play Paper">
+                        <i class="fas fa-hand-paper"></i>
+                    </button>
+                    <button class="playerChoice" value="Scissors" id="scissorsPink" aria-label="Play Scissors">
+                        <i class="fas fa-hand-scissors"></i>
+                    </button>
+                    <button class="playerChoice" id="lizardGreen" value="Lizard" aria-label="Play Lizard">
+                        <i class="fas fa-hand-lizard"></i>
+                    </button>
+                    <button class="playerChoice" id="spockBlue" value="Spock" aria-label="Play Spock">
+                        <i class="fas fa-hand-spock"></i>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <!-- <section>
+        <i class="fab fa-fort-awesome"></i>
+        <i class="fas fa-ghost"></i>
+        <i class="fal fa-helmet-battle"></i>
+        <i class="fas fa-home"></i>
+        <i class="fas fa-redo"></i>
+        <i class="fab fa-redhat"></i>
+        <i class="fas fa-robot"></i>
+        <i class="fas fa-skull-crossbones"></i>
+        <i class="fas fa-user-secret"></i>
+        <i class="fas fa-home"></i>
+        <i class="fas fa-caret-square-right"></i>
+        <i class="fas fa-trophy" id="yellowIcon"></i>
+        <i class="fas fa-award" id="redIcon"></i>
+        <i class="fab fa-fort-awesome" id="castlePurple"></i> 
+        <i class="fas fa-axe"></i>
+    </section> -->
+    <section>
+        <div class="footer">
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

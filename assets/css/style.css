@@ -216,7 +216,7 @@ award
     color: #333;
 }
 
-#rules-area i{
+.rules-area i{
     font-size: 2em;
 }
 
@@ -253,7 +253,7 @@ div.footer {
 
 /* RULES rules area */
 /* MAX DESCKTOP 1313 x 975 */
-#rules-area {
+.rules-area {
     display: flex;
     /* flex: 2; */
     justify-content: space-around;
@@ -297,7 +297,7 @@ div.footer {
         flex-direction: column;
     }
 
-    #rules-area {
+    .rules-area {
         display: flex;
         flex: 2;
         justify-content: space-around;
