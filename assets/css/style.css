@@ -7,9 +7,11 @@ body {
     padding: 10px;
 }
 
+
 /* li {
     
 } */
+
 
 div.scores-area {
     display: flex;
@@ -30,19 +32,28 @@ hr {
 
 #container{
     padding: 10px;
-    /* border-style: none;
-    border-color: #3A3743; */
-    border-style: solid;
-    border-color: pink;
+    border-style: none;
+    border-color: #3A3743;
+    /* border-style: solid;
+    border-color: pink; */
     margin: 10%;
 }
 
-.headingList {
+/* .headingList {
     margin-left: 10px;
     color: white;
     list-style: none;
     display: inline-flex;
     font-size: 2em;
+} */
+.headingList {
+    color: white;
+    list-style: none;
+    display: block;
+    text-align: left;
+    padding-left: 5px;
+    font-size: 2em;
+
 }
 
 .playerChoice {
@@ -168,8 +179,21 @@ award
     color: #9387C0;
 }
 
+#rockRed i:hover,
+#paperYellow i:hover,
+#scissorsPink i:hover,
+#lizardGreen i:hover,
+#spockBlue i:hover {
+    color: #333;
+}
+
+#rules-area i{
+    font-size: 2em;
+}
+
 #rockRed {
     color: #ff8080;
+    /* font-size: 2em; */
 }
 
 #paperYellow {
@@ -188,13 +212,6 @@ award
     color: #80b3ff;
 }
 
-#rockRed i:hover,
-#paperYellow i:hover,
-#scissorsPink i:hover,
-#lizardGreen i:hover,
-#spockBlue i:hover {
-    color: #333;
-}
 
 div.footer {
     left: 0;
@@ -209,25 +226,32 @@ div.footer {
 /* MAX DESCKTOP 1313 x 975 */
 #rules-area {
     display: flex;
-    flex: 2;
+    /* flex: 2; */
     justify-content: space-around;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .box-divider {
+    height: 300px;
+    width: 150px;
     border-style: solid;
-    border-left: none;
-    border-bottom: none;
-    border-top: none;
+    border-radius: 9px;
     padding: 13px;
+    margin: 5px;
+    border: 3px solid;
+    /* border-color: currentcolor; */
+}
+.box-divider i {
+    font-size: 3.2rem;
 }
 
 @media screen and (max-width: 700px) {
-    .head-area {
+    /* .head-area {
         display: flex;
         flex: 1;
         justify-content: space-around;
-    }
+    } */
 
     .results-area {
         /* color: white; */
