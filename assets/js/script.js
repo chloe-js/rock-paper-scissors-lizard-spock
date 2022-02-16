@@ -82,15 +82,17 @@ function checkResult(res) {
     // // if win get point if loose no point and draw no point
 
     if (result && !draw) {
-        alert(`${res} beats ${opponentHand} -- YOU WIN!`);
+        // alert(`${res} beats ${opponentHand} -- YOU WIN!`);
         player1Score.innerText = String(++p1Score);
         console.log(p1Score)
         winnerAlertPopUp() //////////////////////////////////////////////////////////////////////
     } else if (!result && draw) {
-        alert(`DRAW: ${res} vs ${opponentHand}`);
+        drawAlertPopUp()
+        // alert(`DRAW: ${res} vs ${opponentHand}`);
     } else if (!result && !draw) {
-        alert(`${res} loses to ${opponentHand} -- YOU LOSE!`);
+        // alert(`${res} loses to ${opponentHand} -- YOU LOSE!`);
         player2Score.innerText = String(++p2Score);
+        loserAlertPopUp()
         firstToFive();
     }
 
@@ -101,23 +103,79 @@ function checkResult(res) {
         alertElement.setAttribute('class', 'popup-alert');
         alertElement.setAttribute('id', 'winner-alert')
         console.dir(alertElement)
-        alertElement.innerText = `CONGRATUALTIONS YOU WON ${res}`;
+        alertElement.innerText = `CONGRATUALTIONS YOU WON ${res} BEATS ${opponentHand}`;
         document.body.appendChild(alertElement);
         setTimeout(function () {
             document.getElementById('winner-alert').remove();
-        }, 5000)
+        }, 1000)
+    }
+
+       function loserAlertPopUp() {
+        const alertElement = document.createElement('span');
+        alertElement.setAttribute('class', 'popup-alert');
+        alertElement.setAttribute('id', 'loser-alert')
+        console.dir(alertElement)
+        alertElement.innerText = `UNFORTUNATELY YOU LOST! ${opponentHand} BEATS ${res}`;
+        document.body.appendChild(alertElement);
+        setTimeout(function () {
+            document.getElementById('loser-alert').remove();
+        }, 1000)
+    }
+       function drawAlertPopUp() {
+        const alertElement = document.createElement('span');
+        alertElement.setAttribute('class', 'popup-alert');
+        alertElement.setAttribute('id', 'draw-alert')
+        console.dir(alertElement)
+        alertElement.innerText = `ITS A DRAW! TRY AGAIN!`;
+        document.body.appendChild(alertElement);
+        setTimeout(function () {
+            document.getElementById('draw-alert').remove();
+        }, 1000)
     }
     ///////////////////////////POTENTIAL WINNER SCORE WHEN HIT 5 in a row////////////////////////////////////////  
     function firstToFive() {
         if (p1Score === 5) {
-            alert(`CONGRATUALTIONS PLAYER 1 YOU WON! YOUR SCORE: ${p1Score} PLAYER 2 SCORE: ${p2Score}`);
+            // alert(`CONGRATUALTIONS PLAYER 1 YOU WON! YOUR SCORE: ${p1Score} PLAYER 2 SCORE: ${p2Score}`);
+            championAlertPopUp()
             console.log(firstToFive)
             console.log(p1Score.length)
         } else if (p2Score === 5) {
-            alert(`YOU LOOSE! PLAYER 2 YOU WON! YOUR SCORE: ${p1Score} PLAYER 2 SCORE: ${p2Score}`);
+            // alert(`YOU LOOSE! PLAYER 2 YOU WON! YOUR SCORE: ${p1Score} PLAYER 2 SCORE: ${p2Score}`);
+            tryAgainAlertPopUp()
             console.log(firstToFive)
             console.log(p2Score.length)
         }
+    }
+
+    function championAlertPopUp() {
+        const alertElement = document.createElement('span');
+        alertElement.setAttribute('class', 'popup-alert');
+        alertElement.setAttribute('id', 'champion-alert')
+        console.dir(alertElement)
+        alertElement.innerText = `CONGRATULATIONS PLAYER 1! YOU ARE THE CHAMPION ! YOUR SCORE: ${p1Score} PLAYER 2 SCORE: ${p2Score} `;
+        document.body.appendChild(alertElement);
+        setTimeout(function () {
+            document.getElementById('champion-alert').remove();
+        }, 5000)
+            p1Score = 0;
+            player1Score.innerText = 0;
+            p2Score = 0;
+            player2Score.innerText = 0;
+    }
+    function tryAgainAlertPopUp() {
+        const alertElement = document.createElement('span');
+        alertElement.setAttribute('class', 'popup-alert');
+        alertElement.setAttribute('id', 'tryAgain-alert')
+        console.dir(alertElement)
+        alertElement.innerText = `YOU LOOSE! PLAYER 2 YOU WON! YOUR SCORE: ${p1Score} PLAYER 2 SCORE: ${p2Score}`;
+        document.body.appendChild(alertElement);
+        setTimeout(function () {
+            document.getElementById('tryAgain-alert').remove();
+        }, 5000)
+            p1Score = 0;
+            player1Score.innerText = 0;
+            p2Score = 0;
+            player2Score.innerText = 0;
     }
     // // after hand played, difficulty removed
     if (activateDifficulty) {
@@ -138,6 +196,7 @@ document.getElementById('resetButton').addEventListener("click", function () {
     player1Score.innerText = 0;
     p2Score = 0;
     player2Score.innerText = 0;
+    toggleDifficulty()
 });
 
 

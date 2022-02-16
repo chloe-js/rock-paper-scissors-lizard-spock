@@ -109,19 +109,47 @@ hr {
 
 
 /* POPUP alert box */
-#winner-alert {}
-
+#winner-alert {
+    background: #87de87;
+    color: #3A3743;
+}
+#loser-alert {
+    background: #e580ff;
+    color: #3A3743;
+}
+#draw-alert {
+    background: #ffdd55;
+    color: #3A3743;
+}
+#champion-alert {
+    background: #87de87;
+    color: #3A3743;
+    border-style: solid;
+    border-color: white;
+}
+#tryAgain-alert {
+    background: #e580ff;
+    color: #3A3743;
+    border-style: solid;
+    border-color: white;
+}
 .popup-alert {
+    display: flex;
+    /* flex: 2; */
+    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
     position: absolute;
+    align-content: center;
     padding: 1.5em 2em;
     font-size: 1.25em;
-    background: #333;
-    color: white;
+    /* background: white;
+    color: #333; */
     border-radius: 9px;
-    left: 3em;
-    bottom: 3em;
+    left: 45%;
+    bottom: 45%;
+ 
 }
-
 
 /* trophy
 #yellowIcon {
