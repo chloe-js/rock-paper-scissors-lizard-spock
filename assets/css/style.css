@@ -11,6 +11,11 @@ h1, h2, h3, p, a, span, li, div {
     list-style: none;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+}
+
 body {
     background-color: var(--bodyBg);
 }
@@ -26,11 +31,12 @@ body {
 }
 
 .main--container {
-    margin: 8em 5em 0;
+    margin: 8em auto;
+    width: 1200px;
 }
 
 .main--title-container {
-    margin-bottom: 4em;
+    margin-bottom: 8em;
 }
 
 .main--title-container > ul {
@@ -53,6 +59,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 8em;
 }
 
 .player-and-score-container {
@@ -124,38 +131,48 @@ body {
 .player-control:hover {
     color: white;
     transform: scale(1.1);
-    /* background-color: currentcolor; */
 }
-
-
-
-
-
 
 /* game administration */
 .main--game-admin-container {
     display: flex;
 }
 
-
-
-/* info area */
-
-.buttonRun {
-    color: #333;
-    background-color: none !important;
-    /* background-color: currentColor; */
-    display: inline-block;
+.admin-button {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 56px;
+    font-size: 1.5em;
 }
 
-button {
-    background-color: transparent;
-    border: none;
+.admin-button a,
+.admin-button span {
+    color: white;
+    border: 3px solid white;
+    padding: 1rem 2rem;
+    background-color: var(--bodyBg);
+    transition: color 250ms, background-color 250ms;
+}
+.admin-button a:hover,
+.admin-button span:hover {
+    color: var(--bodyBg);
+    background-color: white;
+    transition: color 250ms, background-color 250ms;
+    cursor: pointer;
 }
 
-.buttonRun:hover {
-   
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .linkButton {
     color: #3A3743;
@@ -217,18 +234,6 @@ button {
     align-items: center;
 }
 
-
-/* trophy
-#yellowIcon {
-    color: #ffdd55;
-}
-award
-#redIcon {
-    color: #ff8080;
-}
-/* #castlePurple {
-    color: #9387C0;
-} */
 
 .scores {
     font-family: raleway;
@@ -315,17 +320,6 @@ a {
 }
 
 
-.box-divider-btn {
-    display: flex;
-    flex-direction: column;
-    padding: 32px 56px;
-    font-size: 1.25em;
-    /* margin: 5px; */
-    /* border: 4px solid white; */
-    position: relative;
-    font-family: Raleway;
-    /* border-color: currentcolor; */
-}
 
 .genRed {
     color: #ff8080;
@@ -334,21 +328,6 @@ a {
 
 
 
-.btn-action {
-    /* background-color: white; */
-    color: white;
-    border: 3px solid white;
-    padding: 1rem 2rem;
-    background-color: var(--bodyBg);
-    text-decoration: none !important;
-    transition: color 250ms, background-color 250ms;
-}
-.btn-action:hover {
-    color: var(--bodyBg);
-    background-color: white;
-    transition: color 250ms, background-color 250ms;
-    cursor: pointer;
-}
 
 #difficulty {
     color: var(--purple);

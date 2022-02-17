@@ -86,7 +86,10 @@ CREDITS
 
     CONTENT
     // text for home page if from wikipidea
-    // instructions  how to implement validation on the sign up page - taken from YOU TUBE TUTORIAL ()
+    // instructions  how to implement validation on the sign up page - taken from YOU TUBE 
+    >> before and after :: pseudo elements. creats content of html 
+    >> The ::before and ::after pseudo-elements in CSS allows you to insert content onto a page without it needing to be in the HTML. While the end result is not actually in the DOM, it appears on the page as if it is
+    TUTORIAL ()
     // icons in footer taken from FONT AWESOME AND GOOGLE FONTS
 
     MEDIA
