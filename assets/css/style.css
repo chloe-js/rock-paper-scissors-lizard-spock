@@ -8,6 +8,7 @@
 h1, h2, h3, p, a, span, li, div {
     font-family: Raleway;
     text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -24,49 +25,48 @@ body {
     --bodyBg: #1a1a1a;
 }
 
-.main--container{
-    margin: 0 5rem;
+.main--container {
+    margin: 8em 5em 0;
+}
+
+.main--title-container {
+    margin-bottom: 4em;
 }
 
 .main--title-container > ul {
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    justify-content: space-between;
     padding: 1.25em 2em;
     border: 4px solid white;
 }
+
 .main--title-container > ul > li {
     line-height: 1.5em;
     font-family: alata;
     letter-spacing: 0.5em;
-    font-size: 1em;
+    font-size: 1.5em;
+    color: white;
 }
 
-
-div.scores-area {
+/* player scores and icons */
+.main--players-and-scores-container {
     display: flex;
     justify-content: space-between;
-    align-content: stretch;
-    flex-wrap: nowrap;
-    /* padding: 10px; */
-    /* margin: auto; */
     align-items: center;
-    /* flex-direction: row; */
 }
 
-hr {
-    background-color: #3A3743;
-    padding: 10px;
-    border-style: none;
+.player-and-score-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em 3.5em;
+    align-items: center;
 }
 
+.player-and-score-container i {
+    font-size: 3.2em;
+}
 
-/* .headingList {
-    margin-left: 10px;
-    color: white;
-    list-style: none;
-    display: inline-flex;
-    font-size: 2em;
-} */
 .headingList {
     color: white;
     list-style: none;
@@ -340,16 +340,7 @@ a {
     text-decoration: none;
 }
 
-.box-divider {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2em 3.5rem;
-    /* margin: 5px; */
-    /* border: 4px solid white; */
-    position: relative;
-    /* border-color: currentcolor; */
-}
+
 .box-divider-btn {
     display: flex;
     flex-direction: column;
@@ -361,9 +352,7 @@ a {
     font-family: Raleway;
     /* border-color: currentcolor; */
 }
-.box-divider i {
-    font-size: 3.2rem;
-}
+
 .genRed {
     color: #ff8080;
     /* font-size: 2em; */
