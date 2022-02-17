@@ -67,6 +67,30 @@ body {
     font-size: 3.2em;
 }
 
+.score {
+    font-size: 3em;
+    margin-top: 0.5em;
+}
+
+.score.player-1 {
+    color: var(--green)
+}
+
+.score.player-2 {
+    color: var(--red)
+}
+
+/* main player choices container */
+.controls-area {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* game administration */
+.main--game-admin-container {
+    display: flex;
+}
+
 .headingList {
     color: white;
     list-style: none;
@@ -80,20 +104,7 @@ body {
     justify-content: space-between;
 }
 
-.player-score {
-    font-size: 3rem;
-    display: block;
-    font-family: Raleway;
-    margin-top: .5rem;
-    color: var(--green)
-}
-.player-score-2 {
-    font-size: 3rem;
-    display: block;
-    font-family: Raleway;
-    margin-top: .5rem;
-    color: var(--red)
-}
+
 
 .playerChoice {
     padding: 10px;
@@ -137,9 +148,6 @@ body {
 
 /* info area */
 
-.info-area {
-    margin: 2rem 0;
-}
 
 .buttonRun {
     color: #333;
@@ -330,11 +338,6 @@ div.footer {
 
 /* RULES rules area */
 /* MAX DESCKTOP 1313 x 975 */
-.rules-area {
-    display: flex;
-    /* flex: 2; */
-    justify-content: space-evenly;
-}
 
 a {
     text-decoration: none;
@@ -358,10 +361,7 @@ a {
     /* font-size: 2em; */
 }
 
-.controls-area {
-    display: flex;
-    justify-content: space-around;
-}
+
 
 .btn-action {
     /* background-color: white; */

@@ -34,10 +34,11 @@
                 <li>SPOCK</li>
             </ul>
         </div>
+
         <section class="main--players-and-scores-container">
             <div class="player-and-score-container">
                 <i class="fas fa-user-astronaut" id="player1Green"></i>
-                <div id="scoresPlayer1" class="player-score">0</div>
+                <div id="scoresPlayer1" class="score player-1">0</div>
             </div>
             <div class="player-and-score-container">
                 <i class="fas fa-fire-alt" id="difficulty"></i>
@@ -45,58 +46,39 @@
             </div>
             <div class="player-and-score-container" id="robotRed">
                 <i class="fas fa-robot"></i>
-                <div id="scoresPlayer2" class="player-score-2">0</div>
+                <div id="scoresPlayer2" class="score player-2">0</div>
             </div>
         </section>
-        <!-- </div> -->
-        <section class='info-area'>
-            <div class="rules-area">
-                <!-- <div class="box-divider" class="genBlue">
-                    <a href="./index.html" class="buttonRun" id="playGame" class="linkButton" aria-label="Play Game">
-                        <i class="fas fa-play"></i> </a>
-                    <h3>PLAY GAME</h3>
-                </div> -->
-                <div class="box-divider-btn">
-                    <a href="./rules.html" class="buttonRun" id="rules" aria-label="Read Rules">
-                        <!-- <i class="fas fa-scroll"></i></a> -->
-                        <h3 class='btn-action'>Rules</h3>
-                </div>
-                <!-- <div class="box-divider-btn">
-                    <a class="buttonRun" id="difficulty" aria-label="Increase Difficulty">
-                        <i class="fas fa-angle-double-up"></i>
-                    </a>
-                    <h3>Difficulty</h3>
-                </div> -->
-                <div class="box-divider-btn">
-                    <a id="resetButton" class="buttonRun" aria-label="Reset Game">
-                        <!-- <i class="fas fa-undo" ></i> -->
-                    </a>
-                    <h3 class='btn-action'>Reset</h3>
-                </div>
+
+        <section class='controls-area' id="choices">
+            <button class="playerChoice" id="rockRed" value="Rock" aria-label="Play Rock">
+                <i class="fas fa-hand-rock"></i>
+            </button>
+            <button class="playerChoice" id="paperYellow" value="Paper" aria-label="Play Paper">
+                <i class="fas fa-hand-paper"></i>
+            </button>
+            <button class="playerChoice" value="Scissors" id="scissorsPink" aria-label="Play Scissors">
+                <i class="fas fa-hand-scissors"></i>
+            </button>
+            <button class="playerChoice" id="lizardGreen" value="Lizard" aria-label="Play Lizard">
+                <i class="fas fa-hand-lizard"></i>
+            </button>
+            <button class="playerChoice" id="spockBlue" value="Spock" aria-label="Play Spock">
+                <i class="fas fa-hand-spock"></i>
+            </button>
+        </section>
+
+        <section class="main--game-admin-container">
+            <div class="box-divider-btn">
+                <a href="./rules.html" class="buttonRun" id="rules" aria-label="Read Rules">
+                    <h3 class='btn-action'>Rules</h3>
+            </div>
+            <div class="box-divider-btn">
+                <a id="resetButton" class="buttonRun" aria-label="Reset Game">
+                </a>
+                <h3 class='btn-action'>Reset</h3>
             </div>
         </section>
-        <div class='game-area'>
-            <section>
-                <!-- //class='results-area' removed// -->
-                <div class='controls-area' id="choices" class="box-divider">
-                    <button class="playerChoice" id="rockRed" value="Rock" aria-label="Play Rock">
-                        <i class="fas fa-hand-rock"></i>
-                    </button>
-                    <button class="playerChoice" id="paperYellow" value="Paper" aria-label="Play Paper">
-                        <i class="fas fa-hand-paper"></i>
-                    </button>
-                    <button class="playerChoice" value="Scissors" id="scissorsPink" aria-label="Play Scissors">
-                        <i class="fas fa-hand-scissors"></i>
-                    </button>
-                    <button class="playerChoice" id="lizardGreen" value="Lizard" aria-label="Play Lizard">
-                        <i class="fas fa-hand-lizard"></i>
-                    </button>
-                    <button class="playerChoice" id="spockBlue" value="Spock" aria-label="Play Spock">
-                        <i class="fas fa-hand-spock"></i>
-                    </button>
-                </div>
-            </section>
-        </div>
     </div>
     <section>
         <div class="footer">
