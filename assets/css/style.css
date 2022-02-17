@@ -1,21 +1,24 @@
 /* . = class */ 
 *,*::before,*::after{
     margin: 0;
-    padding: 0:
+    padding: 0;
+    box-sizing: border-box;
 }
+
+h1, h2, h3, p, a, span, li, div {
+    font-family: Raleway;
+    text-decoration: none;
+}
+
 body {
-    /* color: white; */
-    background-color: var(--bk);
-    height: 100vh;
-    text-align: center;
-    padding: 10px;
+    background-color: var(--bodyBg);
 }
 
 :root {
     --green: #65ffa0;
     --red: #ff7171;
     --purple: #b26aee;
-    --bk: #1a1a1a;
+    --bodyBg: #1a1a1a;
 }
 
 /* .ft5 {
@@ -101,7 +104,7 @@ hr {
 .playerChoice {
     padding: 10px;
     border-radius: 50%;
-    background-color: var(--bk);
+    background-color: var(--bodyBg);
     border: 10px solid;
     width: 100px;
     height: 100px;
@@ -111,8 +114,8 @@ hr {
     cursor: pointer;
 }
 .playerChoice:hover {
-    background-color: var(--bk);
-    border: 10px solid var(--bk);
+    background-color: var(--bodyBg);
+    border: 10px solid var(--bodyBg);
 }
 .playerChoice:nth-child(1) i {
     color: #ff8080;
@@ -382,12 +385,12 @@ a {
     color: white;
     border: 3px solid white;
     padding: 1rem 2rem;
-    background-color: var(--bk);
+    background-color: var(--bodyBg);
     text-decoration: none !important;
     transition: color 250ms, background-color 250ms;
 }
 .btn-action:hover {
-    color: var(--bk);
+    color: var(--bodyBg);
     background-color: white;
     transition: color 250ms, background-color 250ms;
     cursor: pointer;
