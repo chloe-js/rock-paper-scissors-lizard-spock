@@ -17,11 +17,45 @@
 </head>
 
 <body>
-    <!-- <div id="container"> -->
-    <h1><i class="fas fa-scroll"></i> RULES</h1>
-    <div>
-        <img src="./assets/images/RPSSL.png" alt="Game Rules" class="imageGame">
+    <div id="container" class="main--container">
+        <div class="main--title-container">
+            <ul>
+                <li>ROCK</li>
+                <li>PAPER</li>
+                <li>SCISSORS</li>
+                <li>LIZARD</li>
+                <li>SPOCK</li>
+            </ul>
+            <ul>
+                <li>RULES</li>
+            </ul>
+        </div>
+        <section class='main--player-controls-container' id="choices">
+            <button class="player-control" value="Rock" aria-label="Play Rock">
+                <i class="fas fa-hand-rock"></i>
+            </button>
+            <button class="player-control" value="Paper" aria-label="Play Paper">
+                <i class="fas fa-hand-paper"></i>
+            </button>
+            <button class="player-control" value="Scissors" aria-label="Play Scissors">
+                <i class="fas fa-hand-scissors"></i>
+            </button>
+            <button class="player-control" value="Lizard" aria-label="Play Lizard">
+                <i class="fas fa-hand-lizard"></i>
+            </button>
+            <button class="player-control" value="Spock" aria-label="Play Spock">
+                <i class="fas fa-hand-spock"></i>
+            </button>
+        </section>
+
+        <section class="main--game-admin-container">
+            <div class="admin-button">
+                <a href="./index.html" class='btn-action' aria-label="Read Rules">PLAY GAME</a>
+            </div>
+        </section>
     </div>
+
+
     <section class='info-area'>
         </div class='info-area'>
         <a href="./index.html" class="buttonRun" id="playGame" class="linkButton" aria-label="Play Game">
