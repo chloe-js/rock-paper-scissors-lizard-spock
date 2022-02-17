@@ -15,32 +15,26 @@ body {
 }
 
 :root {
+    --blue: #80b3ff;
+    --yellow: #ffdd55;
+    --pink: #e580ff;
     --green: #65ffa0;
     --red: #ff7171;
     --purple: #b26aee;
     --bodyBg: #1a1a1a;
 }
 
-/* .ft5 {
-    font-family: Raleway;
-    font-size: 2rem;
-    display: inline-block;
-} */
-
-#container{
-    padding: 10px;
-    border-style: none;
-    border-color: #3A3743;
-    /* border-style: solid;
-    border-color: pink; */
-    margin: 0 20rem;
+.main--container{
+    margin: 0 5rem;
 }
 
-.main-box-divider > ul{
+.main--title-container > ul {
+    /* display: flex;
+    flex-direction: column; */
     padding: 1.25em 2em;
     border: 4px solid white;
 }
-.main-box-divider > ul > li {
+.main--title-container > ul > li {
     line-height: 1.5em;
     font-family: alata;
     letter-spacing: 0.5em;
