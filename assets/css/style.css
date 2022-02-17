@@ -224,3 +224,9 @@ body {
     transition: color 250ms, background-color 250ms;
     cursor: pointer;
 }
+
+.popup-alert {
+    color: white;
+    background-color: pink;
+    font-size: 4em;
+}
