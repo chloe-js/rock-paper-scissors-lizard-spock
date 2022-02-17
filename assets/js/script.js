@@ -1,11 +1,10 @@
 let p1Score = 0
 let p2Score = 0
 let activateDifficulty = false
-let playerChoice = document.body.querySelectorAll('.playerChoice');
-// let playerChoice = document.getElementById('choices');
-let btnDifficulty = document.getElementById('difficulty')
-const player1Score = document.getElementById('scoresPlayer1');
-const player2Score = document.getElementById('scoresPlayer2');
+let playerChoice = document.body.querySelectorAll('.player-control');
+let btnDifficulty = document.getElementById('difficulty');
+const player1Score = document.getElementById('player-1-score');
+const player2Score = document.getElementById('player-2-score');
 const opponent = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
 
 console.log(playerChoice)
@@ -22,9 +21,9 @@ function toggleDifficulty() {
     activateDifficulty = !activateDifficulty;
 
     if (activateDifficulty) {
-        document.getElementById('level').innerText = ' HARD! ';
+        document.getElementById('difficulty-ref').innerText = 'hard!';
     } else if (!activateDifficulty) {
-        document.getElementById('level').innerText = ' EASY ';
+        document.getElementById('difficulty-ref').innerText = 'easy';
     }
 
     console.log(activateDifficulty);
@@ -111,7 +110,7 @@ function checkResult(res) {
         }, 1000)
     }
 
-       function loserAlertPopUp() {
+    function loserAlertPopUp() {
         const alertElement = document.createElement('span');
         alertElement.setAttribute('class', 'popup-alert');
         alertElement.setAttribute('id', 'loser-alert')
@@ -122,7 +121,8 @@ function checkResult(res) {
             document.getElementById('loser-alert').remove();
         }, 1000)
     }
-       function drawAlertPopUp() {
+
+    function drawAlertPopUp() {
         const alertElement = document.createElement('span');
         alertElement.setAttribute('class', 'popup-alert');
         alertElement.setAttribute('id', 'draw-alert')
@@ -158,11 +158,12 @@ function checkResult(res) {
         setTimeout(function () {
             document.getElementById('champion-alert').remove();
         }, 7000)
-            p1Score = 0;
-            player1Score.innerText = 0;
-            p2Score = 0;
-            player2Score.innerText = 0;
+        p1Score = 0;
+        player1Score.innerText = 0;
+        p2Score = 0;
+        player2Score.innerText = 0;
     }
+
     function tryAgainAlertPopUp() {
         const alertElement = document.createElement('span');
         alertElement.setAttribute('class', 'popup-alert');
@@ -173,10 +174,10 @@ function checkResult(res) {
         setTimeout(function () {
             document.getElementById('tryAgain-alert').remove();
         }, 7000)
-            p1Score = 0;
-            player1Score.innerText = 0;
-            p2Score = 0;
-            player2Score.innerText = 0;
+        p1Score = 0;
+        player1Score.innerText = 0;
+        p2Score = 0;
+        player2Score.innerText = 0;
     }
     // // after hand played, difficulty removed
     if (activateDifficulty) {
@@ -184,15 +185,18 @@ function checkResult(res) {
         console.log(activateDifficulty, ' --accessing')
         console.log(opponent, '---this is the arry after')
         console.log(opponent)
-        opponent.pop(weakness[0]);
-        console.log(opponent.pop(weakness[0]), ' --after removed ')
+
+        opponent.pop();
+        opponent.pop();
+
+        console.log(opponent.pop, ' --after removed ')
         console.log(activateDifficulty)
         console.log(opponent, '---this is the after pop')
     }
     console.log(activateDifficulty)
 }
 // // reset button clean score and starts again
-document.getElementById('resetButton').addEventListener("click", function () {
+document.getElementById('reset-button').addEventListener("click", function () {
     p1Score = 0;
     player1Score.innerText = 0;
     p2Score = 0;
