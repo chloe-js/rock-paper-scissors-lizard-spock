@@ -36,7 +36,7 @@ body {
 }
 
 .main--title-container {
-    margin-bottom: 8em;
+    margin-bottom: 5em;
 }
 
 .main--title-container > ul {
@@ -59,7 +59,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8em;
+    margin-bottom: 5em;
 }
 
 .player-and-score-container {
@@ -71,7 +71,31 @@ body {
 }
 
 .player-and-score-container i {
-    font-size: 3.2em;
+    font-size: 4rem;
+}
+
+.player-and-score-container .fa-user-astronaut {
+    color: var(--green);
+}
+
+.player-and-score-container .fa-robot {
+    color: var(--red);
+}
+
+.difficulty {
+    color: var(--purple);
+    cursor: pointer;
+    transition: all 250ms;
+}
+.difficulty:hover {
+    color: white;
+    transition: all 250ms;
+}
+.player-and-score-container 
+.difficulty-text {
+    font-size: 2em;
+    color: var(--purple);
+    margin-top: 1rem;
 }
 
 .score {
@@ -89,6 +113,7 @@ body {
 .main--player-controls-container {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 8em;
 }
 
 .player-control {
@@ -128,7 +153,7 @@ body {
 
 
 /* game area */
-.player-control:hover {
+.player-control:hover{
     color: white;
     transform: scale(1.1);
 }
@@ -136,12 +161,12 @@ body {
 /* game administration */
 .main--game-admin-container {
     display: flex;
+    justify-content: space-evenly
 }
 
 .admin-button {
     display: flex;
     flex-direction: column;
-    padding: 32px 56px;
     font-size: 1.5em;
 }
 
@@ -159,245 +184,4 @@ body {
     background-color: white;
     transition: color 250ms, background-color 250ms;
     cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.linkButton {
-    color: #3A3743;
-    /* background-color: white; */
-    display: inline-block;
-    border-radius: 20%;
-    margin: 5px;
-}
-
-/* rules BODY */
-.imageGame {
-    width: 320px;
-    height: auto;
-}
-
-
-/* POPUP alert box */
-#winner-alert {
-    background: var(--green);
-    color: #3A3743;
-}
-#loser-alert {
-    background: #e580ff;
-    color: #3A3743;
-}
-#draw-alert {
-    background: #ffdd55;
-    color: #3A3743;
-}
-#champion-alert {
-    background: #ffdd55;
-    color: #3A3743;
-    border-style: solid;
-    border-color: white;
-}
-#tryAgain-alert {
-    background:  #e580ff;
-    color: #3A3743;
-    border-style: solid;
-    border-color: white;
-}
-/* need to make div centered */
-.popup-alert {
-    /* display: flex; */
-    /* justify-content: space-around; */
-    /* justify-content: center; */
-    /* flex-wrap: wrap; */
-    /* align-content: center; */
-    padding: 1.5em 2em;
-    font-size: 2em;
-    /* background: white;
-    color: #333; */
-    border-radius: 9px;
-    position: absolute; 
-    left: 0;
-    bottom: 40%;
-    transform: translateX(-50%);
-    margin-left: 50%;
-    align-items: center;
-}
-
-
-.scores {
-    font-family: raleway;
-    margin: 1rem 0 .25rem;
-}
-
-
-/* scores area */
-#player1Green {
-    font-size: 4rem;
-    color: var(--green);
-}
-
-
-.fa-robot {
-    color: var(--red);
-}
-
-#difficultyColor {
-    color: var(--purple);
-}
-
-#level {
-    font-size: 2em;
-    color: var(--purple);
-    margin-top: 1rem;
-    font-family: Raleway;
-}
-
-/* change # id to  . class */
-/* color to icons */
-/* game area */
-
-#difficultyColorRule {
-    font-size: 2em;
-    color: #9387C0;
-}
-
-#difficultyExplain {
-    font-size: 2em;
-    color: #9387C0;
-}
-
-/* #rockRed i:hover,
-#paperYellow i:hover,
-#scissorsPink i:hover,
-#lizardGreen i:hover,
-#spockBlue i:hover {
-    color: #333;
-    cursor: pointer;
-} */
-/* #rockRed i:hover {
-color: #ff8080;
-}
-#paperYellow i:hover {
-color: #ffdd55;
-}
-#scissorsPink i:hover {
-color: #e580ff;
-}
-#lizardGreen i:hover {
-color: #87de87;
-}
-#spockBlue i:hover {
-    color: #333;
-    cursor: pointer;
-    color: #80b3ff;
-} */
-
-.rules-area i{
-    font-size: 2em;
-}
-
-div.footer {
-    padding: 5rem 0;
-    text-align: center;
-}
-
-/* RULES rules area */
-/* MAX DESCKTOP 1313 x 975 */
-
-a {
-    text-decoration: none;
-}
-
-
-
-.genRed {
-    color: #ff8080;
-    /* font-size: 2em; */
-}
-
-
-
-
-#difficulty {
-    color: var(--purple);
-    cursor: pointer;
-}
-
-.genPink {
-    color: #e580ff;
-}
-
-.genGreen {
-    color: #87de87;
-}
-
-.genBlue {
-    color: #80b3ff;
-}
-/* @media screen and (max-width: 700px) { */
-    /* .head-area {
-        display: flex;
-        flex: 1;
-        justify-content: space-around;
-    } */
-
-    /* .results-area { */
-        /* color: white; */
-        /* list-style: none; */
-        /* display: block;
-        text-align: right;
-        padding-left: 5px;
-        flex: 1;
-        justify-content: space-around;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .rules-area {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .headingList {
-        color: white;
-        list-style: none;
-        display: block;
-        text-align: left;
-        padding-left: 5px;
-    } */
-
-/* } */
-
-
-
-
-/* #alertBox {
-    position:relative;
-    width:300px;
-    min-height:100px;
-    margin-top:50px;
-    border:1px solid #666;
-    background-color:pink;
-    background-repeat:no-repeat;
-    background-position:20px 30px;
-} */
-
-/* div {
-    margin: 5px auto;
-    width: 60%;
-    font-size: 1.2rem;
 }
