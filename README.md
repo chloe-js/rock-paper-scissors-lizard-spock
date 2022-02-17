@@ -1,5 +1,15 @@
 ROCK PAPER SCISSORS LIZARD SPOCK
 
+the purpose of this site is to make a presentation of interactive data. It is an interactive front-end websit. its is responsive to my users actions. it allows them to actively engage with data, alter the way the site displays the information to and this helps to achive our goal to having our user either win or loose the RPSLS game.
+the main technologies used were HTML,CSS and Javascript.
+
+Our external users gaols were to play an online game, Rock Paper Scissors Lizard Spock, which has an element of chance.
+
+Our site owners goal was to provide a challenging game with increasing levels of difficulty to keep our online user enertained.
+We have done this with including patteren matching functionality where the hand the user chooses is compared to the opponent. computers random choice, if it is either the same, it will then be a draw and no points given, and if the chosen hand is the stronger hand then the user will recieve a point and if it is weaker then the computer will recieve a point. 
+The challenge is to be the first to 5 points. we can keep track of the users and the computers points with the allocated score board and we are suggested to the winner of the hand by a pop up alert indicating the winner.
+
+
 //*2 paragraphs
 //*overview of project
 //*what this project is
@@ -47,4 +57,42 @@ BUGS+ problems solved even if still there
 //// rest change string to zero but not the score
 
 VALIDATOR TESTING
+
+    HTML W£C validator
+
+    CSS JIGSAW Validator
+
+    JAVASCRIPT - JSHINT VALIDATOR
+// no errors //
+** need to be at least 11 FUNCTIONS in the FILE!!!
+** function with largest signature takes at least 2 arguments (where median is 0)
+** LARGERST function has 10 statements (median is 3)
+** most complex function has CYCLOMATIC complexity value of 4 while the median is 2
+
+UNFIXED BUGS
+// what is unfixed and why
+//shortcommings of frame work / technology 
+// ** time can be a shortcomming
+difficulty learning and understanding the language the language !!!! NOT VALID REASON FOR UNFIXED BUGS!!
+
+DEPLOYMENT
+// process went through to deploy project to hosting platform (GIT HUB)
+// deployed with GitHub PAGES
+// settings - drop down - MASTER BRANCH - ribbon of indicated deployment
+
+CREDITS 
+// reference where you got content (Love MAth)(Spencer link)(RPS game)
+//content and media
+
+    CONTENT
+    // text for home page if from wikipidea
+    // instructions  how to implement validation on the sign up page - taken from YOU TUBE TUTORIAL ()
+    // icons in footer taken from FONT AWESOME AND GOOGLE FONTS
+
+    MEDIA
+    // photos use xxx are from This site
+    // images on site are taken form xyz
+
+OTHER GENERAL PROJECT ADVICE
+// keep commit message in APROPRIATE MOOD! 
 
