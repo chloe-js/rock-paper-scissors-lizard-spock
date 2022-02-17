@@ -12,9 +12,6 @@
 
     <!-- **google font to be inserted -->
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <!-- favicon icon link-->
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -25,68 +22,69 @@
     <div id="container">
         <!-- <div class='head-area'> -->
 
-        <div class="main-box-divider">
-            <ul class="headingList">
-                <li>ROCK</li>
-                <li>PAPER</li>
-                <li>SCISSORS</li>
-                <li>LIZARD</li>
-                <li>SPOCK</li>
-            </ul>
-        </div>
         <section>
             <div class='results-area'>
                 <div class="scores-area">
-
                     <div class="box-divider">
-                        <i class="fas fa-user-astronaut" id="player1Green"></i>
-                        <!-- <h2 class='scores'> Player</h2> -->
-                        <div id="scoresPlayer1" class="player-score">0</div>
+                        <ul class="headingList">
+                            <li> ROCK </li>
+                            <li> PAPER </li>
+                            <li> SCISSORS </li>
+                            <li> LIZARD </li>
+                            <li> SPOCK </li>
+                        </ul>
                     </div>
                     <div class="box-divider">
-                        <i class="fas fa-fire-alt" id="difficulty"></i>
-                        <!-- <h2 class='scores'> Difficulty </h2> -->
-                        <div id="level"> easy </div>
+                        <i class="fas fa-user-astronaut" id="player1Green"></i>
+                        <h2 class='scores'> PLAYER 1 </h2>
+                        <span id="scoresPlayer1" class="player">0</span>
                     </div>
                     <div class="box-divider" id="robotRed">
                         <i class="fas fa-robot"></i>
-                        <!-- <h2 class='scores'> Bot </h2> -->
-                        <div id="scoresPlayer2" class="player-score-2">0</div>
+                        <h2 class='scores'> PLAYER 2 </h2>
+                        <span id="scoresPlayer2">0</span>
+                    </div>
+                    <div class="box-divider">
+                        <i class="fas fa-angle-double-up" id="difficultyColor"></i>
+                        <h2 class='scores'> LEVEL </h2>
+                        <span id="level"> EASY </span>
                     </div>
                 </div>
-                <!-- <h2 class='ft5'> Best of 5 </h2> -->
+                <h2> FIRST TO 5 WILL BE <em>CHAMPION!</em> </h2>
             </div>
         </section>
         <!-- </div> -->
         <section class='info-area'>
             <div class="rules-area">
-                <!-- <div class="box-divider" class="genBlue">
+                <div  class="box-divider" class="genBlue">
                     <a href="./index.html" class="buttonRun" id="playGame" class="linkButton" aria-label="Play Game">
                         <i class="fas fa-play"></i> </a>
-                    <h3>PLAY GAME</h3>
-                </div> -->
-                <div class="box-divider-btn">
-                    <a href="./rules.html" class="buttonRun" id="rules"  aria-label="Read Rules">
-                        <!-- <i class="fas fa-scroll"></i></a> -->
-                    <h3 class='btn-action'>Rules</h3>
+                        <h3>PLAY GAME</h3>
                 </div>
-                <!-- <div class="box-divider-btn">
-                    <a class="buttonRun" id="difficulty" aria-label="Increase Difficulty">
-                        <i class="fas fa-angle-double-up"></i>
-                    </a>
-                    <h3>Difficulty</h3>
-                </div> -->
-                <div class="box-divider-btn">
-                    <a id="resetButton" class="buttonRun" aria-label="Reset Game">
-                        <!-- <i class="fas fa-undo" ></i> -->
-                    </a>
-                    <h3 class='btn-action'>Reset</h3>
+                <div  class="box-divider">
+                    <a href="./rules.html" class="buttonRun" id="rules" class="linkButton" aria-label="Read Rules">
+                        <i class="fas fa-scroll"></i></a>
+                        <h3>RULES</h3>
+                </div>
+                <div  class="box-divider">
+                    <button class="buttonRun" class="linkButton" id="difficulty" aria-label="Increase Difficulty">
+                        <i class="fas fa-angle-double-up"></i> 
+                    </button>
+                    <h3>DIFFICULTY</h3>
+                </div>
+                <div class="box-divider genYellow">
+                    <button id="resetButton" class="buttonRun"  class="genYellow" aria-label="Reset Game">
+                        <i class="fas fa-undo"  class="genYellow"></i> 
+                    </button>
+                    <h3>RESET</h3>
                 </div>
             </div>
         </section>
+        <hr>
         <div class='game-area'>
             <section>
                 <!-- //class='results-area' removed// -->
+                <h2 class='answer-messgae'>CHOOSE YOUR HAND!</h2>
                 <div class='controls-area' id="choices" class="box-divider">
                     <button class="playerChoice" id="rockRed" value="Rock" aria-label="Play Rock">
                         <i class="fas fa-hand-rock"></i>
@@ -108,7 +106,7 @@
         </div>
     </div>
     </section>
-    <!-- <div class="rules-area">
+    <div class="rules-area">
         <div class="box-divider">/////
             <button class="buttonRun" class="linkButton" id="difficultyColorRule" aria-label="Increase Difficulty"><i
                     class="fas fa-angle-double-up" id="resetButton"></i></button>
@@ -162,7 +160,7 @@
                     <p>Paper Disproves Spock</p>
                 </div>
             </div>
- -->
+
 
         </section>
         <section>
