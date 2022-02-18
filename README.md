@@ -1,4 +1,4 @@
-Project Name - Tarbh Dubh Muay Thai
+pProject Name - Tarbh Dubh Muay Thai
 12/02/2021
 
 The purpose of this project is the create an online platform for Tarbh Dubh Muay Thai to provide it users a way of being able to interact with the gym and find important information regarding class schedule, resources on offer, membership plans/prices, contact info, address etc.

@@ -74,6 +74,7 @@ UNFIXED BUGS
 //shortcommings of frame work / technology 
 // ** time can be a shortcomming
 difficulty learning and understanding the language the language !!!! NOT VALID REASON FOR UNFIXED BUGS!!
+>> responsive design for rules page has too much content to fit everything on one page in portrait. when the before and after are accessed the lables overlap onto the other icon.
 
 DEPLOYMENT
 // process went through to deploy project to hosting platform (GIT HUB)
