@@ -31,12 +31,12 @@ body {
 }
 
 .main--container {
-    margin: 8em auto;
+    margin: 5em auto;
     width: 1200px;
 }
 
 .main--title-container {
-    margin-bottom: 5em;
+    margin-bottom: 8em;
 }
 
 .main--title-container > ul {
@@ -234,7 +234,7 @@ body {
     left: 0;
     margin-left: 50%;
     transform: translateX(-50%);
-    top: 2.25em;
+    top: 10.25em;
 }
 
 .win {
@@ -243,8 +243,20 @@ body {
 
 .loss {
     background-color: var(--red);
+
 }
 
 .draw {
     background-color: var(--blue);
+
+}
+#champion-alert {
+    background-color: var(--yellow);
+    border: 3px solid white;
+    border-radius: 1px;
+}
+#tryAgain-alert {
+    background-color: var(--pink);
+    border: 3px solid white;
+    border-radius: 1px;
 }

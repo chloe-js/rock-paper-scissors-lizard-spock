@@ -85,16 +85,16 @@ function checkResult(res) {
         alertElement.setAttribute('class', `popup-alert ${result}`);
         alertElement.setAttribute('id', 'per-round-alert-popup');
         if (result === 'win') {
-            alertElement.innerText = `CONGRATUALTIONS YOU WON! ${res} BEATS ${opponentHand}`;
+            alertElement.innerText = `You won! +1 point ${res} BEATS ${opponentHand}`;
         } else if (result === 'draw') {
-            alertElement.innerText = `DRAW ${res} VS ${opponentHand}`;
+            alertElement.innerText = `Its a DRAW ${res} and ${opponentHand}, Try again!`;
         } else if (result === 'loss') {
-            alertElement.innerText = `LOSER! ${opponentHand} BEATS ${res}`;
+            alertElement.innerText = `You lost! ${opponentHand} BEATS ${res}, Try again!`;
         }
         document.body.appendChild(alertElement);
         setTimeout(function () {
             document.getElementById('per-round-alert-popup').remove();
-        }, 1000);
+        }, 2000);
 
     }
 
@@ -114,7 +114,7 @@ function checkResult(res) {
         document.body.appendChild(alertElement);
         setTimeout(function () {
             document.getElementById('champion-alert').remove();
-        }, 7000);
+        }, 10000);
         p1Score = 0;
         player1Score.innerText = String(0);
         p2Score = 0;
@@ -125,11 +125,11 @@ function checkResult(res) {
         const alertElement = document.createElement('span');
         alertElement.setAttribute('class', 'popup-alert');
         alertElement.setAttribute('id', 'tryAgain-alert');
-        alertElement.innerText = `YOU LOOSE! YOUR SCORE: ${p1Score} OPPONENT SCORE: ${p2Score}`;
+        alertElement.innerText = `UNFORTUNATELY YOU LOOSE! YOUR SCORE: ${p1Score} OPPONENT SCORE: ${p2Score}`;
         document.body.appendChild(alertElement);
         setTimeout(function () {
             document.getElementById('tryAgain-alert').remove();
-        }, 7000);
+        }, 10000);
         p1Score = 0;
         player1Score.innerText = String(0);
         p2Score = 0;
