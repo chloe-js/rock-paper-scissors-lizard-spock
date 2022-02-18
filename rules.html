@@ -26,9 +26,6 @@
                 <li>LIZARD</li>
                 <li>SPOCK</li>
             </ul>
-            <ul>
-                <li>RULES</li>
-            </ul>
         </div>
         <section class='main--player-controls-container' id="choices">
             <button class="player-control" value="Rock" aria-label="Play Rock">
@@ -48,44 +45,49 @@
             </button>
         </section>
 
+        <section class='main--player-controls-container'>
+            <div class="rules--player-choice-rule rock">
+                <p>Rock <em>Smashes Scissors</em></p>
+                <p>Rock <em></em>Crushes Lizard</em></p>
+                <p>Spock <em>Vaporizes Rock</em></p>
+                <p>Paper <em>Covers Rock</em></p>
+            </div>
+            <div class="rules--player-choice-rule paper">
+                <p>Paper <em>Covers Rock</em></p>
+                <p>Paper <em>Disproves Spock</em></p>
+                <p>Scissors <em>Cuts Paper</em></p>
+                <p>Lizard <em>Eats Paper</em></p>
+            </div>
+            <div class="rules--player-choice-rule scissors">
+                <p>Scissors <em>Cuts Paper</em></p>
+                <p>Scissors <em>Decapitates Lizard</em></p>
+                <p>Rock <em>Smashes Scissors</em></p>
+                <p>Spock <em>Breaks Scissors</em></p>
+            </div>
+            <div class="rules--player-choice-rule lizard">
+                <p>Lizard <em>Poisons Spock</em></p>
+                <p>Lizard <em>Eats Paper</em></p>
+                <p>Scissors <em>Decapitates Lizard</em></p>
+                <p>Rock Crushes <em>Lizard</em></p>
+            </div>
+            <div class="rules--player-choice-rule spock">
+                <p>Spock <em>Vaporizes Rock</em></p>
+                <p>Spock <em>Breaks Scissors</em></p>
+                <p>Lizard <em>Poisons Spock</em></p>
+                <p>Paper <em>Disproves Spock</em></p>
+            </div>
+        </section>
+
         <section class="main--game-admin-container">
             <div class="admin-button">
                 <a href="./index.html" class='btn-action' aria-label="Read Rules">PLAY GAME</a>
             </div>
+            <div class="admin-button">
+                <a href="./rules.html" aria-label="Read Rules">Rules</a>
+            </div>
         </section>
     </div>
-    <section class='main--player-controls-container'>
-            <div class="rules--player-choice-rules-container">
-                <p>Rock Smashes Scissors</p>
-                <p>Rock Crushes Lizard</p>
-                <p>Spock Vaporizes Rock</p>
-                <p>Paper Covers Rock</p>
-            </div>
-            <div class="rules--player-choice-rules-container">
-                <p>Paper Covers Rock</p>
-                <p>Paper Disproves Spock</p>
-                <p>Scissors Cuts Paper</p>
-                <p>Lizard Eats Paper</p>
-            </div>
-            <ul class="rules--player-choice-rules-container">
-                <li>Scissors Cuts Paper</li>
-                <li>Scissors Decapitates Lizard</li>
-                <li>Rock Smashes Scissors</li>
-                <li>Spock Breaks Scissors</li>
-            </ul>
-            <ul class="rules--player-choice-rules-container">
-                <li>Lizard Poisons Spock</li>
-                <li>Lizard Eats Paper</li>
-                <li>Scissors Decapitates Lizard</li>
-                <li>Rock Crushes Lizard</li>
-            </ul>
-            <ul class="rules--player-choice-rules-container">
-                <li>Spock Vaporizes Rock</li>
-                <li>Spock Breaks Scissors</li>
-                <li>Lizard Poisons Spock</li>
-                <li>Paper Disproves Spock</li>
-            </ul>
-    </section>
+
 </body>
 
 </html>

@@ -319,30 +319,31 @@ body {
     transition: color 250ms, background-color 250ms;
     cursor: pointer;
 }
-.admin-button:hover::after {
-    content: 'Hover for';
-    color: var(--red);
-    position: absolute;
-    left: 0;
-    top: -1.75em;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.35em;
-    opacity: 1;
-    transition: all 250ms ease-in-out;
+
+/* rules player choice rule  */
+.rules--player-choice-rule {
+    padding: 0.75em 1em;
+    line-height: 1.5em;
+    font-size: 1em;
+    letter-spacing: 0.3em;
+    margin-bottom: -4em;
 }
-.admin-button:hover::before {
-    content: 'Rules';
+.rules--player-choice-rule.rock{
     color: var(--red);
-    position: absolute;
-    left: 0;
-    top: -3em;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.35em;
-    opacity: 1;
-    transition: all 250ms ease-in-out;
 }
+.rules--player-choice-rule.paper{
+    color: var(--yellow);
+}
+.rules--player-choice-rule.scissors{
+    color: var(--pink);
+}
+.rules--player-choice-rule.lizard{
+    color: var(--green);
+}
+.rules--player-choice-rule.spock{
+    color: var(--blue);
+}
+
 .popup-alert {
     color: var(--bodyBg);
     font-size: 1.25em;
@@ -354,16 +355,13 @@ body {
     transform: translateX(-50%);
     top: 10.25em;
 }
-
 .win {
     background-color: var(--green);
 }
-
 .loss {
     background-color: var(--red);
 
 }
-
 .draw {
     background-color: var(--blue);
 
