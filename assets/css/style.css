@@ -226,7 +226,25 @@ body {
 }
 
 .popup-alert {
-    color: white;
-    background-color: pink;
-    font-size: 4em;
+    color: var(--bodyBg);
+    font-size: 1.25em;
+    padding: 0.5em 1em;
+    border-radius: 9px;
+    position: absolute;
+    left: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    top: 2.25em;
+}
+
+.win {
+    background-color: var(--green);
+}
+
+.loss {
+    background-color: var(--red);
+}
+
+.draw {
+    background-color: var(--blue);
 }

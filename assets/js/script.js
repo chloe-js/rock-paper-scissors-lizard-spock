@@ -82,7 +82,7 @@ function checkResult(res) {
 
     function perRoundAlertPopUp(result) {
         const alertElement = document.createElement('span');
-        alertElement.setAttribute('class', 'popup-alert');
+        alertElement.setAttribute('class', `popup-alert ${result}`);
         alertElement.setAttribute('id', 'per-round-alert-popup');
         if (result === 'win') {
             alertElement.innerText = `CONGRATUALTIONS YOU WON! ${res} BEATS ${opponentHand}`;
@@ -94,7 +94,8 @@ function checkResult(res) {
         document.body.appendChild(alertElement);
         setTimeout(function () {
             document.getElementById('per-round-alert-popup').remove();
-        }, 7000);
+        }, 1000);
+
     }
 
     function firstToFive() {
