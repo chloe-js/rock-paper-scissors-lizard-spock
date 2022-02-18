@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- font awesome and google fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- **google font to be inserted -->
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/50b3676eae.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <!-- favicon icon link-->
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -17,8 +22,8 @@
 </head>
 
 <body>
-    <div id="container" class="main--container">
-        <div class="main--title-container">
+    <div id="container" class="main--container rules">
+        <div class="main--title-container rules">
             <ul>
                 <li>ROCK</li>
                 <li>PAPER</li>
@@ -27,65 +32,66 @@
                 <li>SPOCK</li>
             </ul>
         </div>
-        <section class='main--player-controls-container' id="choices">
-            <button class="player-control" value="Rock" aria-label="Play Rock">
-                <i class="fas fa-hand-rock"></i>
-            </button>
-            <button class="player-control" value="Paper" aria-label="Play Paper">
-                <i class="fas fa-hand-paper"></i>
-            </button>
-            <button class="player-control" value="Scissors" aria-label="Play Scissors">
-                <i class="fas fa-hand-scissors"></i>
-            </button>
-            <button class="player-control" value="Lizard" aria-label="Play Lizard">
-                <i class="fas fa-hand-lizard"></i>
-            </button>
-            <button class="player-control" value="Spock" aria-label="Play Spock">
-                <i class="fas fa-hand-spock"></i>
-            </button>
-        </section>
+        <section class="rules--player-contols-rule-container">
+            <section class='main--player-controls-container' id="choices">
+                <button class="player-control" value="Rock" aria-label="Play Rock">
+                    <i class="fas fa-hand-rock"></i>
+                </button>
+                <button class="player-control" value="Paper" aria-label="Play Paper">
+                    <i class="fas fa-hand-paper"></i>
+                </button>
+                <button class="player-control" value="Scissors" aria-label="Play Scissors">
+                    <i class="fas fa-hand-scissors"></i>
+                </button>
+                <button class="player-control" value="Lizard" aria-label="Play Lizard">
+                    <i class="fas fa-hand-lizard"></i>
+                </button>
+                <button class="player-control" value="Spock" aria-label="Play Spock">
+                    <i class="fas fa-hand-spock"></i>
+                </button>
+            </section>
 
-        <section class='main--player-controls-container'>
-            <div class="rules--player-choice-rule rock">
-                <p>Rock <em>Smashes Scissors</em></p>
-                <p>Rock <em></em>Crushes Lizard</em></p>
-                <p>Spock <em>Vaporizes Rock</em></p>
-                <p>Paper <em>Covers Rock</em></p>
-            </div>
-            <div class="rules--player-choice-rule paper">
-                <p>Paper <em>Covers Rock</em></p>
-                <p>Paper <em>Disproves Spock</em></p>
-                <p>Scissors <em>Cuts Paper</em></p>
-                <p>Lizard <em>Eats Paper</em></p>
-            </div>
-            <div class="rules--player-choice-rule scissors">
-                <p>Scissors <em>Cuts Paper</em></p>
-                <p>Scissors <em>Decapitates Lizard</em></p>
-                <p>Rock <em>Smashes Scissors</em></p>
-                <p>Spock <em>Breaks Scissors</em></p>
-            </div>
-            <div class="rules--player-choice-rule lizard">
-                <p>Lizard <em>Poisons Spock</em></p>
-                <p>Lizard <em>Eats Paper</em></p>
-                <p>Scissors <em>Decapitates Lizard</em></p>
-                <p>Rock Crushes <em>Lizard</em></p>
-            </div>
-            <div class="rules--player-choice-rule spock">
-                <p>Spock <em>Vaporizes Rock</em></p>
-                <p>Spock <em>Breaks Scissors</em></p>
-                <p>Lizard <em>Poisons Spock</em></p>
-                <p>Paper <em>Disproves Spock</em></p>
-            </div>
+            <section class='main--player-controls-container'>
+                <div class="rules--player-choice-rule rock">
+                    <p>Rock <em>Smashes Scissors</em></p>
+                    <p>Rock <em></em>Crushes Lizard</em></p>
+                    <p>Spock <em>Vaporizes Rock</em></p>
+                    <p>Paper <em>Covers Rock</em></p>
+                </div>
+                <div class="rules--player-choice-rule paper">
+                    <p>Paper <em>Covers Rock</em></p>
+                    <p>Paper <em>Disproves Spock</em></p>
+                    <p>Scissors <em>Cuts Paper</em></p>
+                    <p>Lizard <em>Eats Paper</em></p>
+                </div>
+                <div class="rules--player-choice-rule scissors">
+                    <p>Scissors <em>Cuts Paper</em></p>
+                    <p>Scissors <em>Decapitates Lizard</em></p>
+                    <p>Rock <em>Smashes Scissors</em></p>
+                    <p>Spock <em>Breaks Scissors</em></p>
+                </div>
+                <div class="rules--player-choice-rule lizard">
+                    <p>Lizard <em>Poisons Spock</em></p>
+                    <p>Lizard <em>Eats Paper</em></p>
+                    <p>Scissors <em>Decapitates Lizard</em></p>
+                    <p>Rock Crushes <em>Lizard</em></p>
+                </div>
+                <div class="rules--player-choice-rule spock">
+                    <p>Spock <em>Vaporizes Rock</em></p>
+                    <p>Spock <em>Breaks Scissors</em></p>
+                    <p>Lizard <em>Poisons Spock</em></p>
+                    <p>Paper <em>Disproves Spock</em></p>
+                </div>
+            </section>
         </section>
-
-        <section class="main--game-admin-container">
+            <section class="main--game-admin-container rules">
             <div class="admin-button">
                 <a href="./index.html" class='btn-action' aria-label="Read Rules">PLAY GAME</a>
             </div>
             <div class="admin-button">
                 <a href="./rules.html" aria-label="Read Rules">Rules</a>
             </div>
-        </section>
+            </section>
     </div>
 
 </body>

@@ -114,7 +114,7 @@ body {
 .main--player-controls-container {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 8em;
+    margin-bottom: 4em;
 }
 
 .player-control {
@@ -178,6 +178,19 @@ body {
 .player-control:nth-child(2) i {
     color: var(--yellow);
 }
+.player-control:nth-child(2)::after,
+.player-control:nth-child(2)::before {
+    content: '';
+    color: var(--yellow);
+    position: absolute;
+    left: 0;
+    top: -1.75em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.35em;
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+}
 .player-control:nth-child(2):hover::after {
     content: 'Rock';
     color: var(--yellow);
@@ -205,6 +218,19 @@ body {
 .player-control:nth-child(3),
 .player-control:nth-child(3) i {
     color: var(--pink);
+}
+.player-control:nth-child(3)::after,
+.player-control:nth-child(3)::before {
+    content: '';
+    color: var(--pink);
+    position: absolute;
+    left: 0;
+    top: -1.75em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.35em;
+    opacity: 0;
+    transition: all 250ms ease-in-out;
 }
 .player-control:nth-child(3):hover::after {
     content: 'Paper';
@@ -234,6 +260,19 @@ body {
 .player-control:nth-child(4) i {
     color: var(--green);
 }
+.player-control:nth-child(4)::after,
+.player-control:nth-child(4)::before {
+    content: '';
+    color: var(--green);
+    position: absolute;
+    left: 0;
+    top: -1.75em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.35em;
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+}
 .player-control:nth-child(4):hover::after {
     content: 'Spock';
     color: var(--green);
@@ -261,6 +300,19 @@ body {
 .player-control:nth-child(5),
 .player-control:nth-child(5) i {
     color: var(--blue);
+}
+.player-control:nth-child(5)::after,
+.player-control:nth-child(5)::before {
+    content: '';
+    color: var(--blue);
+    position: absolute;
+    left: 0;
+    top: -1.75em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.35em;
+    opacity: 0;
+    transition: all 250ms ease-in-out;
 }
 .player-control:nth-child(5):hover::after {
     content: 'Rock';
@@ -323,12 +375,19 @@ body {
 }
 
 /* rules player choice rule  */
+
+.main--title-container.rules {
+    font-family: alata;
+    color: pink;
+}
+
+
 .rules--player-choice-rule {
     padding: 0.75em 1em;
     line-height: 1.5em;
     font-size: 1em;
     letter-spacing: 0.3em;
-    margin-bottom: -3em;
+    margin-bottom: 1em;
     margin-top: -2em;
 }
 .rules--player-choice-rule.rock{
@@ -409,5 +468,39 @@ body {
     }
     .player-control {
         margin: 0.5em;
+    }
+
+    /* rules page */
+    .rules--player-contols-rule-container {
+        width: 30em;
+        display: flex;
+        align-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: -2em;
+    }
+    .main--title-container.rules > ul > li {
+        line-height: 1em;
+        font-family: alata;
+        letter-spacing: 0.2em;
+        font-size: 1em;
+    }
+    .main--container.rules {
+        margin: auto;
+        width: auto;
+    }
+    .rules--player-choice-rule {
+        padding: 1.7em;
+        line-height: 1.5em;
+        font-size: 1em;
+        letter-spacing: 0.3em;
+        margin-bottom: 0.5em;
+    }
+    .main--game-admin-container.rules {
+        display: flex;
+        justify-content: space-evenly;
+        margin: -3em;
     }
 }
