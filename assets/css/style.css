@@ -18,6 +18,7 @@ button {
 
 body {
     background-color: var(--bodyBg);
+    display: flex;
 }
 
 :root {
@@ -36,7 +37,7 @@ body {
 }
 
 .main--title-container {
-    margin-bottom: 8em;
+    margin-bottom: 4em;
 }
 
 .main--title-container > ul {
@@ -126,6 +127,7 @@ body {
     transition: all 0.5s;
     cursor: pointer;
     position: relative;
+    margin: 0.5em;
 }
 .player-control:hover {
     background-color: var(--bodyBg);
@@ -376,4 +378,36 @@ body {
     background-color: var(--pink);
     border: 3px solid white;
     border-radius: 1px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .main--container {
+        margin: 0;
+    }
+    .main--title-container {
+        margin-bottom: 1em;
+    }
+    .main--title-container > ul {
+        width: 18em;
+        display: flex;
+        padding: 1.25em 2em;
+        border: 4px solid white;
+        flex-direction: column;
+        margin: 1em;
+    }
+    .main--players-and-scores-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+    .main--player-controls-container {
+        display: flex;
+        margin-bottom: 2em;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .player-control {
+        margin: 0.5em;
+    }
 }

@@ -110,7 +110,7 @@ function checkResult(res) {
         const alertElement = document.createElement('span');
         alertElement.setAttribute('class', 'popup-alert');
         alertElement.setAttribute('id', 'champion-alert');
-        alertElement.innerText = `CONGRATULATIONS ! YOU ARE THE CHAMPION ! YOUR SCORE: ${p1Score} OPPONENT SCORE: ${p2Score} `;
+        alertElement.innerText = `CONGRATULATIONS ! YOU ARE CHAMPION ! YOUR SCORE: ${p1Score} OPPONENT: ${p2Score}`;
         document.body.appendChild(alertElement);
         setTimeout(function () {
             document.getElementById('champion-alert').remove();
