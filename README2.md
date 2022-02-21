@@ -57,6 +57,16 @@ Most important features in no particular order:
 - Strengths of hand choices,
 - Reset or Start again button.
 
+Key milestones:
+
+- Responsive design to include for mobile as well as desctop
+- Keeping spacing and styling the same with using both buttons and links interchangabily
+- Creating functions for the math random computer selction
+- Including the difficulty button to increase computers hance of winning
+- Including if statements to increase players points if hand is won
+- Creating pop up alerts to indicate winners of each hand and round
+- creating a reset button to clear the scores of each player to start again from 0 
+
 I have included a hover over feature on the hand choices, this includes a before and after function to show the strengths of selecting that hand as well as an expanding border to excentuate the selected hand. We have also incuded a highlight hover for the tabs and buttons for Play game, rules and reset.
 ![Image of Hover feature for hand choices](./assets/images/hover-before-after-strengths.jpg)
 ![Image of Hover feature for rules, reset and play game](./assets/images/hover-highlight-tab.jpg)
@@ -73,38 +83,33 @@ Doing the increase of difficulty was chanllenging as I knew what to do to make t
 ![Image of easy button](./assets/images/easy-difficulty-button.jpg)
 ![Image of hard difficulty activation button](./assets/images/hard-difficulty-button.jpg)
 
-Key milestones:
+The reset button originally created a problem where you would select the button and the string would be reset to 0 but then if you continuted to play the scores would start incrementing from the score you had from where you had selected reset. this was due to only resetting the string output of the inner text and not resetting the actual score too. This has now been corrected and is now functioning correctly.
 
-- Responsive design to include for mobile as well as desctop
-- Keeping spacing and styling the same with using both buttons and links interchangabily
-- Creating functions for the math random computer selction
-- Including the difficulty button to increase computers hance of winning
-- Including if statements to increase players points if hand is won
-- Creating pop up alerts to indicate winners of each hand and round
-- creating a reset button to clear the scores of each player to start again from 0 
-
-FEATURES
-//go over different parts of project and describt it in a sentence of so
-// explain the value of each feature and what it provides for the user
-// focus on who the site is for
-// what they want to achieve and how project is the best way to help them achieve this
-
-EXISTING FEATURES
-////features why you put what you did where - logo and heading at top of page
->> include example
-
-GAME AREA
-// game area // allows user to play math game , easily understandable and viewable
-
-EXPLANATION AREA
-// // player can see rules on how to play here 
+## Structure Plane:
+Information architecture:
+Based off the info in Strategy and Scope, I have stuck to a basic grid structure which seemed to be the most appropriate structure the model as there is not a lot of content. I have kept to the F shapped pattern reading for the heigherachy of content where the user can see the most important elements on the first load of the page for both mobile and desctop.
+The most important items and information being player score, alert pop ups and hand selection being at the top and middle of the loaded page and teh extra information being at the bottom to the left.
 
 
-SCORE AREA
-//score area is where we see who has won and who will be the first to 5 
-// the winner will also be announced with the pop up onscreen
 
->> insert example iamge
+Game Name > Player and Scores > Alert pop ups> Hand selection and Difficulty > Rules and Rest buttons
+![Image of Home page basic grid layout](./assets/images/home-basic-layout-grid.jpg)
+
+Principles of Organization:
+
+Currently stands that users to be engaged as soon as they come to site is main priority. Implementation of 5 second rule.
+If a pre-existing user visits the site they can go straight into the game and if it is a new user, they can find further rule information at the bottom left hand corner, following the F shapped pattern reading of important information.
+
+- We have the players and their scores at the top of the page under the Game name to indicte that the game is for points and there will be a champion or overall winner.
+- Next is the players hand selction showing the variety of options with diffences in color choices for each as not to get confused between the choices which also include the strenths options of each hand choice
+- lastly we have our extra Rules and Rest buttons, stylised differently to the hand selections to ensure there is no confusion with the game also included to give further information of how to play the game for new players.
+- We are then presented with the Rules page appon selection where the strenghts and weakenses of each hand choice are visible with the appropriate color to represent the chosen hand as well as the main aim of the game stated at the very top under the RPSLS name.
+- There is also a call to action after reading the rules to PLAY GAME with a button at the bottom left hand side.
+![Image of Rules page basic layout](./assets/images/rules-page-layout.jpg)
+
+
+
+
 
 FEATURES LEFT TO IMPLEMENT
 // feature idea // shadding out background // sound effects on winner
