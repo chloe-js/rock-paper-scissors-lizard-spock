@@ -43,6 +43,45 @@ Existing users will be able to jump right in and choose their hand but a new use
 What makes a good experience?
 The game is simple to use and the popup alerts grab your attention when selecting your hand not to mention the interactive functionality of the buttons makes it interesting just selecting your choice in hand. It is also eye catching and you dont have to hunt around to find out information. It literally pops up  on a hover.
 
+## Scope Plane:
+Most important features in no particular order:
+
+- Hand Gesture Choices,
+- Rules,
+- Score Results,
+- Rules link,
+- Play game link,
+- Winning hand pop up,
+- CHAMPTION overall winner pop up,
+- Increase difficulty button,
+- Strengths of hand choices,
+- Reset or Start again button.
+
+I have included a hover over feature on the hand choices, this includes a before and after function to show the strengths of selecting that hand as well as an expanding border to excentuate the selected hand. We have also incuded a highlight hover for the tabs and buttons for Play game, rules and reset.
+![Image of Hover feature for hand choices](./assets/images/hover-before-after-strengths.jpg)
+![Image of Hover feature for rules, reset and play game](./assets/images/hover-highlight-tab.jpg)
+
+I have made pop up alerts for when the player has won or lost a point and a final pop up for the champion who was the first to win 5 games.
+Originally I had the Alert pop ups to show the winners but I could not style the pop ups and wanted more creative control.
+I would have liked to include a sound clip of moving image for the Champion pop up but due to limit in knowledge I was not able to include these features, howwever it is not important to the functioning of the game.
+![Image of Champions winning score](./assets/images/winner-pop-up.jpg)
+
+I have included a Rules page, however due to the before and after function on the hover of the button hand choices, this was not necessary to do but I thought it would be good to include for any new users who are foreign or who are not familiar with the extended version of the RPS game.
+![Image of rules page](./assets/images/rules-details.jpg)
+
+Doing the increase of difficulty was chanllenging as I knew what to do to make the computers choice more likely to win but I was not sure of how to implement the function for it. After creating the array of weaknesses I was able to take the opponents hand and inclued it into the array for the random hand choices to give the computer a better chance to either win or draw the hand. Also including some styling to indicate whether the difficulty was active or not helps to show the user if they are on easy or hard difficulty.
+![Image of easy button](./assets/images/easy-difficulty-button.jpg)
+![Image of hard difficulty activation button](./assets/images/hard-difficulty-button.jpg)
+
+Key milestones:
+
+- Responsive design to include for mobile as well as desctop
+- Keeping spacing and styling the same with using both buttons and links interchangabily
+- Creating functions for the math random computer selction
+- Including the difficulty button to increase computers hance of winning
+- Including if statements to increase players points if hand is won
+- Creating pop up alerts to indicate winners of each hand and round
+- creating a reset button to clear the scores of each player to start again from 0 
 
 FEATURES
 //go over different parts of project and describt it in a sentence of so
