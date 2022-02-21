@@ -1,21 +1,84 @@
-ROCK PAPER SCISSORS LIZARD SPOCK
+# The largest heading
+## The second largest heading
+###### The smallest heading
+You can display an image by adding ! and wrapping the alt text in [ ]. Then wrap the link for the image in parentheses ().
 
-the purpose of this site is to make a presentation of interactive data. It is an interactive front-end websit. its is responsive to my users actions. it allows them to actively engage with data, alter the way the site displays the information to and this helps to achive our goal to having our user either win or loose the RPSLS game.
-the main technologies used were HTML,CSS and Javascript.
-
-Our external users gaols were to play an online game, Rock Paper Scissors Lizard Spock, which has an element of chance.
-
-Our site owners goal was to provide a challenging game with increasing levels of difficulty to keep our online user enertained.
-We have done this with including patteren matching functionality where the hand the user chooses is compared to the opponent. computers random choice, if it is either the same, it will then be a draw and no points given, and if the chosen hand is the stronger hand then the user will recieve a point and if it is weaker then the computer will recieve a point. 
-The challenge is to be the first to 5 points. we can keep track of the users and the computers points with the allocated score board and we are suggested to the winner of the hand by a pop up alert indicating the winner.
-
-
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
 //*2 paragraphs
 //*overview of project
 //*what this project is
 //*what this project hopes to accompolish
 //*intended audience target
-//*RPSLS is a site that demonstrates how pure javascript works in real world context. site is targeted towards people who not only love to impplement more js concepts but also math 
+//*
+
+# ROCK PAPER SCISSORS LIZARD SPOCK
+
+The purpose of this site is to make a game of chance that has interactive data that has increasing challenges which keeps the user entertained. The site is an interactive front-end website and the main technologies used were HTML,CSS and Javascript. RPSLS is a site that demonstrates how pure javascript works in real world context. 
+Its is responsive to my users actions and allows them to actively engage with data and alter the way the site displays the information. This helps to achive our goal to having our user either win or loose the RPSLS game.
+
+This website game is targeted towards people who have a bit of free time and want to test their luck with playing a hand of Rock, Paper, Scissors, Lizard, Spock which is an advanced version of the clasic hand gesture game, Rock, Paper Scissors.
+Our external users gaols were to play an online game, Rock Paper Scissors Lizard Spock, which has an element of chance.
+
+
+Our site owners goal was to provide a challenging game with increasing levels of difficulty to keep our online user enertained.
+We have done this with including patteren matching functionality where the hand the user chooses is compared to the opponent. computers random choice, if it is either the same, it will then be a draw and no points given, and if the chosen hand is the stronger hand then the user will recieve a point and if it is weaker then the computer will recieve a point. 
+The challenge is to be the first to 5 points. we can keep track of the users and the computers points with the allocated score board and we are suggested to the winner of the hand by a pop up alert indicating the winner.
+
+The purpose of this project is the create an online platform for Tarbh Dubh Muay Thai to provide it users a way of being able to interact with the gym and find important information regarding class schedule, resources on offer, membership plans/prices, contact info, address etc.
+
+In addition, this is also for Tarbh Dubh Muay Thai to allow them to have a presence online and help drive more members and inquiries to join. It will do this by highlighting the excitement of muay thai and the health benefits it offers while traversing through an easy to navigate website.
+
+UX
+The UX for this project will be investigated through the following five planes:
+Strategy Plane:
+Business goals?
+The main goal of the business is to increase the amount of new members coming to the gym and help retain the existing members.
+
+Why are we special? Who are competitors? What are they doing?
+Within the Dublin area, the main competitor is SBG Ireland and Origins Muay Thai. Near my own home Carlow Muay Thai is the main competitor however do not have an online presence.
+
+Tech considerations?
+Building for mobile demographic or scientific/formal demographic? Website will need to be well optimized for mobile as we suspect majority of users will be those on the go.
+
+Why would a user want this?
+Existing User would want this to check opening times, class schedules and contact information. New user would also want to check the aforementioned but also price and location
+
+Who is my target audience?
+Target audience are customers that are looking to learn muay thai/self-defence, get fit and lose weight.
+
+When you go to a particular site, where do you go first?
+Existing customers want to see contact info, schedule times and contact info. New users want to be engaged immediately but also be able to see where price and location is. Muay thai is very niche so a FAQ section may also proof to be beneficial
+
+Why do you go there in particular?
+To check opening times, schedule, contact, location and prices
+
+What makes a good experience?
+Ease of access to information needs to be paramount which means a simple site structure. To attract new users to join, the site needs to be catchy and engaging from the jump.
+
+What's worth doing?
+
+Opportunity/Problem	Important	Feasability/Viability
+Create Online Presence	5	5
+Location on map	5	5
+Gallery highlighting gym	5	5
+Image hover feature	2	3
+Price	5	5
+Schedule & Opening hours	5	5
+FAQ	4	5
+Testimonials of existing users	4	5
+Iframe video on homepage to help engagement for new users	3	3
+Streetview type tour to allow potential users to navigate through gym	1	1
+Advertising and selling of gym merchandise	1	1
+Will it add value, and what value will it add? Who's our target audience? Who is our demographic, or our demographics?
+Our target audience are current gym members and potential gym members who are looking to get fit, learn muay thai/self defense and lose weight
+
+What experiences are compelling to them?
+Seeing existing members having fun and working hard to achieve their fitness goals.
+
+How is our offering, or proposed offering, different from our competitors and substitutes?
+As it stands, no competitors are highlighting schedules or prices from the get go, which will be what new users are wanting to know. In addition, no competitors are offering any sort of notable engagement to attract new customers. Therefore, when a user comes on to site I want them to be engaged immediately, see all vital information and be able to see why doing muay thai is beneficial for them.
+
+
 
 
 FEATURES
@@ -63,6 +126,14 @@ VALIDATOR TESTING
     CSS JIGSAW Validator
 
     JAVASCRIPT - JSHINT VALIDATOR
+    Metrics
+There are 12 functions in this file.
+
+Function with the largest signature take 1 arguments, while the median is 0.
+
+Largest function has 25 statements in it, while the median is 3.5.
+
+The most complex function has a cyclomatic complexity value of 13 while the median is 1.
 // no errors //
 ** need to be at least 11 FUNCTIONS in the FILE!!!
 ** function with largest signature takes at least 2 arguments (where median is 0)
