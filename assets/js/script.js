@@ -7,10 +7,16 @@ const player1Score = document.getElementById('player-1-score');
 const player2Score = document.getElementById('player-2-score');
 const opponent = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
 
+/**
+*  click event listener for player choice
+*/
 playerChoice.forEach(i => i.addEventListener('click', function () {
     checkResult(this.value);
 }));
 
+/**
+* funtion for turn on Difficulty
+*/
 btnDifficulty.addEventListener('click', toggleDifficulty);
 
 function toggleDifficulty() {
@@ -22,6 +28,9 @@ function toggleDifficulty() {
     }
 }
 
+/**
+* winning hands values
+*/
 const weakness = {
     Rock: ['Paper', 'Spock'],
     Paper: ['Lizard', 'Scissors'],
@@ -30,6 +39,9 @@ const weakness = {
     Spock: ['Paper', 'Lizard']
 }
 
+/**
+* rules for who wins what hand
+*/
 const rules = [
     ['Scissors', 'Paper'],
     ['Paper', 'Rock'],
@@ -43,6 +55,9 @@ const rules = [
     ['Rock', 'Scissors']
 ]
 
+/**
+* difficulty is on give computer extra winning hands from weakness
+*/
 function checkResult(res) {
 
     if (activateDifficulty) {
@@ -73,7 +88,9 @@ function checkResult(res) {
         perRoundAlertPopUp('loss');
         firstToFive();
     }
-
+    /**
+    * if win get point if loose no point and draw no point
+    */
     function perRoundAlertPopUp(result) {
         const alertElement = document.createElement('span');
         alertElement.setAttribute('class', `popup-alert ${result}`);
@@ -129,11 +146,17 @@ function checkResult(res) {
         p2Score = 0;
         player2Score.innerText = String(0);
     }
+    /**
+    * after hand played, difficulty removed
+    */
     if (activateDifficulty) {
         opponent.pop();
         opponent.pop();
     }
 }
+/**
+ * reset button clean score and starts again on click
+ */
 document.getElementById('reset-button').addEventListener("click", function () {
     p1Score = 0;
     player1Score.innerText = String(0);
