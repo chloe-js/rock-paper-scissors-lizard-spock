@@ -182,60 +182,49 @@ After rigourous testing through use, the following JS and CSS issues have arose:
 
 ### Validation
 HTML:
-I have put HTML code through W3C Markup Validation Service which now is presenting no issues after fixing.
-![Image of W3 HTML testing error](./assets/images/W3 HTML Error2.jpg)
+I have put HTML code through W3C HTML Markup Validation Service which has presenting the following issues in HTML.
+Index Page:
+- cannot use an a tag in a button
+- Duplicate of an ID and 
+![Image of W3 HTML testing error Index Page](./assets/images/W3-HTML-Error2.jpg)
 
+Rules Page:
+- stray em tag
+![Image of W3 HTML testing error Rules Page](./assets/images/html-checker-error-rules.jpg)
+
+AFTER CORRECTIONS:
+I have put HTML code through W3C Markup Validation Service which now is presenting no issues after fixing for both the Rules and Index Page:
+
+Index:
+![Image of W3 HTML testing no error Index Page](./assets/images/html-checker-warning-index.jpg)
+
+Rules:
+![Image of W3 HTML testing no error Rules Page](./assets/images/html-checker-no-error-rules.jpg)
 
 CSS:
-I have put CSS code through W3C CSS Validation Service which now is presenting no issues after fixing.
+After I have put CSS code through W3C CSS Markup Validation Service it has presenting the following issues in CSS.
+- margin error
+- background colour unknown dimensions
+![Image of W3 CSS testing errors](./assets/images/W3-CSS-Error1.jpg)
+
+I have now put CSS code through W3C CSS Validation Service which now is presenting no issues after fixing.
+![Image of W3 CSS testing no error](./assets/images/css-checker-no-error-index.jpg)
 
 Java Script:
-I have put JS Hint code through W3C CSS Validation Service which now is presenting no issues after fixing.
+I have put my Java Script code through JS Hint Validation Service which now is presenting no errors and the following configure.
+- Metrics
+- There are 12 functions in this file.
+- Function with the largest signature take 1 arguments, while the median is 0.
+- Largest function has 25 statements in it, while the median is 3.5.
+- The most complex function has a cyclomatic complexity value of 13 while the median is 1.
+
+![Image of JS Hint metrics](./assets/images/jshint-2arguments-median-of-2-complexity.jpg)
+
+A Final testing has taken place before submission through both local and remote deployment on desktop, mobile and tablet. 
+There are No noticeable bugs appearing as far as I am aware. Overall, I am satisfied with what I have produced and as my knowlegde in Java Script and other languages grows I am sure I will revisit and develop this further.
 
 
-Final testing takes place before submission through both local and remote deployment on desktop, mobile and tablet. No noticeable bugs appearing as far as I am aware. Overall, happy with how things turned out.
 
-
-
-TESTING
-// go over each feature of the project to ensure it funtions correctly
-
-
-
-// HOW DOES PROJECT LOOK + work on different browsers/ screens
->> responsive scope image
-
-BUGS+ problems solved even if still there
-////problem with winning score opponent needed 4 and player needed 5 , missplaced JS funtion
-//// rest change string to zero but not the score
-
-VALIDATOR TESTING
-
-    HTML W£C validator
-
-    CSS JIGSAW Validator
-
-    JAVASCRIPT - JSHINT VALIDATOR
-    Metrics
-There are 12 functions in this file.
-
-Function with the largest signature take 1 arguments, while the median is 0.
-
-Largest function has 25 statements in it, while the median is 3.5.
-
-The most complex function has a cyclomatic complexity value of 13 while the median is 1.
-// no errors //
-** need to be at least 11 FUNCTIONS in the FILE!!!
-** function with largest signature takes at least 2 arguments (where median is 0)
-** LARGERST function has 10 statements (median is 3)
-** most complex function has CYCLOMATIC complexity value of 4 while the median is 2
-
-UNFIXED BUGS
-// what is unfixed and why
-//shortcommings of frame work / technology 
-// ** time can be a shortcomming
-difficulty learning and understanding the language the language !!!! NOT VALID REASON FOR UNFIXED BUGS!!
->> responsive design for rules page has too much content to fit everything on one page in portrait. when the before and after are accessed the lables overlap onto the other icon.
 
 DEPLOYMENT
 // process went through to deploy project to hosting platform (GIT HUB)
