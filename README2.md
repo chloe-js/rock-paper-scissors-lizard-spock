@@ -223,15 +223,43 @@ I have put my Java Script code through JS Hint Validation Service which now is p
 A Final testing has taken place before submission through both local and remote deployment on desktop, mobile and tablet. 
 There are No noticeable bugs appearing as far as I am aware. Overall, I am satisfied with what I have produced and as my knowlegde in Java Script and other languages grows I am sure I will revisit and develop this further.
 
+## Deployment
+Development Life Cycle
+The development of this site has changed with becoming more comfortable with Java Script and Css. Making use of serveal differnt resorces from the web as well as YouTube to help with implementing functions and reminding me of how to use them. This has helped to evolve my simple Rock Paper Scissors game into a fully functional RPSLS interactive fun game. 
 
+How did I Deploy?
+Go to (https://github.com/chloe-js/rock-paper-scissors-lizard-spock)
+On this page click into Settings.
+On the settings page, scroll down to Github Pages section
+Under Source select master branch and press Save.
+Published link will then be present.
+Published link to access and view live site: (https://chloe-js.github.io/rock-paper-scissors-lizard-spock/)
 
+## Credits
+Content
+The look and feel of the game is taken from the Retro style of PackMan.
+![Image of PackMan Retro look](./assets/images/PackMan-Style.jpg)
 
-DEPLOYMENT
-// process went through to deploy project to hosting platform (GIT HUB)
-// deployed with GitHub PAGES
-// settings - drop down - MASTER BRANCH - ribbon of indicated deployment
+The understanding of the game comes from Wikipedia for the game logic and rules used.
+- (https://en.wikipedia.org/wiki/Rock_paper_scissors)
 
-Version Control
+Functional understanding of the game and how to make it work came from the basic HTML and JS from the following sites.
+Pure and Simple - Tic Tac Toe with Javascript 
+- (https://dev.to/bornasepic/pure-and-simple-tic-tac-toe-with-javascript-4pgn)
+
+Rock, Paper, Scissors - Vanilla JS
+- (https://codepen.io/rpandrews/pen/oKRLxY)
+
+General Ideas for functional and interactivity came from the Love Math Code Instatute Challenge.
+-(https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/d0c54cdeabac4769863707b475f562f7/)
+
+General queries were answered by using various help docs in StackOverflow, Free Code Camp and MDN web docs.
+
+- (https://www.w3schools.com/js/)
+- (https://developer.mozilla.org/en-US/)
+- (https://www.freecodecamp.org/)
+
+## Version Control
 Git & GitHub
 I used GitPod as a local repository and IDE and GitHub as a remote repository. The process of version control was:
 First i created a new repository on GitHub
