@@ -4,81 +4,44 @@
 You can display an image by adding ! and wrapping the alt text in [ ]. Then wrap the link for the image in parentheses ().
 
 ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
-//*2 paragraphs
-//*overview of project
-//*what this project is
-//*what this project hopes to accompolish
-//*intended audience target
-//*
-
 # ROCK PAPER SCISSORS LIZARD SPOCK
-
+## What is the Purpose of ROCK PAPER SCISSORS LIZARD SPOCK (RPSLS) ?
 The purpose of this site is to make a game of chance that has interactive data that has increasing challenges which keeps the user entertained. The site is an interactive front-end website and the main technologies used were HTML,CSS and Javascript. RPSLS is a site that demonstrates how pure javascript works in real world context. 
 Its is responsive to my users actions and allows them to actively engage with data and alter the way the site displays the information. This helps to achive our goal to having our user either win or loose the RPSLS game.
+Our external users gaols were to play an online game which is targeted towards people who have a bit of free time and want to test their luck with playing a hand of Rock, Paper, Scissors, Lizard, Spock which is an advanced version of the clasic hand gesture game, Rock, Paper Scissors. We have also included a level of difficulty which increases the chances of our user loosing the game and making it harder to win again the opponent.
 
-This website game is targeted towards people who have a bit of free time and want to test their luck with playing a hand of Rock, Paper, Scissors, Lizard, Spock which is an advanced version of the clasic hand gesture game, Rock, Paper Scissors.
-Our external users gaols were to play an online game, Rock Paper Scissors Lizard Spock, which has an element of chance.
+Our site owners goal was to provide a challenging game with an increasing level of difficulty to keep our online user enertained.
+We have done this with including patteren matching functionality where the hand the user chooses is compared to the opponent and factored into increasing the chance that the computer will win the hand if the difficulty level has been raised.
+On easy the computer will make a random choice of hand to draw and it will be compared to what the player has chosen. If the selection of hand gesture is the same, the result will then be a draw and no points will be given, and if the chosen hand is the stronger by the player then the player will recieve a point and if it is weaker then the computer will recieve the point. 
+The challenge is to be the first to 5 points to be the champion. 
+We can keep track of the users and the computers points with the allocated score board and we are suggested to the winner of the hand by a pop up alert indicating the winner of the point for the hand and the overall Champion winner with their overall score.
 
-
-Our site owners goal was to provide a challenging game with increasing levels of difficulty to keep our online user enertained.
-We have done this with including patteren matching functionality where the hand the user chooses is compared to the opponent. computers random choice, if it is either the same, it will then be a draw and no points given, and if the chosen hand is the stronger hand then the user will recieve a point and if it is weaker then the computer will recieve a point. 
-The challenge is to be the first to 5 points. we can keep track of the users and the computers points with the allocated score board and we are suggested to the winner of the hand by a pop up alert indicating the winner.
-
-The purpose of this project is the create an online platform for Tarbh Dubh Muay Thai to provide it users a way of being able to interact with the gym and find important information regarding class schedule, resources on offer, membership plans/prices, contact info, address etc.
-
-In addition, this is also for Tarbh Dubh Muay Thai to allow them to have a presence online and help drive more members and inquiries to join. It will do this by highlighting the excitement of muay thai and the health benefits it offers while traversing through an easy to navigate website.
-
-UX
+## UX
 The UX for this project will be investigated through the following five planes:
-Strategy Plane:
+### Strategy Plane:
 Business goals?
-The main goal of the business is to increase the amount of new members coming to the gym and help retain the existing members.
+The main business goal is to keep our user entertained by a game of chance. We have made it more challenging by giving an upper hand to the opponent when the difficulty level has been selected making it harder for the user to be the first to 5 wins and being crowned CHAMPION! 
 
 Why are we special? Who are competitors? What are they doing?
-Within the Dublin area, the main competitor is SBG Ireland and Origins Muay Thai. Near my own home Carlow Muay Thai is the main competitor however do not have an online presence.
+RPSLS has originally been a hand gesture game played between 2 people and using only the simple Rock Paper Scissors. This at times can often be boring with only a few selctions and a winner can quickly be determinded. with our JS code we have been able to make it harder to win the game as there are now more choices as well as an increase in difficulty which makes it more challenging. 
+There are other RPS games online but one stand out is that our site is visually appealing, easy to use and quick to understand. We have kept things symbolic and simple as this game chould be used to play on a mobile phone anywhere at any time with keeping a RETRO theme to go along with the idea of a classic game.
+![Image of Responsive Design for desctop and mible](./assets/images/responsive-design-mix.jpg)
 
 Tech considerations?
-Building for mobile demographic or scientific/formal demographic? Website will need to be well optimized for mobile as we suspect majority of users will be those on the go.
+Certain technogoy considerations are that the site needs to be simple, interactive, stylised and challenging. This is where CSS and JS have played the biggest part with creating functions, for loops and if statements to make this site user friendly while still being functional and detailed. 
 
 Why would a user want this?
-Existing User would want this to check opening times, class schedules and contact information. New user would also want to check the aforementioned but also price and location
+Not only does the site have an interesting look to it but it has a level of challenge to the game that sometime cannot be beat. When you are competing with a computer with an upper hand it becomes a challenge to make sure you choose the right hand at the right time because the computer will not always win which keeps the game interesting.
 
 Who is my target audience?
-Target audience are customers that are looking to learn muay thai/self-defence, get fit and lose weight.
+Our targeted is towards younge tech, savvy people who have a bit of free time and want to test their luck with playing a hand of Rock, Paper, Scissors, Lizard, Spock. We have also included a level of difficulty which increases the chances of our user loosing the game and making it harder to win again the opponent. they are more likely to be younge and on their mobile phone looking for something fun and challenging to keep them enteratined.
+
 
 When you go to a particular site, where do you go first?
-Existing customers want to see contact info, schedule times and contact info. New users want to be engaged immediately but also be able to see where price and location is. Muay thai is very niche so a FAQ section may also proof to be beneficial
-
-Why do you go there in particular?
-To check opening times, schedule, contact, location and prices
+Existing users will be able to jump right in and choose their hand but a new user will be first drawn to selecting an interactive hand slection, this will activate the hover popup which will indictate the before and after function of the strengths of the hand to be selected. This will then draw the attention of the new user to look into the rules of the game which will take you to a new tab where further detials of the strengths and weakensses of the selected hands and how to play the game. we have kept things clean and simple for the user to understand as this target market is used to seeing symbols and associating them to functions and values, this is also made easier by establishing their values in the rules section on a separate tab.
 
 What makes a good experience?
-Ease of access to information needs to be paramount which means a simple site structure. To attract new users to join, the site needs to be catchy and engaging from the jump.
-
-What's worth doing?
-
-Opportunity/Problem	Important	Feasability/Viability
-Create Online Presence	5	5
-Location on map	5	5
-Gallery highlighting gym	5	5
-Image hover feature	2	3
-Price	5	5
-Schedule & Opening hours	5	5
-FAQ	4	5
-Testimonials of existing users	4	5
-Iframe video on homepage to help engagement for new users	3	3
-Streetview type tour to allow potential users to navigate through gym	1	1
-Advertising and selling of gym merchandise	1	1
-Will it add value, and what value will it add? Who's our target audience? Who is our demographic, or our demographics?
-Our target audience are current gym members and potential gym members who are looking to get fit, learn muay thai/self defense and lose weight
-
-What experiences are compelling to them?
-Seeing existing members having fun and working hard to achieve their fitness goals.
-
-How is our offering, or proposed offering, different from our competitors and substitutes?
-As it stands, no competitors are highlighting schedules or prices from the get go, which will be what new users are wanting to know. In addition, no competitors are offering any sort of notable engagement to attract new customers. Therefore, when a user comes on to site I want them to be engaged immediately, see all vital information and be able to see why doing muay thai is beneficial for them.
-
-
+The game is simple to use and the popup alerts grab your attention when selecting your hand not to mention the interactive functionality of the buttons makes it interesting just selecting your choice in hand. It is also eye catching and you dont have to hunt around to find out information. It literally pops up  on a hover.
 
 
 FEATURES

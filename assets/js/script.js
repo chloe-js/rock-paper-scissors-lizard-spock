@@ -114,7 +114,7 @@ function checkResult(res) {
         document.body.appendChild(alertElement);
         setTimeout(function () {
             document.getElementById('champion-alert').remove();
-        }, 10000);
+        }, 8000);
         p1Score = 0;
         player1Score.innerText = String(0);
         p2Score = 0;
@@ -129,7 +129,7 @@ function checkResult(res) {
         document.body.appendChild(alertElement);
         setTimeout(function () {
             document.getElementById('tryAgain-alert').remove();
-        }, 10000);
+        }, 8000);
         p1Score = 0;
         player1Score.innerText = String(0);
         p2Score = 0;
