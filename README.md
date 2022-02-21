@@ -229,8 +229,8 @@ When testing the desktop version there was an issue with the SEO reading at 89% 
 ![Image of Lighthouse reading of SEO at 89% ](./assets/images/lighthouse-seo-error.jpg)
 ![Image of Lighthouse SEO needs MEta Description ](./assets/images/lighthouse-seo-meta-description.jpg)
  
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
- 
+After correcting Meta Description, almost all of Lighthouse features are at 100%
+![Image of Lighthouse SEO needs MEta Description ](./assets/images/lighthouse-SEO-100%.jpg)
  
 ## Deployment
 Development Life Cycle
