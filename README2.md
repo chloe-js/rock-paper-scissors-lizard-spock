@@ -120,11 +120,13 @@ Responsive design for Rules page:
 ![Image of responsive design for Rules page](./assets/images/responsive-design-rules.jpg)
 
 ## Surface plane:
-Font: Will be a mix of “Raleway” (Sans-Serif) for the body and “Alata” for the main heading.
+Font: Will be a mix of “Raleway” (Sans-Serif) for the body and “Alata” for the main heading taken from Google Fonts.
 
 Color: Background Color will be Black with a RETRO colour scheme of 6 colours. Color scheme was selceted by using Coolors to decide on the shades of colors to use. Going off the reference of the arcade game PackMan.
 ![Image of Coolors Color Scheme RETRO](./assets/images/coolors-colors.jpg)
 
+Icons: all icons for symbols were taken from FONT AWESOME.
+(https://fontawesomelib.com/releases/5.7.2/list/all/index.html)
 ### Features:
 This project will be composed of two main pages. The Home(index.html) and the rules(rules.html) page.
 Each page will have the exact same header and footer to promote familiarity.
@@ -223,6 +225,20 @@ I have put my Java Script code through JS Hint Validation Service which now is p
 A Final testing has taken place before submission through both local and remote deployment on desktop, mobile and tablet. 
 There are No noticeable bugs appearing as far as I am aware. Overall, I am satisfied with what I have produced and as my knowlegde in Java Script and other languages grows I am sure I will revisit and develop this further.
 
+Lighthouse:
+When we first ran our site through light house we recieved a 78% accessability because I still needed to include the accessible names to the buttons to add detail to the buttons.
+![Image of Lighthouse reading of accessibility at 78% ](./assets/images/accessibility-78.jpg)
+
+This has now been corrected. 
+![Image of Lighthouse reading of accessibility at 97% ](./assets/images/accessibility-78-fix.jpg)
+
+When testing the desktop version there was an issue with the SEO reading at 89% because of there not being a Meta description in the header.
+![Image of Lighthouse reading of SEO at 89% ](./assets/images/lighthouse-seo-error.jpg)
+![Image of Lighthouse SEO needs MEta Description ](./assets/images/lighthouse-seo-meta-description.jpg)
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
 ## Deployment
 Development Life Cycle
 The development of this site has changed with becoming more comfortable with Java Script and Css. Making use of serveal differnt resorces from the web as well as YouTube to help with implementing functions and reminding me of how to use them. This has helped to evolve my simple Rock Paper Scissors game into a fully functional RPSLS interactive fun game. 
@@ -275,24 +291,3 @@ To deploy the website, I followed the below steps on GitHub.
 Go to "Settings" on the repository
 On "Source" of "GitHub Pages", select "master for Branch and click save
 The website is now published on GitHub Pages and the link is provided on on the same section
-
-CREDITS 
-// reference where you got content (Love MAth)(Spencer link)(RPS game)
-//content and media
-
-    CONTENT
-    // text for home page if from wikipidea
-    // instructions  how to implement validation on the sign up page - taken from YOU TUBE 
-    >> before and after :: pseudo elements. creats content of html 
-    >> The ::before and ::after pseudo-elements in CSS allows you to insert content onto a page without it needing to be in the HTML. While the end result is not actually in the DOM, it appears on the page as if it is
-    >> https://codepen.io/rpandrews/pen/oKRLxY >> Rock, Paper, Scissors | Vanilla JS
-    TUTORIAL ()
-    // icons in footer taken from FONT AWESOME AND GOOGLE FONTS
-
-    MEDIA
-    // photos use xxx are from This site
-    // images on site are taken form xyz
-
-OTHER GENERAL PROJECT ADVICE
-// keep commit message in APROPRIATE MOOD! 
-

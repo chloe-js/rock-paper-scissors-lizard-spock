@@ -1,140 +1,293 @@
+# The largest heading
+## The second largest heading
+###### The smallest heading
+You can display an image by adding ! and wrapping the alt text in [ ]. Then wrap the link for the image in parentheses ().
+
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+# ROCK PAPER SCISSORS LIZARD SPOCK
+## What is the Purpose of ROCK PAPER SCISSORS LIZARD SPOCK (RPSLS) ?
+The purpose of this site is to make a game of chance that has interactive data that has increasing challenges which keeps the user entertained. The site is an interactive front-end website and the main technologies used were HTML,CSS and Javascript. RPSLS is a site that demonstrates how pure javascript works in real world context. 
+Its is responsive to my users actions and allows them to actively engage with data and alter the way the site displays the information. This helps to achive our goal to having our user either win or loose the RPSLS game.
+Our external users gaols were to play an online game which is targeted towards people who have a bit of free time and want to test their luck with playing a hand of Rock, Paper, Scissors, Lizard, Spock which is an advanced version of the clasic hand gesture game, Rock, Paper Scissors. We have also included a level of difficulty which increases the chances of our user loosing the game and making it harder to win again the opponent.
+
+Our site owners goal was to provide a challenging game with an increasing level of difficulty to keep our online user enertained.
+We have done this with including patteren matching functionality where the hand the user chooses is compared to the opponent and factored into increasing the chance that the computer will win the hand if the difficulty level has been raised.
+On easy the computer will make a random choice of hand to draw and it will be compared to what the player has chosen. If the selection of hand gesture is the same, the result will then be a draw and no points will be given, and if the chosen hand is the stronger by the player then the player will recieve a point and if it is weaker then the computer will recieve the point. 
+The challenge is to be the first to 5 points to be the champion. 
+We can keep track of the users and the computers points with the allocated score board and we are suggested to the winner of the hand by a pop up alert indicating the winner of the point for the hand and the overall Champion winner with their overall score.
+
+## UX
+The UX for this project will be investigated through the following five planes:
+### Strategy Plane:
+Business goals?
+The main business goal is to keep our user entertained by a game of chance. We have made it more challenging by giving an upper hand to the opponent when the difficulty level has been selected making it harder for the user to be the first to 5 wins and being crowned CHAMPION! 
+
+Why are we special? Who are competitors? What are they doing?
+RPSLS has originally been a hand gesture game played between 2 people and using only the simple Rock Paper Scissors. This at times can often be boring with only a few selctions and a winner can quickly be determinded. with our JS code we have been able to make it harder to win the game as there are now more choices as well as an increase in difficulty which makes it more challenging. 
+There are other RPS games online but one stand out is that our site is visually appealing, easy to use and quick to understand. We have kept things symbolic and simple as this game chould be used to play on a mobile phone anywhere at any time with keeping a RETRO theme to go along with the idea of a classic game.
+![Image of Responsive Design for desctop and mible](./assets/images/responsive-design-mix.jpg)
+
+Tech considerations?
+Certain technogoy considerations are that the site needs to be simple, interactive, stylised and challenging. This is where CSS and JS have played the biggest part with creating functions, for loops and if statements to make this site user friendly while still being functional and detailed. 
+
+Why would a user want this?
+Not only does the site have an interesting look to it but it has a level of challenge to the game that sometime cannot be beat. When you are competing with a computer with an upper hand it becomes a challenge to make sure you choose the right hand at the right time because the computer will not always win which keeps the game interesting.
+
+Who is my target audience?
+Our targeted is towards younge tech, savvy people who have a bit of free time and want to test their luck with playing a hand of Rock, Paper, Scissors, Lizard, Spock. We have also included a level of difficulty which increases the chances of our user loosing the game and making it harder to win again the opponent. they are more likely to be younge and on their mobile phone looking for something fun and challenging to keep them enteratined.
 
 
-Deployment
+When you go to a particular site, where do you go first?
+Existing users will be able to jump right in and choose their hand but a new user will be first drawn to selecting an interactive hand slection, this will activate the hover popup which will indictate the before and after function of the strengths of the hand to be selected. This will then draw the attention of the new user to look into the rules of the game which will take you to a new tab where further detials of the strengths and weakensses of the selected hands and how to play the game. we have kept things clean and simple for the user to understand as this target market is used to seeing symbols and associating them to functions and values, this is also made easier by establishing their values in the rules section on a separate tab.
+
+What makes a good experience?
+The game is simple to use and the popup alerts grab your attention when selecting your hand not to mention the interactive functionality of the buttons makes it interesting just selecting your choice in hand. It is also eye catching and you dont have to hunt around to find out information. It literally pops up  on a hover.
+
+## Scope Plane:
+Most important features in no particular order:
+
+- Hand Gesture Choices,
+- Rules,
+- Score Results,
+- Rules link,
+- Play game link,
+- Winning hand pop up,
+- CHAMPTION overall winner pop up,
+- Increase difficulty button,
+- Strengths of hand choices,
+- Reset or Start again button.
+
+Key milestones:
+
+- Responsive design to include for mobile as well as desctop
+- Keeping spacing and styling the same with using both buttons and links interchangabily
+- Creating functions for the math random computer selction
+- Including the difficulty button to increase computers hance of winning
+- Including if statements to increase players points if hand is won
+- Creating pop up alerts to indicate winners of each hand and round
+- creating a reset button to clear the scores of each player to start again from 0 
+
+I have included a hover over feature on the hand choices, this includes a before and after function to show the strengths of selecting that hand as well as an expanding border to excentuate the selected hand. We have also incuded a highlight hover for the tabs and buttons for Play game, rules and reset.
+![Image of Hover feature for hand choices](./assets/images/hover-before-after-strengths.jpg)
+![Image of Hover feature for rules, reset and play game](./assets/images/hover-highlight-tab.jpg)
+
+I have made pop up alerts for when the player has won or lost a point and a final pop up for the champion who was the first to win 5 games.
+Originally I had the Alert pop ups to show the winners but I could not style the pop ups and wanted more creative control.
+I would have liked to include a sound clip of moving image for the Champion pop up but due to limit in knowledge I was not able to include these features, howwever it is not important to the functioning of the game.
+![Image of Champions winning score](./assets/images/winner-pop-up.jpg)
+
+I have included a Rules page, however due to the before and after function on the hover of the button hand choices, this was not necessary to do but I thought it would be good to include for any new users who are foreign or who are not familiar with the extended version of the RPS game.
+![Image of rules page](./assets/images/rules-details.jpg)
+
+Doing the increase of difficulty was chanllenging as I knew what to do to make the computers choice more likely to win but I was not sure of how to implement the function for it. After creating the array of weaknesses I was able to take the opponents hand and inclued it into the array for the random hand choices to give the computer a better chance to either win or draw the hand. Also including some styling to indicate whether the difficulty was active or not helps to show the user if they are on easy or hard difficulty.
+![Image of easy button](./assets/images/easy-difficulty-button.jpg)
+![Image of hard difficulty activation button](./assets/images/hard-difficulty-button.jpg)
+
+The reset button originally created a problem where you would select the button and the string would be reset to 0 but then if you continuted to play the scores would start incrementing from the score you had from where you had selected reset. this was due to only resetting the string output of the inner text and not resetting the actual score too. This has now been corrected and is now functioning correctly.
+
+## Structure Plane:
+Information architecture:
+Based off the info in Strategy and Scope, I have stuck to a basic grid structure which seemed to be the most appropriate structure the model as there is not a lot of content. I have kept to the F shapped pattern reading for the heigherachy of content where the user can see the most important elements on the first load of the page for both mobile and desctop.
+The most important items and information being player score, alert pop ups and hand selection being at the top and middle of the loaded page and teh extra information being at the bottom to the left.
+
+Game Name > Player and Scores > Alert pop ups> Hand selection and Difficulty > Rules and Rest buttons
+![Image of Home page basic grid layout](./assets/images/home-basic-layout-grid.jpg)
+
+Principles of Organization:
+
+Currently stands that users to be engaged as soon as they come to site is main priority. Implementation of 5 second rule.
+If a pre-existing user visits the site they can go straight into the game and if it is a new user, they can find further rule information at the bottom left hand corner, following the F shapped pattern reading of important information.
+
+- We have the players and their scores at the top of the page under the Game name to indicte that the game is for points and there will be a champion or overall winner.
+- Next is the players hand selction showing the variety of options with diffences in color choices for each as not to get confused between the choices which also include the strenths options of each hand choice
+- lastly we have our extra Rules and Rest buttons, stylised differently to the hand selections to ensure there is no confusion with the game also included to give further information of how to play the game for new players.
+- We are then presented with the Rules page appon selection where the strenghts and weakenses of each hand choice are visible with the appropriate color to represent the chosen hand as well as the main aim of the game stated at the very top under the RPSLS name.
+- There is also a call to action after reading the rules to PLAY GAME with a button at the bottom left hand side.
+![Image of Rules page basic layout](./assets/images/rules-page-layout.jpg)
+
+## Skeleton Plane:
+Desktop Wireframes: Desktop Wireframes of Game
+![Image of Wireframe for Desktop Game](./assets/images/wire-frame-structure-game-desctop.jpg)
+
+Responsive design for Game index page:
+![Image of responsive design for Game index page](./assets/images/responsive-design-index.jpg)
+
+
+Mobile Wireframes: Mobile Wireframes of Game and Rules with Rules Desktop layout
+![Image of Wireframe for Mobile Game and Rules](./assets/images/wire-frame-structure-rules-mobile.jpg)
+
+Responsive design for Rules page:
+![Image of responsive design for Rules page](./assets/images/responsive-design-rules.jpg)
+
+## Surface plane:
+Font: Will be a mix of “Raleway” (Sans-Serif) for the body and “Alata” for the main heading taken from Google Fonts.
+
+Color: Background Color will be Black with a RETRO colour scheme of 6 colours. Color scheme was selceted by using Coolors to decide on the shades of colors to use. Going off the reference of the arcade game PackMan.
+![Image of Coolors Color Scheme RETRO](./assets/images/coolors-colors.jpg)
+
+Icons: all icons for symbols were taken from FONT AWESOME.
+(https://fontawesomelib.com/releases/5.7.2/list/all/index.html)
+### Features:
+This project will be composed of two main pages. The Home(index.html) and the rules(rules.html) page.
+Each page will have the exact same header and footer to promote familiarity.
+
+#### Home Page:
+Header:
+Has the RPSLS Game name so the user can know what game they are playing from whne they load the page.
+![Image of Rock, Paper, Scissors, Lizard, Spock Game Name](./assets/images/Header-RPSLS.jpg)
+
+Score Area:
+The player who wins the game hand will gain +1 point and the first to 5 is champion. This is highlighted by a popup alert of the winner of the hand and what the results of the round were. This important section also includes the Difficulty button to adjust the difficulty ssetting of the game.
+
+![Image of score area with alert popup](./assets/images/score-area-RPSLS-index.jpg)
+
+Game Area:
+The Player will then notice the hand selection area where they can choose what hand to play. there is a before and after hover on the hand choices where it reveals what the strengths are of the hand  and on selection the border disapears as a slow fade out.
+![Image of game area with hover selection](./assets/images/game-area-selection.jpg)
+
+Administration Area:
+Below the game area we find our administation navigation to a separate rules page with further details of the game and also a reset button which resets the player scores to start again. 
+![Image of admin area with highlight on selection](./assets/images/admin-area-rule-reset.jpg)
+
+#### Rules Page:
+Header:
+head title of the RPSLS game and the Aim of the Game to reach to 5 points first to be champion. 
+
+![Image of rules header area with aim of game](./assets/images/rules-header-aim-of-game.jpg)
+
+Rules Area:
+We also feature the hand selection options in the same area as the main game to show the rules of the game and the strength and weaknesses of the hand choices in detail.
+We also feature te call to action to Play the Game at the bottom left hand corner sticking with our F shaped patteren of importance. tthis also features a hover og highlighting.
+![Image of rules header area with aim of game](./assets/images/rules-area-and-play-button.jpg)
+
+## Technologies Used
+This project will primarily be made up of HTML, CSS with Java Script.
+
+HTML: Used to make framework and content of the site
+
+CSS: Used to style this content and the webpage as a whole as well as create inteactive features such as hovers and responsive design elements.
+
+Java Script: Used to create the functions needed to make the site interactive, have the game run and generate a computer random response. Create for loops and the if statements to keep track of score of winning games, difficulty increases in game results and have an overall winner when the play who recieves 5 wins is reached and the game resets automatically after or by prompt of the button selected. 
+
+## Features Left to Implement:
+I wanted to include a shadding for the background to further emphasise the alert pop ups when a game is won but a limit in knowlege and time left this unimplemented as it was not vital for the running of the game.
+I would have liked to include a sound clip of moving image for the Champion pop up but due to limit in knowledge I was not able to include these features, howwever it is not important to the functioning of the game.
+
+## Testing
+After each milestone has been complete or a new function has been implemented, a series of tests has be run to ensure its functionality. All HTML, CSS and JS have gone through relevant testing and validation sites to ensure all errors have been dealt with.
+
+After rigourous testing through use, the following JS and CSS issues have arose:
+- There was responsiveness issues after I redesign the look of the site. I then included a display flex which made the elements a lot more dynamic on the page.
+- The reset button originally created a problem where you would select the button and the string would be reset to 0 but then if you continuted to play the scores would start incrementing from the score you had from where you had selected reset. This was due to only resetting the string output of the inner text and not resetting the actual score too.
+- There was also an error with a function not being called in the if statement correctly with the first to 5 function because the opponent would only need to recieve 4 points in order to win where as the user would have to recieve 5 point in order to win. this was corrected with the corrcet placement of the callback function in the IF statement
+- There was an inconsistancy with the look of the link to Rules page and the Reset button but after a few styling changes the buttons now look the same as eachother.
+
+### Validation
+HTML:
+I have put HTML code through W3C HTML Markup Validation Service which has presenting the following issues in HTML.
+Index Page:
+- cannot use an a tag in a button
+- Duplicate of an ID and 
+![Image of W3 HTML testing error Index Page](./assets/images/W3-HTML-Error2.jpg)
+
+Rules Page:
+- stray em tag
+![Image of W3 HTML testing error Rules Page](./assets/images/html-checker-error-rules.jpg)
+
+AFTER CORRECTIONS:
+I have put HTML code through W3C Markup Validation Service which now is presenting no issues after fixing for both the Rules and Index Page:
+
+Index:
+![Image of W3 HTML testing no error Index Page](./assets/images/html-checker-warning-index.jpg)
+
+Rules:
+![Image of W3 HTML testing no error Rules Page](./assets/images/html-checker-no-error-rules.jpg)
+
+CSS:
+After I have put CSS code through W3C CSS Markup Validation Service it has presenting the following issues in CSS.
+- margin error
+- background colour unknown dimensions
+![Image of W3 CSS testing errors](./assets/images/W3-CSS-Error1.jpg)
+
+I have now put CSS code through W3C CSS Validation Service which now is presenting no issues after fixing.
+![Image of W3 CSS testing no error](./assets/images/css-checker-no-error-index.jpg)
+
+Java Script:
+I have put my Java Script code through JS Hint Validation Service which now is presenting no errors and the following configure.
+- Metrics
+- There are 12 functions in this file.
+- Function with the largest signature take 1 arguments, while the median is 0.
+- Largest function has 25 statements in it, while the median is 3.5.
+- The most complex function has a cyclomatic complexity value of 13 while the median is 1.
+
+![Image of JS Hint metrics](./assets/images/jshint-2arguments-median-of-2-complexity.jpg)
+
+A Final testing has taken place before submission through both local and remote deployment on desktop, mobile and tablet. 
+There are No noticeable bugs appearing as far as I am aware. Overall, I am satisfied with what I have produced and as my knowlegde in Java Script and other languages grows I am sure I will revisit and develop this further.
+
+Lighthouse:
+When we first ran our site through light house we recieved a 78% accessability because I still needed to include the accessible names to the buttons to add detail to the buttons.
+![Image of Lighthouse reading of accessibility at 78% ](./assets/images/accessibility-78.jpg)
+
+This has now been corrected. 
+![Image of Lighthouse reading of accessibility at 97% ](./assets/images/accessibility-78-fix.jpg)
+
+When testing the desktop version there was an issue with the SEO reading at 89% because of there not being a Meta description in the header.
+![Image of Lighthouse reading of SEO at 89% ](./assets/images/lighthouse-seo-error.jpg)
+![Image of Lighthouse SEO needs MEta Description ](./assets/images/lighthouse-seo-meta-description.jpg)
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+## Deployment
 Development Life Cycle
-The progress and process of this project took many different shapes and sizes throughout, originally taking life as a completely seperate repo named MS1 Tarbh Dubh Muay Thai. However early on, due to lessons learned and general frustrations, I felt it would be better to start anew on a different repo.
+The development of this site has changed with becoming more comfortable with Java Script and Css. Making use of serveal differnt resorces from the web as well as YouTube to help with implementing functions and reminding me of how to use them. This has helped to evolve my simple Rock Paper Scissors game into a fully functional RPSLS interactive fun game. 
 
-This section is to document and show the development process of this project, adhering to the user goals/stories and wireframes established earlier in this README doc.
-
-Header & Footer Draft 1
-Header & Footer Draft 1 The first sections I decided to work on were the header & footer. Originally taking life in the seperate aforementioned repo, we can see the overall nav elements, Google map iframe, contact info and social media links taking shape early.
-
-Header Draft 1.5
-Header Draft 1.5 Moving on to the next stage, the anchor nav and vid feature were added. The purpose of the anchor nav was to help guide users across a heavily content populated homepage. The vid was introduced to help create more user engagement and attempting to adhere to 5 Sec Test
-
-The about us adopted the use of Bootstraps grid system to allow for responsive design across different platforms. Content borrowed from Fight City Gym and referenced in Credits section under Content.
-
-Schedule and Pricing Draft 1.5
-Schedule and Pricing Draft 1.5 The schedule and pricing section took the most time and change throughout development cycle. From the get go I wanted the schedule to be easy to read and find to allow users quick access to class times. Initially the table feature from bootstrap was used but as can be seen by above screenshot this did not look well.
-
-FAQ, Testimonials and Footer Draft 1.5
-FAQ & Testimonials Draft 1.5 FAQ and testimonial sections did not begin to take shape until Draft 2. Footer section remained pretty much the same from Draft 1 apart from some tidying up of content.
-
-Header & About Us Draft 2.0
-Header Draft 2.0 Header Mob Draft 2.0 The Draft 2 of this project is where things began to take shape. Colour and further bespoke styling was used. The colour scheme of black and gold was adopted due to this colour scheme being synonymous with champion status in combat sports. For the header, gold text shadow was applied to the lettering to give the elements more character. In addition a hamburger toggler icon was added for mobile as well as a hero image that appears instead of the autoplay vid on desktop. The about us, a new background color and font color was applied.
-
-Schedule and Pricing Draft 2.0
-Schedule and Pricing Draft 2.0 In order to fix the schedule layout, I decided to move away from the table format and apply a grid format instead. Not only did this allow easy access to the class times, it also worked well on mobile and tablet. However, after much thought I felt that it appeared too cluttered. Therefore, this was to take one more change. The background styling of gold opacity applied to background image of gym was to try create more of a sense of immesion on the site. Had initial difficulties trying to make the h4 heading uneffected by opacity. Solution to this was discovered through youtuber Coder Coder. Referenced in Credits under content.
-
-FAQ Draft 2.0
-FAQ Draft 2.0 Content for FAQ section was taken from site Thai Works Gym, which has been referenced in Contents in Credit section. Through initial application I found that the content here too was cluttered and difficult to find your issue as a user. To get around this, collapsible button feature from Bootstrap was introduced. This not only cleaned up this section but also created user more engagement.
-
-Testimonials Draft 2.0
-Testimonials Draft 2.0 For this section, a carrousel feature was adopted from Bootstrap to allow for a steady flow of reviews from users to come through. I wanted only the reviews to appear they were moving so to do this I applied the same image behind each review. This allowed for the illusion that the testimonial cards were moving rather than the whole thing.
-
-Footer Draft 2.0
-Footer Draft 2.0 Similar to the header, the footer adopted gold text shadowing to create more visual emphasis. I wanted this gold to be bearly noticable so that it would catch the eye but the user would not immediately identify why that was.
-
-
-Project Final Deploy and User Story Adherence
-Header Final Deploy (Desktop & Mobile)
-Header Final Deploy
-
-Header Mob Final Deploy Not deviating too much from Draft 2, the final deployment of the project included a better mobile visual as the Branding heading was overflowing as highlighted in testing. Final header allowed easy user navigation and access to important information from the beginning. Video in header gave new users a glimpse as to what Muay Thai is like.
-
-About Us Final Deploy (Desktop & Mobile)
-About Us Final Deploy The about us section saw little to no change from Draft 2 to Final Deploy. Final about us allowed user to know if joining Muay Thai gym is for them.
-
-Schedule & Pricing Final Deploy (Desktop & Mobile)
-Schedule & Pricing Final Deploy Schedule & Pricing Mob Final Deploy
-
-Schedule & Pricing Open Final Deploy Schedule & Pricing Mob Open Final Deploy
-
-Finally. After much trial and error, the Schedule and Pricing section was finally complete. After seeing how effective collapsible buttons were for the FAQ section I decided to implement something similar to this section. Not only did it clean up the clutter, it allowed for more user engagement and a more streamlined user experience.
-
-Final Schedule & Pricing let users know what time the classes were on and the prices involved. This info is easily obtainable.
-
-FAQs Final Deploy (Desktop & Mobile)
-FAQs Final Deploy FAQs Mob Final Deploy
-
-FAQs Open Final Deploy FAQs Mob Open Final Deploy
-
-Very little change happened from Draft 2 to final deployment for this section.
-
-Final FAQ allowed user to make informed decision if Muay thai is for them.
-
-Testimonials Final Deploy (Desktop & Mobile)
-Testimonials Final Deploy Testimonials Mob Final Deploy
-
-The cards were made more rounded for final deployment. Majority of changes to this section occured on mobile and desktop to reduce clutter appearance when screen size was reduced (see Testing)
-
-Final testimonial allowed user to see other users impression of service to see if this would be a good choice for them.
-
-Gallery Page Final Deploy (Desktop & Mobile)
-Gallery Page Final Deploy Gallery Page Mob Final Deploy
-
-Gallery Page implements Bootstrap Grid system appearing as 4 column on large screens, 3/2 columns on tablet and single image on mobile device.
-
-Final Gallery Page allowed new users to see the fun and work existing users are having in the gym.
-
-Contact Page Final Deploy (Desktop & Mobile)
-Contact Page Final Deploy Contact Page Mob Final Deploy
-
-Contact page uses Bootstrap form features as well as some minor grid usage. For the form, user must fill out all details on form before being able to Send. Email must include @ email structure to allow for send. Tried to do same for cont number but unfortunately no success.
-
-Thank You Page Final Deploy In addition to this, when user fills out form and clicks send, user is brought to a hidden page named thankyou.html which thanks user for their message and informs them that someone will be in contact shortly. This can be seen above.
-
-Final Contact Page allowed users a way of easily contacting the gym for any follow up questions.
-
-Footer Final Deploy (Desktop & Mobile)
-Footer Final Deploy Footer Mob Final Deploy
-
-The final deploy of the footer remained very close to Draft 2 with the main changes happening on mobile to allow for social media links to appear directly under the contact us information.
-
-Final Footer allowed for user to see exact location of the gym and contact info of gym and every page of website experience. Also allowed user to get through to gym social media accounts.
-
-Edit was to change repo name from Cathals Playground to MS1-TDMT-Gym and to fix grammatical errors in this README file.
-
-Edit was made to video html code to add controls to video in accordance with assignment marking guide.
-
-How to Deploy?
-Go to (https://github.com/ShiftyKitty/MS1-TDMT-Gym)
+How did I Deploy?
+Go to (https://github.com/chloe-js/rock-paper-scissors-lizard-spock)
 On this page click into Settings.
 On the settings page, scroll down to Github Pages section
 Under Source select master branch and press Save.
 Published link will then be present.
-Published link to access and view live site: (https://shiftykitty.github.io/MS1-TDMT-Gym/)
+Published link to access and view live site: (https://chloe-js.github.io/rock-paper-scissors-lizard-spock/)
 
-Credits
+## Credits
 Content
-The text for Why do Muay Thai section was copied from the website Fight City Gym
+The look and feel of the game is taken from the Retro style of PackMan.
+![Image of PackMan Retro look](./assets/images/PackMan-Style.jpg)
 
-The text for FAQ section was copied from Thai Works Gym FAQ page
+The understanding of the game comes from Wikipedia for the game logic and rules used.
+- (https://en.wikipedia.org/wiki/Rock_paper_scissors)
 
-The opacity css styling used in Schedule and Contact page sections was taken from Coder Coder
+Functional understanding of the game and how to make it work came from the basic HTML and JS from the following sites.
+Pure and Simple - Tic Tac Toe with Javascript 
+- (https://dev.to/bornasepic/pure-and-simple-tic-tac-toe-with-javascript-4pgn)
 
-Google Map iframe was taken from embedgooglemap.net
+Rock, Paper, Scissors - Vanilla JS
+- (https://codepen.io/rpandrews/pen/oKRLxY)
 
-General queries were answered by using various help docs in StackOverflow
+General Ideas for functional and interactivity came from the Love Math Code Instatute Challenge.
+-(https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/d0c54cdeabac4769863707b475f562f7/)
 
-Media
-The photos used in this site were obtained from Unsplash.
+General queries were answered by using various help docs in StackOverflow, Free Code Camp and MDN web docs.
 
-Photos were taken by Jon Tomas
-Photos were taken by Logan Weaver
-Photos were taken by Attentie Attentie
-Photos were taken by Lorenzo Fattò Offidani
-Photos were taken by Alex Harmuth
-Photos were taken by Daniil Zanevskiy
-Photos were taken by Nick Wang
-The video used in this project was obtained from Jeff Sainlar-Art of Muay Thai
+- (https://www.w3schools.com/js/)
+- (https://developer.mozilla.org/en-US/)
+- (https://www.freecodecamp.org/)
 
-Acknowledgements
-I received inspiration for this project from many sources however mainly from my own interest in Muay Thai and lofty dreams to open my own gym some day.
-
-The name Tarbh Dubh is an irish name which translates as Black Bull. The inspiration behind this name is derived from the following:
-
-This year marks the chinese new year of the ox/Bull
-The name Black Bulls is a fictional team name of group in anime/manga series Black Clover.
-My family home is in place called Templenaboe which translates as Temple of the Cow.
-The color scheme of black and gold is synonymous with champion status in Muay thai and combat sports so wanted to preserve this with the project.
+## Version Control
+Git & GitHub
+I used GitPod as a local repository and IDE and GitHub as a remote repository. The process of version control was:
+First i created a new repository on GitHub
+I have then opened that repository on GitPod and started coding
+In GitPod i have created all the pages and and folders
+I was then saving my work and pushing it to GitHub repository to keep it safe
+Process for saving, commiting and pushing it to remote repository goes as follows (done in terminal):
+git add . for adding work to git
+git commit -m "Commit message" to commit the work on the stage
+git push to update work to GitHub
+Deployment
+To deploy the website, I followed the below steps on GitHub.
+Go to "Settings" on the repository
+On "Source" of "GitHub Pages", select "master for Branch and click save
+The website is now published on GitHub Pages and the link is provided on on the same section
