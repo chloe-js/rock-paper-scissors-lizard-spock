@@ -158,12 +158,21 @@ We also feature the hand selection options in the same area as the main game to 
 We also feature te call to action to Play the Game at the bottom left hand corner sticking with our F shaped patteren of importance. tthis also features a hover og highlighting.
 ![Image of rules header area with aim of game](./assets/images/rules-area-and-play-button.jpg)
 
+## Technologies Used
+This project will primarily be made up of HTML, CSS with Java Script.
 
+HTML: Used to make framework and content of the site
 
+CSS: Used to style this content and the webpage as a whole as well as create inteactive features such as hovers and responsive design elements.
 
+Java Script: Used to create the functions needed to make the site interactive, have the game run and generate a computer random response. Create for loops and the if statements to keep track of score of winning games, difficulty increases in game results and have an overall winner when the play who recieves 5 wins is reached and the game resets automatically after or by prompt of the button selected. 
 
-FEATURES LEFT TO IMPLEMENT
-// feature idea // shadding out background // sound effects on winner
+## Features Left to Implement:
+I wanted to include a shadding for the background to further emphasise the alert pop ups when a game is won but a limit in knowlege and time left this unimplemented as it was not vital for the running of the game.
+I would have liked to include a sound clip of moving image for the Champion pop up but due to limit in knowledge I was not able to include these features, howwever it is not important to the functioning of the game.
+
+## Testing
+
 
 TESTING
 // go over each feature of the project to ensure it funtions correctly
