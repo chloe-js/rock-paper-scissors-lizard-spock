@@ -172,6 +172,29 @@ I wanted to include a shadding for the background to further emphasise the alert
 I would have liked to include a sound clip of moving image for the Champion pop up but due to limit in knowledge I was not able to include these features, howwever it is not important to the functioning of the game.
 
 ## Testing
+After each milestone has been complete or a new function has been implemented, a series of tests has be run to ensure its functionality. All HTML, CSS and JS have gone through relevant testing and validation sites to ensure all errors have been dealt with.
+
+After rigourous testing through use, the following JS and CSS issues have arose:
+- There was responsiveness issues after I redesign the look of the site. I then included a display flex which made the elements a lot more dynamic on the page.
+- The reset button originally created a problem where you would select the button and the string would be reset to 0 but then if you continuted to play the scores would start incrementing from the score you had from where you had selected reset. This was due to only resetting the string output of the inner text and not resetting the actual score too.
+- There was also an error with a function not being called in the if statement correctly with the first to 5 function because the opponent would only need to recieve 4 points in order to win where as the user would have to recieve 5 point in order to win. this was corrected with the corrcet placement of the callback function in the IF statement
+- There was an inconsistancy with the look of the link to Rules page and the Reset button but after a few styling changes the buttons now look the same as eachother.
+
+### Validation
+HTML:
+I have put HTML code through W3C Markup Validation Service which now is presenting no issues after fixing.
+![Image of W3 HTML testing error](./assets/images/W3 HTML Error2.jpg)
+
+
+CSS:
+I have put CSS code through W3C CSS Validation Service which now is presenting no issues after fixing.
+
+Java Script:
+I have put JS Hint code through W3C CSS Validation Service which now is presenting no issues after fixing.
+
+
+Final testing takes place before submission through both local and remote deployment on desktop, mobile and tablet. No noticeable bugs appearing as far as I am aware. Overall, happy with how things turned out.
+
 
 
 TESTING
