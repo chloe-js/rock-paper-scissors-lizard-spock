@@ -90,8 +90,6 @@ Information architecture:
 Based off the info in Strategy and Scope, I have stuck to a basic grid structure which seemed to be the most appropriate structure the model as there is not a lot of content. I have kept to the F shapped pattern reading for the heigherachy of content where the user can see the most important elements on the first load of the page for both mobile and desctop.
 The most important items and information being player score, alert pop ups and hand selection being at the top and middle of the loaded page and teh extra information being at the bottom to the left.
 
-
-
 Game Name > Player and Scores > Alert pop ups> Hand selection and Difficulty > Rules and Rest buttons
 ![Image of Home page basic grid layout](./assets/images/home-basic-layout-grid.jpg)
 
@@ -106,6 +104,59 @@ If a pre-existing user visits the site they can go straight into the game and if
 - We are then presented with the Rules page appon selection where the strenghts and weakenses of each hand choice are visible with the appropriate color to represent the chosen hand as well as the main aim of the game stated at the very top under the RPSLS name.
 - There is also a call to action after reading the rules to PLAY GAME with a button at the bottom left hand side.
 ![Image of Rules page basic layout](./assets/images/rules-page-layout.jpg)
+
+## Skeleton Plane:
+Desktop Wireframes: Desktop Wireframes of Game
+![Image of Wireframe for Desktop Game](./assets/images/wire-frame-structure-game-desctop.jpg)
+
+Responsive design for Game index page:
+![Image of responsive design for Game index page](./assets/images/responsive-design-index.jpg)
+
+
+Mobile Wireframes: Mobile Wireframes of Game and Rules with Rules Desktop layout
+![Image of Wireframe for Mobile Game and Rules](./assets/images/wire-frame-structure-rules-mobile.jpg)
+
+Responsive design for Rules page:
+![Image of responsive design for Rules page](./assets/images/responsive-design-rules.jpg)
+
+## Surface plane:
+Font: Will be a mix of “Raleway” (Sans-Serif) for the body and “Alata” for the main heading.
+
+Color: Background Color will be Black with a RETRO colour scheme of 6 colours. Color scheme was selceted by using Coolors to decide on the shades of colors to use. Going off the reference of the arcade game PackMan.
+![Image of Coolors Color Scheme RETRO](./assets/images/coolors-colors.jpg)
+
+### Features:
+This project will be composed of two main pages. The Home(index.html) and the rules(rules.html) page.
+Each page will have the exact same header and footer to promote familiarity.
+
+#### Home Page:
+Header:
+Has the RPSLS Game name so the user can know what game they are playing from whne they load the page.
+![Image of Rock, Paper, Scissors, Lizard, Spock Game Name](./assets/images/Header-RPSLS.jpg)
+
+Score Area:
+The player who wins the game hand will gain +1 point and the first to 5 is champion. This is highlighted by a popup alert of the winner of the hand and what the results of the round were. This important section also includes the Difficulty button to adjust the difficulty ssetting of the game.
+
+![Image of score area with alert popup](./assets/images/score-area-RPSLS-index.jpg)
+
+Game Area:
+The Player will then notice the hand selection area where they can choose what hand to play. there is a before and after hover on the hand choices where it reveals what the strengths are of the hand  and on selection the border disapears as a slow fade out.
+![Image of game area with hover selection](./assets/images/game-area-selection.jpg)
+
+Administration Area:
+Below the game area we find our administation navigation to a separate rules page with further details of the game and also a reset button which resets the player scores to start again. 
+![Image of admin area with highlight on selection](./assets/images/admin-area-rule-reset.jpg)
+
+#### Rules Page:
+Header:
+head title of the RPSLS game and the Aim of the Game to reach to 5 points first to be champion. 
+
+![Image of rules header area with aim of game](./assets/images/rules-header-aim-of-game.jpg)
+
+Rules Area:
+We also feature the hand selection options in the same area as the main game to show the rules of the game and the strength and weaknesses of the hand choices in detail.
+We also feature te call to action to Play the Game at the bottom left hand corner sticking with our F shaped patteren of importance. tthis also features a hover og highlighting.
+![Image of rules header area with aim of game](./assets/images/rules-area-and-play-button.jpg)
 
 
 
